@@ -422,7 +422,7 @@ th, td { padding: 5px; }
 
 .remark-slide-content {
   background-color: #ffffff ; /* #23373B; */
-  background-image: url(../img/game_hex.png);
+  background-image: url(../img/dev_hex.png);
   background-position: 99% 1%;
   background-size: 7%;
   color: #000000;
@@ -518,7 +518,7 @@ color: #23373B;
 
 .title-slide {
   background-color: #771C6D;
-  background-image: url(../img/game_hex.png);
+  background-image: url(../img/dev_hex.png);
   background-position: 99% 90%;
   background-size: 25%;
 }

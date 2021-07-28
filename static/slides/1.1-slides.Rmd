@@ -1,0 +1,119 @@
+---
+title: "1.1 — Introduction to Economic Development"
+subtitle: "ECON 317 • Economic Development • Fall 2021"
+author: 'Ryan Safner<br> Assistant Professor of Economics <br> <a href="mailto:safner@hood.edu"><i class="fa fa-paper-plane fa-fw"></i>safner@hood.edu</a> <br> <a href="https://github.com/ryansafner/devF21"><i class="fa fa-github fa-fw"></i>ryansafner/devF21</a><br> <a href="https://devF21.classes.ryansafner.com"> <i class="fa fa-globe fa-fw"></i>devF21.classes.ryansafner.com</a><br>'
+#date:
+output:
+  xaringan::moon_reader:
+    mathjax: "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_HTMLorMML" # rescales math with css changes https://github.com/yihui/xaringan/issues/143
+    lib_dir: libs
+    #seal: false
+    css: [custom.css, "hygge"] #, metropolis, metropolis-fonts
+    nature:
+      beforeInit: ["macros.js", "https://platform.twitter.com/widgets.js"] # first is for rescaling images , second is for embedding tweets, https://github.com/yihui/xaringan/issues/100
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+      slideNumberFormat: |
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+          </div>
+        </div>
+    includes:
+      in_header: header.html # for font awesome, used in title  
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(echo=F,
+                      message=F,
+                      warning=F,
+                      fig.retina = 3,
+                      fig.align = "center")
+library("tidyverse")
+library("ggrepel")
+library("fontawesome")
+xaringanExtra::use_tile_view()
+xaringanExtra::use_tachyons()
+xaringanExtra::use_freezeframe()
+
+update_geom_defaults("label", list(family = "Fira Sans Condensed"))
+update_geom_defaults("text", list(family = "Fira Sans Condensed"))
+
+set.seed(256)
+
+theme_slides <- theme_light() + 
+  theme(
+    text = element_text(family = "Fira Sans", size = 24)
+  )
+
+```
+
+class: inverse
+
+# Outline
+
+### [The Tools of Microeconomics](#)
+### [Incentives](#)
+### [Equilibrium](#)
+### [Real Talk: The Math](#)
+### [About This Course](#)
+
+---
+
+# About Me
+
+.left-column[
+.center[
+![](../images/meinfrontofsmith.jpg)
+
+.smallest[
+Edinburgh, 2019
+]
+]
+]
+
+.right-column[
+.smallest[
+
+- Ph.D (Economics) — George Mason University, 2015
+
+- B.A. (Economics) — University of Connecticut, 2011
+
+- Specializations:
+  - Law and Economics
+  - Austrian Economics
+
+- Research interests
+  - modeling innovation & economic growth
+  - political economy & economic history of intellectual property
+
+- Expecting a son in March 👶 (expect cameos!)
+]
+]
+
+---
+
+# What This Course is NOT (*Necessarily*) About
+
+.pull-left[
+.center[
+![](../images/gamessports.png)
+
+![](../images/chess2.jpg)
+]
+]
+
+.pull-right[
+.center[
+![](../images/poker.jpg)
+]
+
+.center[
+![](../images/videogames.png)
+]
+]
+
+---
+

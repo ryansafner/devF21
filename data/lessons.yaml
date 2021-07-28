@@ -1,0 +1,54 @@
+lessons:
+  - title: '<span class="fake-header-table">Fundamentals of Economic Development</span>'
+    header: True
+
+  - title: "1 What is Development?"
+    slides: "1.1-slides"
+    class: "1.1-content"
+
+  - title: "2 Measuring Development"
+
+  - title: "3 Can We Plan an Economy?"
+
+  - title: '<span class="fake-header-table">Models of Economic Development</span>'
+    header: True
+
+  - title: "4 The Microeconomics of Development"
+
+  - title: "5 The Macroeconomics of Development"
+
+  - title: '<span class="fake-header-table">Policies & Exogenous Factors</span>'
+  
+  - title: "6 Foreign Aid"
+
+  - title: "7 Geography and Other Uncontrollable Factors"
+
+  - title: '<i class="fas fa-laptop-code"></i> **Short Paper 1** due Wed Oct 30'
+    assignment: "01-short-paper"
+    
+  - title: '<span class="fake-header-table">Institutions and Political Economy</span>'
+    header: True
+
+  - title: "8 Introduction to Political Economy"
+
+  - title: "9 The Pre-modern Malthusian Economy"
+
+  - title: "10 The Natural State and the Violence Trap"
+
+  - title: '<span class="fake-header-table">Making Comparisons and Case Studies</span>'
+    header: True
+
+  - title: '11 The Origins of Liberal Democracy in Western Europe'
+
+  - title: '12 Russia and the Post-Communist Transition'
+
+  - title: '13 State Capitalism: East Asian Style'
+
+  - title: "14 Extractive Institutions: Latin America and Africa"
+
+  - title: '<i class="fas fa-laptop-code"></i> **Short Paper 2** due Dec 6 by email'
+
+  - title: '<i class="fas fa-laptop-code"></i> **Country Profile** due Dec 9'
+    assignment: "country-profile"
+
+  - title: '<i class="fas fa-laptop-code"></i> **Final Exam**'

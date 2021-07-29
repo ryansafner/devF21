@@ -1,7 +1,7 @@
 ---
-title: "1.1 — Introduction to Game Theory — Class Content"
+title: "1.1 — The Big Questions — Class Content"
 draft: false
-linktitle: "1.1 — Introduction to Game Theory"
+linktitle: "1.1 — The Big Questions"
 date: "2020-06-08"
 menu:
   content:
@@ -15,27 +15,27 @@ slides: "1.1-slides"
 ---
 
 {{% alert note %}}
-*Monday, February 1, 2021*
+*Tuesday, August 24, 2021*
 {{% /alert %}}
 
 ## <i class="fas fa-info-circle fa-lg"></i> Overview
 
-<span class="newthought">Welcome</span> to ECON 316 — Game THeory! Today's lesson will be an overview of the content and the assignments of the course. Please read and familiarize yourself with the [syllabus](/syllabus). 
+<span class="newthought">Welcome</span> to ECON 317 — Economic Development! Today's lesson will be an overview of the content and the assignments of the course. Please read and familiarize yourself with the [syllabus](/syllabus).
 
-This is not just a “syllabus day,” as we need to hit the ground running, but today will give you a “big picture” look at this semester, and how to use microeconomic analysis, by focusing on the two main tools/models: **optimization** and **equilibrium**. We will dive right into optimization models next class.
+This is not just a “syllabus day,” as we need to hit the ground running, but today will give you a “big picture” look at this semester by starting with some of the biggest questions, not just in "development economics" or "economics," but arguably all of social science:
+
+1. Why are some countries wealthy, and others poor?
+2. How did/do countries become wealthy?
+
+We then also consider the history “development economics” as a self-identifying field of economics, as compared to the original motivations for economics or political economy (in Adam Smith's time) as a discipline.
 
 ## <i class="fas fa-book-reader fa-lg"></i> Readings
 
-Today is introductory, but you may look at Chapter 1 if you wish, to remind you about the use of models in economics. Otherwise, please heed this timeless message:
+Today is introductory, but please heed this timeless message:
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">A message to students from the Doggfather himself, <a href="https://twitter.com/SnoopDogg?ref_src=twsrc%5Etfw">@SnoopDogg</a> <a href="https://t.co/wsSANYv8u6">pic.twitter.com/wsSANYv8u6</a></p>&mdash; Ryan Briggs (@ryancbriggs) <a href="https://twitter.com/ryancbriggs/status/1293543531496308736?ref_src=twsrc%5Etfw">August 12, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-Please note going forward, the lesson numbers and topics (e.g. 1.1) on this website are *my* design, and will not match up with the textbook!
-
-### Optional/Referenced Readings
-
-- July 2 2003, [<i class="fas fa-external-link-square-alt"></i> “Why Dolphins are Deep Thinkers”](https://www.theguardian.com/science/2003/jul/03/research.science), *The Guardian*
-- January 17, 2021, [<i class="fas fa-external-link-square-alt"></i> These Monkeys Understand Economics and Intentionally Steal High-Ticket Items to Barter for Better Food, Study Finds](https://gizmodo.com/these-monkeys-understand-economics-and-intentionally-st-1846078932?utm_medium=sharefromsite&utm_source=_facebook), *Gizmodo*
+Please note going forward, the lesson numbers and topics (e.g. 1.1) on this website are *my* design, and will not match up with any books!
 
 ## <i class="fas fa-chalkboard-teacher"></i> Slides
 
@@ -44,9 +44,3 @@ Below, you can find the slides in two formats. Clicking the image will bring you
 The lower button will allow you to download a PDF version of the slides. I suggest printing the slides beforehand and using them to take additional notes in class (*not everything* is in the slides)!
 
 `r blogdown::shortcode("slide-links")`
-
-## <i class="fas fa-laptop-code"></i> Assignments
-
-### Preliminary Math Survey Due Sunday Feb 7
-
-Please take the [preliminary math survey](/assignment/00-preliminary-survey) on your math background by 11:59 PM Sunday February 7. This will help us all have a productive course together.

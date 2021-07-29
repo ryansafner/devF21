@@ -1,5 +1,5 @@
 ---
-title: "1.1 — Introduction to Economic Development"
+title: "1.1 — The Big Questions"
 subtitle: "ECON 317 • Economic Development • Fall 2021"
 author: 'Ryan Safner<br> Assistant Professor of Economics <br> <a href="mailto:safner@hood.edu"><i class="fa fa-paper-plane fa-fw"></i>safner@hood.edu</a> <br> <a href="https://github.com/ryansafner/devF21"><i class="fa fa-github fa-fw"></i>ryansafner/devF21</a><br> <a href="https://devF21.classes.ryansafner.com"> <i class="fa fa-globe fa-fw"></i>devF21.classes.ryansafner.com</a><br>'
 #date:
@@ -37,6 +37,7 @@ library("fontawesome")
 xaringanExtra::use_tile_view()
 xaringanExtra::use_tachyons()
 xaringanExtra::use_freezeframe()
+xaringanExtra::use_progress_bar(color = "#ffffff", location = "top", height = "10px")
 
 update_geom_defaults("label", list(family = "Fira Sans Condensed"))
 update_geom_defaults("text", list(family = "Fira Sans Condensed"))

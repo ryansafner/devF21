@@ -4,7 +4,7 @@ lessons:
 
   - title: "1 What is Development?"
     slides: "1.1-slides"
-    class: "1.1-content"
+    content: "1.1-content"
 
   - title: "2 Measuring Development"
 

@@ -1,29 +1,50 @@
 ---
-title: Syllabus
-slug: syllabus
-citeproc: true
-bibliography: ../../static/bib/references.bib
-csl: ../../static/bib/chicago-syllabus-no-bib.csl
-output:
-  blogdown::html_page:
-    toc: true
-    fig_caption: false
+output: 
+  pdf_document:
+    number_sections: false
+    keep_tex: true
+    fig_caption: yes
+    df_print: kable
+    latex_engine: xelatex
+    template: template-syllabus.tex
+    includes:
+      in_header: 
+geometry: margin=1in
+course: "Economic Development"
+coursecode: "ECON 317 Fall 2021"
+section: ""
+author: Dr. Ryan Safner
+semester: "[devF21.classes.ryansafner.com](http://devF21.classes.ryansafner.com)"
+
+email: "safner@hood.edu"
+web: "ryansafner.com"
+officehours: "<i class='fas fa-video'></i> MW 10:00—11 AM & by appt"
+office: "Rosenstock 110"
+classroom: "Rosenstock 30"
+classhours: "TuTh 2:00 PM—3:25PM"
+
+fontfamily: Fira Sans
+mainfont: Fira Sans
+fontsize: 12pt
+sansfont: "Yanone Kaffeesatz"
+monofont: "Fira Code"
+mathfont: "Fira Sans"
+
+#bibliography: 306syllabus.bib
 ---
 
 ```{r load-libraries, message=FALSE, warning=FALSE, include=FALSE}
 library(dplyr)
 library(tibble)
 library(pander)
+library(knitr)
 library(kableExtra)
+library(fontawesome)
 ```
-
-`r blogdown::shortcode("courseinfo")`
-
-<p style="text-align:center"><a target="_blank" href="/syllabus/syllabus-pdf.pdf"><span class="btn btn-primary btn-lg"><i class="fas fa-file-pdf"></i> Download PDF</a></span></br>**Last Updated**: August 20, 2021</p>
 
 > "The consequences for human welfare involved in questions like these are simply staggering: Once one starts to think about them, it is hard to think about anything else."<br> [— Robert Lucas (1995 Economics Nobel Laureate)]{style="float:right"}
 
-<span class="newthought">Economic Development</span> concerns the fundamental question posed by Adam Smith in 1776: *why are some countries wealthy, and others poor?*. Before "economics" emerged as its own discipline in the 20^th^ century, and adopted more rigorous mathematical trappings, the exploration of *political economy* attempted to answer this question: political, social, and cultural institutions and histories had as much to offer as the division of labor and market exchanges in answering the challenge. In the aftermath of WWII, economists in "the First World" began more consciously studying how to promote development in "the Third World", while policymakers built international institutions (the IMF, the World Bank, the Bretton-Woods financial systems) aimed at securing peace and outwardly developing what they say as the "Third World." In order to grapple with these key questions, we will examine a mixture of political economy and economic history to understand the role of political, cultural, and social institutions in directing economic activity towards prosperity or towards ruin. This course, like the professionals dealing with the big questions, will offer many suggestions but fewer "correct" or concrete answers than you may be used to. You should come to this course as a willing participant in the ongoing conversation.
+**Economic Development** concerns the fundamental question posed by Adam Smith in 1776: *why are some countries wealthy, and others poor?*. Before "economics" emerged as its own discipline in the 20^th^ century, and adopted more rigorous mathematical trappings, the exploration of *political economy* attempted to answer this question: political, social, and cultural institutions and histories had as much to offer as the division of labor and market exchanges in answering the challenge. In the aftermath of WWII, economists in "the First World" began more consciously studying how to promote development in "the Third World", while policymakers built international institutions (the IMF, the World Bank, the Bretton-Woods financial systems) aimed at securing peace and outwardly developing what they say as the "Third World." In order to grapple with these key questions, we will examine a mixture of political economy and economic history to understand the role of political, cultural, and social institutions in directing economic activity towards prosperity or towards ruin. This course, like the professionals dealing with the big questions, will offer many suggestions but fewer "correct" or concrete answers than you may be used to. You should come to this course as a willing participant in the ongoing conversation.
 
 The economics of development combines core themes and models of macroeconomics (growth theory, macroeconomic stability and policy) with core principles of microeconomics (price theory), and as such, the **prerequisites** for this course are **either ECON 205 or ECON 206**.
 
@@ -216,9 +237,7 @@ Our [slack channel](https://hoodcollegeeconomics.slack.com) is available to all 
 
 In addition to in-person office hours, you can also make an appointment for **“office hours”** on Zoom. You can join in with video, audio, and/or chat, whichever you feel comfortable with. Of course, if you are not available during those times, we can schedule our own time if you prefer this method over email or Slack. If you want to go over material from class, please have *specific* questions you want help with. I am not in the business of giving private lectures (particularly if you missed class without a valid excuse).
 
-Watch this excellent and accurate video explaining office hours:
-
-<iframe src="https://player.vimeo.com/video/270014784" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+Watch the excellent and accurate video explaining office hours [on the website](https://gamef21.classes.ryansafner.com/syllabus/#communication-email-slack-and-virtual-office-hours).
 
 ## Netiquette 
 
@@ -263,14 +282,6 @@ College courses can, and should, be challenging and bring you out of your comfor
 If you are unable to afford required textbooks or other resources for any reason, come see me and we can find a solution that works for you.
 
 This course is intended to be accessible for all students, including those with mental, physical, or cognitive disabilities, illness, injuries, impairments, or any other condition that tends to negatively affect one's equal access to education. If at any point in the term, you find yourself not able to fully access the space, content, and experience of this course, you are welcome to contact me to discuss your specific needs. I also encourage you to contact the [Office of Accessibility Services](https://www.hood.edu/academics/josephine-steiner-center-academic-achievement-retention/accessibility-services) (301-696-3421). If you have a diagnosis or history of accommodations in high school or previous postsecondary institutions, Accessibility Services can help you document your needs and create an accommodation plan. By making a plan through Accessibility Services, you can ensure appropriate accommodations without disclosing your condition or diagnosis to course instructors.
-
-## ACBSP Information 
-
-![](https://microF21.classes.ryansafner.com/images/acbsp.png)
-
-Hood College is an accredited member of the Accreditation Council for Business Schools and Programs (ACBSP), an organization devoted to enhancing business education. In receiving and maintaining this accreditation, the faculty has made a commitment to the continuous improvement, innovation, and scholarship of the Department of Economics and Management. For you, this means that your educational experience undergoes ongoing validation to ensure it meets the most rigorous international standards of business education. Only a select group of institutions have received this status and it is an attribute of Hood for which you should take great pride. 
-
-Pragmatically, our accreditation means that we will engage in the ongoing use of measures, both quantitative and qualitative in nature, to assess the performance of our students and the program. We ask that you take very seriously the surveys and other measurement devices we will use – your best work and honest response will help us best assess and improve our program.
 
 # Tentative Schedule 
 

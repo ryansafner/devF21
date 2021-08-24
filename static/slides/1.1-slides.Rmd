@@ -54,9 +54,9 @@ class: inverse
 
 # Outline
 
-### [Game Theory](#)
-### [Defining a Game](#)
-### [Types of Games](#)
+### [The Big Questions](#)
+### ["Development Economics" as a Field of Economics](#)
+### [Residues of 20th Century Geopolitics in Development](#)
 ### [About This Course](#)
 
 ---

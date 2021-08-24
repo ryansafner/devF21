@@ -739,5 +739,5 @@ See more details at the [assignments page](http://devf21.classes.ryansafner.com/
 # Roadmap for the Semester
 
 .center[
-![:scale 75%](../img/dev_flowchart_blankbg.png)
+![:scale 100%](../img/dev_flowchart_blankbg.png)
 ]

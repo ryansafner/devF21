@@ -153,7 +153,7 @@ class: inverse, middle, center
 - Violence has been reduced and stabilized, with periodic flare ups
 
 .center[
-![](../images/medellin3.PNG)
+![:scale 45%](../images/medellin3.PNG)
 ]
 
 .source[Blattman, Christopher, Gustavo Duncan, Benjamin Lessing, and Santiago Tobon, 2019, "Gangs of Medellin: How Organized Crime is Organized," Working Paper]
@@ -263,8 +263,9 @@ George Washington Plunkitt
 > There's an honest graft, and I'm an example of how it works. I might sum up the whole thing by sayin': "I seen my opportunities and I took 'em." 
 
 ]
-=
+
 .source[[*Plunkitt of Tammany Hall*](https://www.gutenberg.org/files/2810/2810-h/2810-h.htm#link2HCH0001), Ch. 1]
+]
 
 ---
 
@@ -708,9 +709,7 @@ e.g. whether you buy using Dollars in US or Euros in EU, you should get the same
 - PPP is essentially an argument about .hi-purple[arbitrage] and the .hi-purple[law of one price]
 
 .bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
-.green[**Example**]: 
-
-- Suppose a sweater in the U.S. costs 50 USD. 
+.green[**Example**]: Suppose a sweater in the U.S. costs 50 USD. 
 
 - Suppose the exchange rate is 100 YEN: 1 USD
 
@@ -787,7 +786,7 @@ e.g. whether you buy using Dollars in US or Euros in EU, you should get the same
 
 - Several ways we can talk about how a measure **changes** over time, from time $t_1 \rightarrow t_2$
 
-- **Difference $(\Delta)$:** the difference between the value at time $t_1$ and time $t_2$
+- .hi-purple[Difference `\\((\Delta)\\)`:] the difference between the value at time $t_1$ and time $t_2$
 $$\Delta t=t_2-t_1$$
 ---
 
@@ -795,27 +794,18 @@ $$\Delta t=t_2-t_1$$
 
 - Several ways we can talk about how a measure **changes** over time, from time $t_1 \rightarrow t_2$
 
-- **Difference $(\Delta)$:** the difference between the value at time $t_1$ and time $t_2$
+- .hi-purple[Difference `\\((\Delta)\\)`:] the difference between the value at time $t_1$ and time $t_2$
 $$\Delta t=t_2-t_1$$
 
-- **Relative Difference**: the difference expressed in terms of the original value
+- .hi-purple[Relative Difference]: the difference expressed **in terms of the original value**
 $$\frac{\Delta t}{t_1} = \frac{t_2-t_1}{t_1}$$
- this becomes a proportion $(\pm$ between 0 and 1)
+ this becomes a proportion (a decimal)
 
 ---
 
 # Quantifying Changes III
 
-- Several ways we can talk about how a measure **changes** over time, from time $t_1 \rightarrow t_2$
-
-- **Difference $(\Delta)$:** the difference between the value at time $t_1$ and time $t_2$
-$$\Delta t=t_2-t_1$$
-
-- **Relative Difference**: the difference expressed in terms of the original value
-$$\frac{\Delta t}{t_1} = \frac{t_2-t_1}{t_1}$$
- this becomes a proportion $(\pm$ between 0 and 1)
-
-- **Percentage Change (Growth Rate)**: relative difference expressed as a *percentage* $(\pm$ between 0 and 100%)
+- .hi-purple[Percentage Change (Growth Rate)]: **relative** difference expressed as a **percentage**
 
 $$\begin{align*}
 \% \Delta &= \frac{\Delta t}{t_1} \times 100\%\\
@@ -828,20 +818,12 @@ $$\begin{align*}
 
 .bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
 .green[**Example**:]
-A country's GDP is $100 in 2017, and $120 in 2018. Calculate the country's GDP growth rate for 2018:
-
-$$\begin{align*}
-\text{GDP Growth Rate}_{2018} &= \frac{GDP_{2018}-GDP_{2017}}{GDP_{2017}} \times 100\% \\
-&= \frac{120-100}{100} \times 100\% \\
-&= \frac{20}{100} \times 100\% \\
-&= 0.20 \times 100\% \\
-&=20\% \\ 
-\end{align*}$$
+A country's GDP is $100bn in 2019, and $120bn in 2020. Calculate the country's GDP growth rate for 2020:
 ]
 
 ---
 
-# GDP Growth Rates II
+# GDP Growth Rates
 
 .center[
 ![](../images/fredgdpgrowth2018.png)
@@ -1051,7 +1033,7 @@ $=\frac{72}{\text{GDP Growth Rate}}$
 
 # Limitations of GDP: Shadow Economies II
 
-.pull-left[
+.left-column[
 
 .center[
 
@@ -1062,7 +1044,7 @@ A typical grocery store in Vilnius, Soviet-controlled Lithuania, 1990
 
 ]
 
-.pull-right[
+.right-column[
 
 .smallest[
 > The list of scarce items is practically endless. They are not permanently out of stock, but their appearance is unpredictable...Leningrad can be overstocked with cross-country skis and yet go several months without soap for washing dishes. In the Armenian capital of Yerevan, I found an ample supply of accordians but local people complained that they had gone for weeks without ordinary kitchen spoons or tea samovars. I knew a Moscow family that spent a frantic month hunting for a child’s potty while radios were a glut on the market...

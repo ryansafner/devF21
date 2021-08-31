@@ -22,6 +22,25 @@ slides: "1.3-slides"
 
 Today we begin considering how to measure development. 
 
+## <i class="fas fa-book-reader fa-lg"></i> Readings
+
+# Recommended Readings:
+
+- [<i class="fas fa-file-pdf"></i> Sen (1988), "The Concept of Development"](/readings/sen-1988-concept-of-development.pdf)
+- [<i class="fas fa-file-pdf"></i> Boettke and Subrick (2003), "Rule of Law, Development, and Human Capabilities"](/readings/Boettke-Subrick-2003.pdf)
+- [<i class="fab fa-youtube"></i> TED Talk: Hans Rosling on the Best Stats You've Ever Seen](https://www.ted.com/talks/hans_rosling_shows_the_best_stats_you_ve_ever_seen)
+- [<i class="fab fa-youtube"></i> BBC: Hans Rosling's 200 Countries, 200 Years, 4 Minutes](https://www.youtube.com/watch?v=jbkSRLYSojo)
+- [<i class="fab fa-youtube"></i> TED Talk: Hans Rosling on the Magic Washing Machine](https://www.ted.com/talks/hans_rosling_and_the_magic_washing_machine)
+
+
+We will not have a discussion on these readings for this lesson. However, they may come up in future discussions and provide a good framework for understanding development going forward.
+
+Amartya Sen's "capabilities approach" to "development as freedom" is a good way to think about economic development beyond just GDP numbers. The reading summarizes his views that are famously expounded in a larger book (*Development as Freedom*).
+
+Boettke and Subrick's paper shows (with some modest econometrics) that capabilities are strongly affected by economic development, so GDP numbers remain a great tool.
+
+I highly recommend you watch all of Hans Rosling's videos. They are amazing.
+
 ## <i class="fas fa-chalkboard-teacher"></i> Slides
 
 Below, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. Note while in going through the slides, you can type <kbd>h</kbd> to see a special list of viewing options, and type <kbd>o</kbd> for an outline view of all the slides.

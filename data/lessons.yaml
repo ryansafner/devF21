@@ -10,7 +10,13 @@ lessons:
     slides: "1.2-slides"
     content: "1.2-content"
 
-  - title: "1.3 — Measuring Development II"
+  - title: "1.3 — Why Development Matters"
+    slides: "1.3-slides"
+    content: "1.3-content"
+
+  - title: "1.4 — Can We Plan an Economy?"
+
+  - title: "1.5 — Can We Plan an Economy? II"
 
   - title: '<span class="fake-header-table">Models of Economic Development</span>'
     header: True

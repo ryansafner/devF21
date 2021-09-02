@@ -1149,6 +1149,7 @@ Vladimir Lenin
 
 .pull-left[
 
+.smaller[
 - .hi[Competitive] markets in .hi[equilibrium] are recognized by economists as being:
 
 - .hi-purple[Allocatively efficient]: goods optimally allocated to highest-valued uses
@@ -1158,6 +1159,7 @@ Vladimir Lenin
 
 - .hi-purple[Pareto efficient]: no additional exchanges exist that can make at least one person better off without harming another person
 
+]
 ]
 
 .pull-right[
@@ -1185,15 +1187,15 @@ Vilfredo Pareto
 
 .right-column[
 
-.quitesmall[
+.smallest[
 
-> “Consider a collectivist society which seeks to maximise the [utility] of its members. The problem divides into two parts. Firstly we have a problem of distribution: how should the goods within a society be shared between its members? And secondly, how should production be organised so that, when goods are so distributed, the members of society obtain the maximum [utility?”
+> “Consider a collectivist society which seeks to maximise the [utility] of its members. The problem divides into two parts. Firstly we have a problem of distribution: how should the goods within a society be shared between its members? And secondly, how should production be organised so that, when goods are so distributed, the members of society obtain the maximum [utility]?”
 
 ]
 
 His answer is an informal precursor of the second welfare theorem:
 
-.quitesmall[
+.smallest[
 
 > “Having distributed goods according to the answer to the first problem, the state should allow the members of the collectivity to operate a second distribution, or operate it itself, in either case making sure that it is performed in conformity with the workings of free competition.”
 
@@ -1258,12 +1260,14 @@ $$\begin{bmatrix} p_1\\ p_2\\ \vdots \\ p_n\\ \end{bmatrix} \forall p_i \in \mat
 .pull-left[
 
 .content-box-red[
+.smallest[
 .red[**The Claim**:]
 - If neoclassical economists know the mechanisms of how markets optimally allocate resources and maximize social wealth..
 
 - ...why not install central planners to achieve the *same* optimal market outcomes *without* the "anarchy of production," unemployment, & problems of capitalism
 
 - ...and direct the economy with a single plan for socialist ends? 
+]
 ]
 ]
 
@@ -1303,17 +1307,10 @@ $$\begin{bmatrix} p_1\\ p_2\\ \vdots \\ p_n\\ \end{bmatrix} \forall p_i \in \mat
 .left-column[
 .center[
 .smallest[
-![:scale 40%](../images/adolfberle.jpg)
+![:scale 40%](../images/adolfberle.jpg) ![:scale 40%](../images/gardinermeans.jpg)
 
-Adolf Berle 
-
-(1895-1971)
-
-![:scale 40%](../images/gardinermeans.jpg)
-
-Gardiner Means 
-
-(1896-1988)
+L: Adolf Berle (1895-1971)
+R: Gardiner Means (1896-1988)
 
 ]
 ]

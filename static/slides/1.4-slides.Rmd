@@ -86,7 +86,7 @@ class: inverse, middle, center
 # Making Fair Comparisons: Robust Political Economy I
 
 .pull-left[
-
+.smallest[
 - No system is perfect
 - We need to find arrangements that are .whisper[robust] to knowledge & incentive problems
 
@@ -95,7 +95,7 @@ class: inverse, middle, center
 - Hard case: uncertainty and selfish behavior
 
 - Treat people as they are: sometimes good, bad, smart, stupid, opportunistic, altruistic *depending on the institutions*
-
+]
 ]
 
 .pull-right[
@@ -123,7 +123,7 @@ class: inverse, middle, center
 
 .pull-right[
 .center[
-![](../images/applesoranges.jpg)
+![](../images/makebelieve.png)
 ]
 ]
 ---
@@ -211,14 +211,14 @@ class: inverse, center, middle
 .center[
 ![:scale 50%](../images/smith.png)
 
-*Understanding* the **spontaneous order** of society
+.hi[Understanding] the .hi-purple[spontaneous order] of society
 ]
 ]
 .pull-right[
 .center[
 ![:scale 55%](../images/marx.png)
 
-A *tool* for **social control**
+.hi[A tool] for .hi-purple[social control]
 ]
 ]
 
@@ -238,7 +238,7 @@ Adam Ferguson
 
 .right-column[
 
-> "Every step and every movement of the multitude, even in what are termed enlightened ages, are made with equal blindness to the future; and nations stumble upon establishments, which are indeed **the result of human action, but not the execution of any human design**," (Book III, Chapter 1).
+> "Every step and every movement of the multitude, even in what are termed enlightened ages, are made with equal blindness to the future; and nations stumble upon establishments, which are indeed .hi[the result of human action, but not the execution of any human design]," (Book III, Chapter 1).
 
 
 .source[Ferguson, Adam, 1767, [*An Essay on the History of Civil Society*](https://oll.libertyfund.org/titles/ferguson-an-essay-on-the-history-of-civil-society)]
@@ -386,6 +386,8 @@ Economics Nobel 1974
 .smallest[
 
 > "Moreover, the structures of the extended order are made up not only of individuals but also of many, often overlapping, [groups] within which old instinctual responses, such as solidarity and altruism, continue to retain some importance by assisting voluntary collaboration...Part of our present difficulty is that **we must constantly adjust our lives, our thoughts and our emotions, in order to live simultaneously within different kinds of orders according to different rules.** If we were to apply the unmodified, uncurbed, rules of the micro-cosmos (i.e., of the small band or troop, or of, say, our families) to the macro-cosmos (our wider civilisation), as our instincts and sentimental yearnings often make us wish to do, *we would destroy it*. Yet if we were always to apply the rules of the extended order to our more intimate groupings, *we would crush them*. **So we must learn to live in two sorts of worlds at once**," (p.18)
+
+]
 
 .source[Hayek, F. A., 1988, *The Fatal Conceit*]
 
@@ -812,13 +814,13 @@ Georg Wilhelm Friedrich Hegel
 
 .pull-left[
 .center[
-![:scale 80%](../imagesbaseandsuperstructure.jpg)
+![:scale 80%](../images/baseandsuperstructure.jpg)
 
 ]
 ]
 
 .pull-right[
-.smaller[
+.smallest[
 - Marx's .hi-purple[*materialist* dialectic]
 
 - History of the world is pre-determined by produce of material (economic) forces
@@ -909,6 +911,7 @@ Karl Marx
 # Capitalism and Socialism III
 
 .pull-left[
+.smallest[
 
 - Marxist dialectic: socialism $=$ negation of capitalism and emerges from its problems:
 
@@ -918,7 +921,7 @@ Karl Marx
 
 - Crisis of overproduction and a "reserve army of the unemployed" (business cycles) 
 - Drives capitalist nations to find new markets to avoid depression: imperialism, exploitation, and colonization of periphery countries<sup>.red[1]</sup>
-
+]
 ]
 
 .pull-right[
@@ -1009,8 +1012,10 @@ Vladimir Lenin
 
 .right-column[
 
+.smallest[
 > "The dictatorship of the proletariat, i.e. the organization of the vanguard of the oppressed as the ruling class for the purpose of suppressing the oppressors, cannot result merely in an expansion of democracy. Simultaneously, with an immense expansion of democracy, which, for the first time, becomes democracy for the poor, democracy for the people, and not democracy for the money-bags, the dictatorship of the proletariat imposes a series of restrictions on the freedom of the oppressors, the exploiters, the capitalists. We must suppress them in order to free humanity from wage slavery,their resistance must be crushed by force; it is clear that there is no freedom and no democracy where there is suppression and where there is violence," (pp.62-65).
 
+]
 
 .source[Lenin, Vladimir, 1917, *The State and Revolution*]
 ]
@@ -1031,9 +1036,10 @@ Vladimir Lenin
 
 .right-column[
 
+.smallest[
 > "When a big enterprise assumes gigantic proportions, and, on the basis of an exact computation of mass data, organizes according to plan the supply of primary raw materials to the extend of two-thirds, or three-fourths, of all that is necessary for tens of millions of people; when the raw materials are transported in a systematic and organized manner to the most suitable places of production, sometimes situated hundreds or thousands of miles from each other; when a single centre directs all the consecutive stages of processing the material right up to the manufacture of numerous varieties of finished articles; when these products are distributed according to a single plan among tens and hundreds of millions of consumers...then it becomes evident that we have socialisation of production..." (pp.302-303).
 
-
+]
 .source[Lenin, Vladimir, 1977, *Collected Works*]
 ]
 
@@ -1103,7 +1109,7 @@ Nikolai Bukharin
 
 .right-column[
 
-.smallest[
+.quitesmall[
 
 > "No longer will one enterprise compete with another, the factories, workshops, and other productive institutions will all be subdivisions, as it were, of one vast people's workshop, which will embrace the entire national economy of production. It is obvious that so comprehensive an organization presupposes .hi[a general plan of production]...it is obvious that everything must be precisely calculated. We must .hi[know in advance] how much labour to assign to the various branches of industry; what products are required and how much of each it is necessary to produce; how and where machines must be provided. These and similar details must be thought out beforehand, with approximate accuracy at least; and the work must be guided in conformity with our calculations. This is how the organization of communist production will be effected," (p.70).
 
@@ -1129,7 +1135,7 @@ Vladimir Lenin
 ]
 
 .right-column[
-.smallest[
+.quitesmall[
 > "[H]ave councils of workers and servants been formed in the difference sections of the city; have the workers been armed; have the bourgeoisie been disarmed...have the capitalist factories and wealth in Munich and the capitalist farms in its environs been confiscated; have mortgage and rent payments by small peasants been canceled; have the wages of farm labourers and unskilled workers been doubled or trebeled; have all paper stocks and all printing-presses been confiscated so as to enable popular leaflets and newspapers to be printed for the masses; has the six-hour working day with two or three-hour instruction in state administration been introduced; have the bourgeoisie in Munich been made to give up surplus housing so that workers may be immediately moved into comfortable flats; have you taken over all the banks; have you taken hostages from the ranks of the bourgeoisie...have all the workers been mobilised for defence and for ideological propaganda in the neighboring villages?"
 ]
 
@@ -1143,7 +1149,7 @@ Vladimir Lenin
 
 .pull-left[
 
-- **Competitive** markets in **equilibrium** are recognized by economists as being:
+- .hi[Competitive] markets in .hi[equilibrium] are recognized by economists as being:
 
 - .hi-purple[Allocatively efficient]: goods optimally allocated to highest-valued uses
     - Price equals marginal (opportunity) cost
@@ -1180,6 +1186,7 @@ Vilfredo Pareto
 .right-column[
 
 .quitesmall[
+
 > “Consider a collectivist society which seeks to maximise the [utility] of its members. The problem divides into two parts. Firstly we have a problem of distribution: how should the goods within a society be shared between its members? And secondly, how should production be organised so that, when goods are so distributed, the members of society obtain the maximum [utility?”
 
 ]
@@ -1254,7 +1261,7 @@ $$\begin{bmatrix} p_1\\ p_2\\ \vdots \\ p_n\\ \end{bmatrix} \forall p_i \in \mat
 .red[**The Claim**:]
 - If neoclassical economists know the mechanisms of how markets optimally allocate resources and maximize social wealth..
 
-- ...why not install central planners to achieve the *same* optimal market outcomes *without* the "anarchy of production," unemployment, & problems of capitalism<sup>.red[1]</sup>
+- ...why not install central planners to achieve the *same* optimal market outcomes *without* the "anarchy of production," unemployment, & problems of capitalism
 
 - ...and direct the economy with a single plan for socialist ends? 
 ]
@@ -1266,8 +1273,6 @@ $$\begin{bmatrix} p_1\\ p_2\\ \vdots \\ p_n\\ \end{bmatrix} \forall p_i \in \mat
 ![](../images/management.jpg)
 ]
 ]
-
-.footnote[<sup>.red[1]</sup> The theory would not be developed until later by mainstream economists, but these problems could include **market failures**: externalities, monopoly, public goods, etc.]
 
 ---
 
@@ -1297,6 +1302,7 @@ $$\begin{bmatrix} p_1\\ p_2\\ \vdots \\ p_n\\ \end{bmatrix} \forall p_i \in \mat
 
 .left-column[
 .center[
+.smallest[
 ![:scale 40%](../images/adolfberle.jpg)
 
 Adolf Berle 
@@ -1309,6 +1315,7 @@ Gardiner Means
 
 (1896-1988)
 
+]
 ]
 ]
 
@@ -1362,8 +1369,11 @@ Albert Enstein
 
 .right-column[
 
+.smallest[
+
 > "The .hi[economic anarchy of capitalist society] as it exists today is, in my opinion, the real source of the evil...I am convinced there is only one way to eliminate these grave evils, namely through the .hi[establishment of a socialist economy], accompanied by an educational system which would be oriented toward social goals. In such an economy, the means of production are owned by society itself and are .hi[utilised in a planned fashion.] A planned economy, which adjusts production to the needs of the community, would distribute the work to be done among all those able to work and would guarantee a livelihood to every man, woman, and child." (pp. 311)
 
+]
 
 .source[Einstein, Albert, 1949, "Why Socialism?", *Monthly Review*]
 

@@ -18,13 +18,17 @@ slides: "1.4-slides"
 *Thursday, September 2, 2021*
 {{% /alert %}}
 
+{{% alert warning %}}
+We will have our first graded in-class discussion next class (Tues Sep 7). Please see the [readings for 1.5](/content/1.5-content#readings) and [more information](/assignments/discussions) about discussions.
+{{% /alert %}}
+
 ## <i class="fas fa-info-circle fa-lg"></i> Overview
 
 Today we begin considering how to measure development. 
 
 ## <i class="fas fa-book-reader fa-lg"></i> Readings
 
-# Recommended Readings:
+### Recommended Readings:
 
 - [<i class="fas fa-external-link-square-alt"></i> "The Reductive Seduction of Other People's Problems"](https://brightthemag.com/the-reductive-seduction-of-other-people-s-problems-3c07b307732d)
 - [<i class="fas fa-podcast"></i> NPR's *Planet Money*: "The Invention of the Economy"](https://www.npr.org/sections/money/2014/03/05/286366404/episode-521-the-invention-of-the-economy)

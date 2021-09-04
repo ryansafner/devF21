@@ -1,7 +1,7 @@
 ---
-title: "1.4 — Can We Plan an Economy? — Class Content"
+title: "1.5 — Can We Plan an Economy? II— Class Content"
 draft: false
-linktitle: "1.4 — Can We Plan an Economy?"
+linktitle: "1.5 — Can We Plan an Economy? II"
 date: "2020-06-08"
 menu:
   content:
@@ -15,7 +15,11 @@ slides: "1.4-slides"
 ---
 
 {{% alert note %}}
-*Thursday, September 2, 2021*
+*Tuesday, September 7, 2021*
+{{% /alert %}}
+
+{{% alert warning %}}
+Today we will have a discussion on the (required) readings below and my lectures. Please email me 2-3 questions/points you want to discuss about the reading **before** class. See 
 {{% /alert %}}
 
 ## <i class="fas fa-info-circle fa-lg"></i> Overview
@@ -26,7 +30,7 @@ Today we begin considering how to measure development.
 
 # Required Readings:
 
-- [<i class="fas fa-file-pdf"></i> White (2012), *The Clash of Economic Ideas*, Ch. 2, "The Bolshevik Revolution and The Socialist Calculation Debate"](/readings/Mises-1920-Economic-Calculation.pdf)
+- [<i class="fas fa-file-pdf"></i> White (2012), *The Clash of Economic Ideas*, Ch. 2, "The Bolshevik Revolution and The Socialist Calculation Debate"](/readings/White-2012-Ch2.pdf)
 
 # Recommended Readings:
 

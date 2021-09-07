@@ -1,0 +1,646 @@
+---
+title: "1.5 — The Socialist Calculation Debate"
+subtitle: "ECON 317 • Economic Development • Fall 2021"
+author: 'Ryan Safner<br> Assistant Professor of Economics <br> <a href="mailto:safner@hood.edu"><i class="fa fa-paper-plane fa-fw"></i>safner@hood.edu</a> <br> <a href="https://github.com/ryansafner/devF21"><i class="fa fa-github fa-fw"></i>ryansafner/devF21</a><br> <a href="https://devF21.classes.ryansafner.com"> <i class="fa fa-globe fa-fw"></i>devF21.classes.ryansafner.com</a><br>'
+#date:
+output:
+  xaringan::moon_reader:
+    mathjax: "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_HTMLorMML" # rescales math with css changes https://github.com/yihui/xaringan/issues/143
+    lib_dir: libs
+    #seal: false
+    css: [custom.css, "hygge"] #, metropolis, metropolis-fonts
+    nature:
+      beforeInit: ["macros.js", "https://platform.twitter.com/widgets.js"] # first is for rescaling images , second is for embedding tweets, https://github.com/yihui/xaringan/issues/100
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+      slideNumberFormat: |
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+          </div>
+        </div>
+    includes:
+      in_header: header.html # for font awesome, used in title  
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(echo=F,
+                      message=F,
+                      warning=F,
+                      fig.retina = 3,
+                      fig.align = "center")
+library("tidyverse")
+library("ggrepel")
+library("fontawesome")
+xaringanExtra::use_tile_view()
+xaringanExtra::use_tachyons()
+xaringanExtra::use_freezeframe()
+
+update_geom_defaults("label", list(family = "Fira Sans Condensed"))
+update_geom_defaults("text", list(family = "Fira Sans Condensed"))
+
+set.seed(256)
+
+theme_slides <- theme_light() + 
+  theme(
+    text = element_text(family = "Fira Sans", size = 24)
+  )
+
+```
+
+class: inverse
+
+# Outline
+
+### [Mises' Critique of Socialism](#3)
+### [Neoclassical Market Socialism](#14)
+### [The Socialist Calculation Debate: In Retrospect](#24)
+
+---
+
+class: inverse, middle, center
+
+# Mises' Critique of Socialism
+
+---
+
+# Mises' Critique of Socialism I
+
+.left-column[
+.center[
+![:scale 80%](../images/mises2.png)
+
+Ludwig von Mises 
+
+(1881-1973)
+
+]
+]
+
+.right-column[
+
+> "The impracticability of Socialism is the result of intellectual, not moral, incapacity. Even angels, if they were endowed only with human reason, could not form a socialistic community. If a socialist community were capable of economic calculation, it could be set up without any change in men's moral character," (p. 407).
+
+
+
+.source[von Mises, Ludwig, 1922, *Socialism: An Economic an Sociological Analysis*]
+
+]
+
+---
+
+# Mises' Critique of Socialism II
+
+.left-column[
+.center[
+![:scale 80%](../images/mises2.png)
+
+Ludwig von Mises 
+
+(1881-1973)
+
+]
+]
+
+.right-column[
+
+.smallest[
+- Socialism $=$ no private ownership of the means of production
+
+- $\implies$ no exchange of capital goods
+
+- $\implies$ no market prices for capital goods
+
+- $\implies$ no profit or loss signals
+
+- $\implies$ no feedback to determine if an allocation is efficient
+
+- Therefore, .hi-purple[it is impossible under socialism to rationally allocate productive resources]
+
+> "Where there is no free market, there is no pricing mechanism; without a pricing mechanism, there is no economic calculation," (p. 18)
+
+]
+
+
+.source[von Mises, Ludwig, 1922, *Socialism: An Economic an Sociological Analysis*]
+
+]
+
+---
+
+# Mises' Critique of Socialism III
+
+.left-column[
+.center[
+![:scale 80%](../images/mises2.png)
+
+Ludwig von Mises 
+
+(1881-1973)
+
+]
+]
+
+.right-column[
+
+- Sign of a free economy is the existence of a stock market
+
+> "Production goods in a socialist commonwealth are exclusively communal; they are inalienable property of the community, and thus *res extra commercium* [things outside of market]"
+
+- Socialists accept this definition: a socialist economy does not allow private ownership of the means of production
+
+
+.source[von Mises, Ludwig, 1920, *Economic Calculation in the Socialist Commonwealth*]
+
+]
+
+---
+
+# Mises' Critique of Socialism IV
+
+.left-column[
+.center[
+![:scale 80%](../images/mises2.png)
+
+Ludwig von Mises 
+
+(1881-1973)
+
+]
+]
+
+.right-column[
+
+> "There will be hundreds and thousands of factories in operation...In the ceaseless toil and moil of this process, however, the administration will be without any means of testing their bearings. It will never be able to determine whether a given good has not been kept for a superfluous length of time in the necessary processes of production, or weather work and material have not been wasted in its completion. How will it be able to decide whether this or that method of production is the more profitable?"
+
+
+.source[von Mises, Ludwig, 1920, *Economic Calculation in the Socialist Commonwealth*]
+
+]
+
+---
+
+# Mises' Critique of Socialism V
+
+.left-column[
+.center[
+![:scale 80%](../images/mises2.png)
+
+Ludwig von Mises 
+
+(1881-1973)
+
+]
+]
+
+.right-column[
+
+> "Calculation by exchange value furnishes a control over the appropriate employment of goods. Anyone who wishes to make calculations in regard to a complicated process of production will immediately notice whether he has worked more economically than others or not; if he finds...that he will not be able to produce profitably, this shows that others understand how to make a better use of the goods of higher order [capital] in question."
+
+
+
+.source[von Mises, Ludwig, 1920, *Economic Calculation in the Socialist Commonwealth*]
+
+]
+
+---
+
+# Mises' Critique of Socialism VI 
+
+.left-column[
+.center[
+![:scale 80%](../images/mises2.png)
+
+Ludwig von Mises 
+
+(1881-1973)
+
+]
+]
+
+.right-column[
+.smallest[
+- Socialists claim we can run the economy like we run a firm
+
+- This mistakes the .hi[economic problem] for a mere .hi-purple[technological problem]
+
+- Capital and production is not a mere problem of management and allocating resources (assuming a static, constant structure of the economy)
+
+- The real problem is *dynamic* and *entrepreneurial*! Activities in the capital market (starting firms, merging them, dissolving them, lending, borrowing, exchanging equity, credit) *change the structure* of the economy! 
+
+]
+
+.source[von Mises, Ludwig, 1920, *Economic Calculation in the Socialist Commonwealth*]
+
+]
+---
+
+# Mises' Critique of Socialism VII
+
+.left-column[
+.center[
+![:scale 80%](../images/mises2.png)
+
+Ludwig von Mises 
+
+(1881-1973)
+
+]
+]
+
+.right-column[
+
+.smallest[
+> "The cardinal fallacy implied in this and all kindred proposals is that they...consider the structure of industrial production and the allocation of capital to the various branches and production aggregates as rigid, and do not take into account the necessity of altering this structure in order to adjust it to changes in conditions...The operations of managers, their buying and selling, are only a small segment of the totality of market operations...The entrepreneurs and capitalists establish corporations and other firms, enlarge or reduce their size, dissolve them or merge them with other enterprises; they buy and sell the shares of bonds of already existing and of new corporations; they grant, withdraw, and recover credits; in short they perform all those acts the totality of which is called the capital and money market," (p.703).
+
+]
+
+.source[von Mises, Ludwig, 1949, *Human Action: A Treatise on Economics*]
+
+]
+---
+
+# Mises' Critique of Socialism VIII
+
+.left-column[
+.center[
+![:scale 80%](../images/mises2.png)
+
+Ludwig von Mises 
+
+(1881-1973)
+
+]
+]
+
+.right-column[
+
+.smallest[
+
+> "Our problem does not refer to the managerial activities; it concerns the allocation of capital to the various branches of industry. The question is: In which branches should production be increased or restricted, in which branches should the objective of production be altered, what new branches should be inaugurated? With regard to these issues it is vain to cite the honest corporation manager and his well-tried efficiency. Those who confused entrepreneurship and management close their eyes to the economic problem...The capitalist system is not a managerial system, it is an entrepreneurial system," (p.703).
+
+]
+
+.source[von Mises, Ludwig, 1949, *Human Action: A Treatise on Economics*]
+
+]
+
+---
+
+# Mises' Critique of Socialism IX
+
+.left-column[
+.center[
+![:scale 80%](../images/mises2.png)
+
+Ludwig von Mises 
+
+(1881-1973)
+
+]
+]
+
+.right-column[
+
+.smallest[
+> "[A]s soon as one gives up the conception of a freely established monetary price for goods of a higher order, rational production becomes completely impossible. .hi[Every step that takes us away from private ownership of the means of production and from the use of money also takes us away from rational economics]," (p.14).
+
+> "Thus in the socialist commonwealth every economic change becomes an undertaking whose success can be neither appraised in advance nor later retrospectively determined. There is only groping in the dark. .hi[Socialism is the abolition of rational economy]," (p.17).
+
+]
+
+.source[von Mises, Ludwig, 1920, *Economic Calculation in the Socialist Commonwealth*]
+]
+---
+
+# Mises' Critique of Socialism X
+
+.left-column[
+.center[
+![:scale 80%](../images/mises2.png)
+
+Ludwig von Mises 
+
+(1881-1973)
+
+]
+]
+
+.right-column[
+
+- But there are socialist countries at the time! (Soviet Union)
+
+> "The extent to which socialism is in evidence among us constitutes only a socialistic oasis in a society with monetary exchange...[However using world prices would be impossible] in the case of socialist concerns operating in a purely socialistic environment, that is, if socialism covers the globe."
+
+
+.source[von Mises, Ludwig, 1920, *Economic Calculation in the Socialist Commonwealth*]
+
+]
+
+---
+
+class: inverse, center, middle
+# Neoclassical Market Socialism
+
+---
+
+# Socialist/Neoclassical Response I
+
+.left-column[
+.center[
+![:scale 80%](../images/lange.png)
+
+Oskar Lange 
+
+(1904-1965)
+
+]
+]
+
+.right-column[
+
+- We can achieve competitive market equilibria through central planning
+
+- Pure socialism (without prices) is indeed impossible (thanks, Mises), but with central planning, we can still achieve optimal outcomes while avoiding capitalism's problems
+
+- .hi[Market Socialism]: maintaining a price system (or importing one) but having the State direct economic activity
+]
+
+.source[Lange, Oskar, 1936, "On the Economic Theory of Socialism: Part One," *Review of Economic Studies* 4: 53-71]
+
+---
+
+# Socialist/Neoclassical Response II
+
+.left-column[
+.center[
+![:scale 80%](../images/lange.png)
+
+Oskar Lange 
+
+(1904-1965)
+
+]
+]
+
+.right-column[
+
+.smallest[
+> "[It was Mises'] powerful challenge that forced the socialists to recognize the importance of an adequate system of economic accounting to guide the allocation of resources in a socialist economy. Even more, it was chiefly due to Professor Mises' challenge that many socialists became aware of the very existence of such a problem," (p.53).
+
+> "Professor Mises' contention that a socialist economy cannot solve the problem of rational allocation of resources is based on a confusion concerning the nature of prices...[Prices are merely trade-off ratios, the] terms on which alternatives are offered," (p.54).
+
+]
+
+.source[Lange, Oskar, 1936, "On the Economic Theory of Socialism: Part One," *Review of Economic Studies* 4: 53-71]
+
+]
+---
+
+# Socialist/Neoclassical Response III
+
+.left-column[
+.center[
+![:scale 80%](../images/lange.png)
+
+Oskar Lange 
+
+(1904-1965)
+
+]
+]
+
+.right-column[
+
+> "The economic problem is a problem of choice between different alternatives. To solve the problem three data are needed: (1) a preference scale...(2) knowledge of 'the terms on which alternatives are offered,' and finally (3) knowledge of the amount of resources available. Those three data given, the problem of choice is soluable," (p.54).
+
+]
+
+.source[Lange, Oskar, 1936, "On the Economic Theory of Socialism: Part One," *Review of Economic Studies* 4: 53-71]
+
+---
+
+# Socialist/Neoclassical Response IV
+
+.left-column[
+.center[
+![:scale 80%](../images/lange.png)
+
+Oskar Lange 
+
+(1904-1965)
+
+]
+]
+
+.right-column[
+
+.smallest[
+> "Professor Mises denies [that knowledge of the terms on which alternatives are offered can exist without markets] However, a careful study of price theory and of the theory of productions convinces us that, the data under (1) and under (3) being given, the "terms on which alternatives are given" are determined ultimately by the technical possibilities of transformation of one commodity into another, i.e. by the production functions. The administrators of a socialist economy will have exactly the same knowledge, or lack of knowledge, of the production functions as the capitalist entrepreneurs have.," (p.55).
+
+> "The Central Planning Board would fix [the price to avoid surpluses and shortages] so as to satisfy the objective equilibrium conditions, just as a competitive market does." 
+
+]
+
+.source[Lange, Oskar, 1936, "On the Economic Theory of Socialism: Part One," *Review of Economic Studies* 4: 53-71]
+]
+
+---
+
+# Socialist/Neoclassical Response V
+
+.left-column[
+.center[
+![:scale 80%](../images/bergson.jpg)
+
+Abram Bergson 
+
+(1914-2003)
+
+]
+]
+
+.right-column[
+
+> "[O]nce tastes and techniques are given, the values of the means of production can be determined unambiguously by imputation without the intervention of a market process. The [Central Planning] Board...could decide readily how to allocate resources so as to assure the optimum welfare. It would simply have to solve the equations," (p.264).
+
+> "There can hardly be any room for debate: of course, socialism can work. on this, Lange certainly is convincing." 
+
+]
+
+.source[Bergson, Abram, 1948, *Socialist Economics*]
+
+---
+
+# Socialist/Neoclassical Response VI
+
+.left-column[
+.center[
+![:scale 80%](../images/lange.png)
+
+Oskar Lange 
+
+(1904-1965)
+
+]
+]
+
+.right-column[
+
+- Given set of least-cost production functions, we can solve the constrained optimization problem to calculate the appropriate tradeoff ratios between goods, which gives us the relative prices
+
+- Where to get "given" data of (1) and (2)? 
+
+]
+
+.source[Lange, Oskar, 1936, "On the Economic Theory of Socialism: Part One," *Review of Economic Studies* 4: 53-71]
+
+---
+
+# Isn't This Just Replicating Competitive Markets I
+
+.left-column[
+.center[
+![:scale 80%](../images/lange.png)
+
+Oskar Lange 
+
+(1904-1965)
+
+]
+]
+
+.right-column[
+
+- "Market socialism" is superior for 4 reasons:
+
+1. It can redistribute endowments, namely toward greater equality, “so as to attain the maximum social welfare."
+2. It can modify prices to correct for external effects 
+3. eliminate monopoly pricing, in both ways approaching the ideal of perfect competition more closely than a market economy
+4. Socialism is better able to foster technological progress
+
+]
+
+.source[Lange, Oskar, 1936, "On the Economic Theory of Socialism: Part One," *Review of Economic Studies* 4: 53-71]
+
+---
+
+# Isn't This Just Replicating Competitive Markets? II
+
+.left-column[
+.center[
+![:scale 80%](../images/lerner.jpg)
+
+Abba Lerner 
+
+(1903-1982)
+
+]
+]
+
+.right-column[
+
+.quitesmall[
+
+> "If socialism is to be identified with the belief that the abolition of private property would automatically establish the brotherhood of man - and many socialists did, while some apparently still do - then socialism must be counted out as false," (vii).
+
+> "**Economics of Control** [takes the stress away] from collectivism and applied to the idea of conscious recognition of the problems of social organization and the exercise of conscious control over the economic system...The economics of *control* is still contrasted with the economics of *laissez fare*, but control does not necessarily mean collectivism. **It suggests the deliberate application of whatever policy will best serve the social interest**, without prejudging the issue between collective ownership and administration or some form of private enterprise," (vii-viii).
+
+]
+
+.source[Lerner, Abba, 1944, [*The Economics of Control: Principles of Welfare Economics*](https://archive.org/details/in.ernet.dli.2015.5584/page/n7)]
+
+]
+
+---
+
+# Socialism Across the World
+
+.center[
+![](../images/mapofsocialism.png)
+]
+
+.source[Source: [Wikipedia](https://en.wikipedia.org/wiki/List_of_socialist_states#/media/File:Socialist_states_by_duration.png)]
+
+---
+
+class: inverse, center, middle
+# The Socialist Calculation Debate: In Retrospect
+
+---
+
+# The Socialist Calculation Debate In Retrospect I
+
+.pull-left[
+- Overall, the socialist calculation "debate" largely ended with **economists talking past each other**
+    - Both sides walked away believing they had "won"
+
+- Mises & Hayek (["The Austrians"](http://en.wikipedia.org/wiki/Austrian_School)) begin to recognize that they view "prices," "equilibrium," "competition," and "efficiency" *very differently* than neoclassical economists
+]
+
+.pull-right[
+.center[
+![](../images/hayekmises.jpg)
+]
+]
+---
+
+# The Socialist Calculation Debate In Retrospect II
+
+.smaller[
+Stages of the debate:
+
+1. Marxists argue for moneyless, propertyless, centrally-planned economy as a superior system for achieving coordinated, "advanced material production" as compared to the ``anarchy'' of capitalist production
+2. Mises (1920) argued that socialism cannot achieve its defined goals due to its inability to solve the economic calculation problem
+3. Developments in NC-GE theory show logical/formal similarity of systems of equations between the socialist and capitalist system under static, ideal, conditions
+4. Hayek extends Mises' calculation point as a problem of dispersed tacit knowledge (impossible to achieve via equation-solving) that is not *given* to any agent or system; competition and market prices enable *discovery* of optimal resource uses 
+5. Lange & others argue "market socialism" can approximate *perfect competition*
+]
+
+.source[Lavoie, Don, 1985, *Rivalry and Central Planning: The Socialist Calculation Debate Reconsidered*, p.25]
+
+---
+
+# The Socialist Calculation Debate In Retrospect III
+
+.pull-left[
+.quitesmall[
+- Main disagreement is about **rivalry**
+
+- **Marxists**: .hi-purple[rivalry as inherent flaw] in capitalism leading to conflict; central planning removes rivalry and leads to pre-coordinated harmony
+
+- **Mises-Hayek**: .hi-purple[rivalry] under specific institutions (market prices, property rights) .hi-purple[is the only way to generate the information] necessary to rationally allocate resources
+
+- **Neoclassical economists**: .hi-purple[assume rivalry away] in perfect competition models, viewing prices as just parametric statistics, allowing a central planner to achieve the same optimal outcome
+]
+
+.source[Lavoie, Don, 1985, *Rivalry and Central Planning: The Socialist Calculation Debate Reconsidered*, p.25]
+
+]
+
+.pull-right[
+
+.center[
+![](../images/marketcompetition.jpg)
+]
+
+]
+
+---
+
+# What Are Prices Then?
+
+.pull-left[
+
+- This will lead into our next topic on the microeconomics of development
+
+- And also, how did socialism appear to work in the Soviet Union for 70 years?
+]
+
+.pull-right[
+.center[
+![](../images/moneysignal.jpg)
+]
+]

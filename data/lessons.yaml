@@ -20,6 +20,7 @@ lessons:
 
   - title: "1.5 — Can We Plan an Economy? II"
     content: "1.5-content"
+    slides: "1.5-slides"
 
   - title: '<span class="fake-header-table">Models of Economic Development</span>'
     header: True

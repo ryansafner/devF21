@@ -1,7 +1,7 @@
 ---
-title: "1.5 — Can We Plan an Economy? II— Class Content"
+title: "1.5 — The Socialist Calculation Debate — Class Content"
 draft: false
-linktitle: "1.5 — Can We Plan an Economy? II"
+linktitle: "1.5 — The Socialist Calculation Debate"
 date: "2020-06-08"
 menu:
   content:
@@ -19,7 +19,7 @@ slides: "1.4-slides"
 {{% /alert %}}
 
 {{% alert warning %}}
-Today we will have a discussion on the (required) readings below and my lectures. Please email me 2-3 questions/points you want to discuss about the reading **before** class. See 
+Today we will have a discussion on the (required) readings below and my lectures. Please email me 2-3 questions/points you want to discuss about the reading **before** class. See [more information](/assignments/discussions) about how discussions work and are graded.
 {{% /alert %}}
 
 ## <i class="fas fa-info-circle fa-lg"></i> Overview

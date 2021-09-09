@@ -755,6 +755,127 @@ Michael Munger
 
 ---
 
+# From Subsistence to Exchange I
+
+.left-column[
+.center[
+![:scale 80%](../images/ptbauer2.jpg)
+
+P. T. Bauer
+
+1915-2002
+]
+]
+
+.right-column[
+
+> "In emerging economies the activities of traders promote not only the more efficient deployment of available resources, but also the growth of resources. Trading activities are productive in both static and dynamic senses," (p.4)
+
+> "Instead, in spite of the economic history of the now-developed world, which should have been familiar to development economists, trading activities are barely mentioned in the mainstream literature," (p.4)
+
+.source[Bauer, Peter, 2000, "From Subsistence to Exchange," in Bauer, P. T., *From Subsistence to Exchange, and Other Essays*, Princeton University Press]
+
+]
+
+---
+
+# From Subsistence to Exchange II
+
+.left-column[
+.center[
+![:scale 80%](../images/ptbauer2.jpg)
+
+P. T. Bauer
+
+1915-2002
+]
+]
+
+.right-column[
+
+> "Moreover, even a cursory reading of the last hundred years' history ... would have drawn attention to the .hi[role of traders] in helping to .hi[transform them from largely subsistence economies to largely exchange economies]," (p.5).
+
+> "These investments were made in the context of their decisions, encouraged by the activities of traders, to replace subsistence production by production for the market," (p.6)
+
+.source[Bauer, Peter, 2000, "From Subsistence to Exchange," in Bauer, P. T., *From Subsistence to Exchange, and Other Essays*, Princeton University Press]
+
+]
+
+---
+
+# From Subsistence to Exchange III
+
+.left-column[
+.center[
+![:scale 80%](../images/ptbauer2.jpg)
+
+P. T. Bauer
+
+1915-2002
+]
+]
+
+.right-column[
+
+.smallest[
+> "Conditions in the Third World tend to ensure the need for a substantial volume of trading and closely related activities. These activities are more labor intensive than in the West because capital is scarcer relative to labor in poor countries than in rich.
+A large proportion of producers and consumers operate on a small scale and far from the major commercial centers, including the ports. Individual transactions are small. Individual farmers produce on a small scale and sell in even smaller quantities at frequent intervals because they lack stor- age facilities and substantial cash reserves. Conversely, because of their low incomes, consumers find it convenient or necessary to buy in small, often very small, amounts, again at frequent intervals." (pp.8-9)
+
+]
+
+.source[Bauer, Peter, 2000, "From Subsistence to Exchange," in Bauer, P. T., *From Subsistence to Exchange, and Other Essays*, Princeton University Press]
+
+]
+---
+
+# From Subsistence to Exchange III
+
+.left-column[
+.center[
+![:scale 80%](../images/ptbauer2.jpg)
+
+P. T. Bauer
+
+1915-2002
+]
+]
+
+.right-column[
+
+.smallest[
+> "To a Western audience it may seem as if sales of produce and purchases of consumer goods in such small quantities must be wasteful. This is not so...What may be somewhat surprising is that a large part of this labor is self-employed. This is so because entry into small-scale trading is easy...For these reasons small-scale operations are economic in many parts of the distribution system: large firms are at a disadvantage because their operations require more administrative and supervisory personnel, and these tend to be relatively expensive or ineffective in many poor countries. A multiplicity of small-scale traders in part represents the substitution of cheaper labor for more expensive labor," (p.9-10)
+]
+
+
+.source[Bauer, Peter, 2000, "From Subsistence to Exchange," in Bauer, P. T., *From Subsistence to Exchange, and Other Essays*, Princeton University Press]
+
+]
+---
+
+# From Subsistence to Exchange IV
+
+.left-column[
+.center[
+![:scale 80%](../images/ptbauer2.jpg)
+
+P. T. Bauer
+
+1915-2002
+]
+]
+
+.right-column[
+
+.smallest[
+> "Farmers in poor countries producing for wider exchange have to make in- vestments of various kinds. These investments include the clearing and im- provement of land and the acquisition of livestock and equipment. Such investments constitute capital formation. A part of this capital formation is financed from personal savings and borrowing from traders and others. But much of it is nonmonetized...These forms of investment, when made by small farmers, are generally omitted from official statistics and are still largely ignored in both the aca- demic and the official development literature. [But] these categories of investment are critical in the advance from subsistence to exchange." (pp.11-12)
+]
+
+.source[Bauer, Peter, 2000, "From Subsistence to Exchange," in Bauer, P. T., *From Subsistence to Exchange, and Other Essays*, Princeton University Press]
+
+]
+
+---
+
 class: inverse, center, middle
 
 # The Political Problem Markets Create
@@ -950,114 +1071,3 @@ Joseph Schumpeter
 
 ]
 ]
-
----
-
-# From Subsistence to Exchange I
-
-.left-column[
-.center[
-![:scale 80%](../images/ptbauer2.jpg)
-
-P. T. Bauer
-
-1915-2002
-]
-]
-
-.right-column[
-
-> "In emerging economies the activities of traders promote not only the more efficient deployment of available resources, but also the growth of resources. Trading activities are productive in both static and dynamic senses," (p.4)
-
-> "Instead, in spite of the economic history of the now-developed world, which should have been fa- miliar to development economists, trading activities are barely mentioned in the mainstream literature," (p.4)
-]
-
-.source[Bauer, Peter, 2000, "From Subsistence to Exchange," in Bauer, P. T., *From Subsistence to Exchange, and Other Essays*, Princeton University Press]
-
----
-
-# From Subsistence to Exchange II
-
-.left-column[
-.center[
-![:scale 80%](../images/ptbauer2.jpg)
-
-P. T. Bauer
-
-1915-2002
-]
-]
-
-.right-column[
-
-> "Moreover, even a cursory reading of the last hundred years' history ... would have drawn attention to the **role of traders** in helping to **transform them from largely subsistence economies to largely exchange economies**," (p.5).
-
-> "These investments were made in the context of their decisions, encouraged by the activities of traders, to replace subsistence production by production for the market," (p.6)
-]
-
-.source[Bauer, Peter, 2000, "From Subsistence to Exchange," in Bauer, P. T., *From Subsistence to Exchange, and Other Essays*, Princeton University Press]
-
----
-
-# From Subsistence to Exchange III
-
-.left-column[
-.center[
-![:scale 80%](../images/ptbauer2.jpg)
-
-P. T. Bauer
-
-1915-2002
-]
-]
-
-.right-column[
-
-> "Conditions in the Third World tend to ensure the need for a substantial volume of trading and closely related activities. These activities are more labor intensive than in the West because capital is scarcer relative to labor in poor countries than in rich.
-A large proportion of producers and consumers operate on a small scale and far from the major commercial centers, including the ports. Individual transactions are small. Individual farmers produce on a small scale and sell in even smaller quantities at frequent intervals because they lack stor- age facilities and substantial cash reserves. Conversely, because of their low incomes, consumers find it convenient or necessary to buy in small, often very small, amounts, again at frequent intervals." (pp.8-9)
-
-]
-
-.source[Bauer, Peter, 2000, "From Subsistence to Exchange," in Bauer, P. T., *From Subsistence to Exchange, and Other Essays*, Princeton University Press]
-
----
-
-# From Subsistence to Exchange III
-
-.left-column[
-.center[
-![:scale 80%](../images/ptbauer2.jpg)
-
-P. T. Bauer
-
-1915-2002
-]
-]
-
-.right-column[
-
-> "To a Western audience it may seem as if sales of produce and purchases of consumer goods in such small quantities must be wasteful. This is not so...What may be somewhat surprising is that a large part of this labor is self-employed. This is so because entry into small-scale trading is easy...For these reasons small-scale operations are economic in many parts of the distribution system: large firms are at a disadvantage because their operations require more administrative and supervisory personnel, and these tend to be relatively expensive or ineffective in many poor countries. A multiplicity of small-scale traders in part represents the substitution of cheaper labor for more expensive labor," (p.9-10)
-]
-
-.source[Bauer, Peter, 2000, "From Subsistence to Exchange," in Bauer, P. T., *From Subsistence to Exchange, and Other Essays*, Princeton University Press]
-
----
-
-# From Subsistence to Exchange IV
-
-.left-column[
-.center[
-![:scale 80%](../images/ptbauer2.jpg)
-
-P. T. Bauer
-
-1915-2002
-]
-]
-
-.right-column[
-
-> "Farmers in poor countries producing for wider exchange have to make in- vestments of various kinds. These investments include the clearing and im- provement of land and the acquisition of livestock and equipment. Such investments constitute capital formation. A part of this capital formation is financed from personal savings and borrowing from traders and others. But much of it is nonmonetized...These forms of investment, when made by small farmers, are generally omitted from official statistics and are still largely ignored in both the aca- demic and the official development literature. [But] these categories of investment are critical in the advance from subsistence to exchange." (pp.11-12)
-]
-
-.source[Bauer, Peter, 2000, "From Subsistence to Exchange," in Bauer, P. T., *From Subsistence to Exchange, and Other Essays*, Princeton University Press]

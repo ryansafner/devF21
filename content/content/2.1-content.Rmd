@@ -1,0 +1,45 @@
+---
+title: "2.1 — The Microeconomics of Development I: Division of Labor — Class Content"
+draft: false
+linktitle: "2.1 — The Microeconomics of Development I: Division of Labor"
+date: "2020-06-08"
+menu:
+  content:
+    parent: Course content
+    weight: 7
+type: docs
+output:
+  blogdown::html_page:
+    toc: true
+slides: "2.1-slides"
+---
+
+{{% alert note %}}
+*Thursday, September 0, 2021*
+{{% /alert %}}
+
+## <i class="fas fa-info-circle fa-lg"></i> Overview
+
+We begin with our approach to trying to "model" development. We begin at the micro-level and begin with the original - Adam Smith. We cover major concepts that are key to how prosperity grows (division of labor, transition from subsistence to exchange, etc) and how markets work. In exploring markets (much in the way you would in ECON 306), we highlight the role of prices and entrepreneurship in bringing about coordination and progress - in doing so, we apply Hayek's answer to the socialist calculation debate of the previous lesson.
+
+There are no formal "models" here, only major concepts, but they are coming in the next lesson, which takes a more macroeconomic view towards understanding, modeling, and stimulating economic growth.
+
+In thinking about how to "model" an economy in a way that policymakers can exploit (e.g. manipulate key choice variables that can be changed) and assess the results, consider again: what exactly are we able to control? What knowledge must policymakers possess? What incentives ensure it gets implemented "the way we want?"
+
+## <i class="fas fa-book-reader fa-lg"></i> Readings
+
+# Recommended Readings:
+
+- [<i class="fas fa-external-link-square-alt"></i> Smith (1776), *Wealth of Nations*, Book I, Chs. 1-3](https://www.econlib.org/library/Smith/smWN.html)
+- [<i class="fas fa-external-link-square-alt"></i> Munger (2007), “I’ll Stick With These: Some Sharp Observations on the Division of Labor”](https://www.econlib.org/library/Columns/y2007/Mungerpins.html)
+- [<i class="fas fa-file-pdf"></i> Bauer (2000), "From Subsistence to Exchange"](/readings/Bauer-2000-Ch1.pdf)
+- [<i class="fab fa-youtube"></i> TED Talk: Thomas Thwaites: How I Built a Toaster From Scratch"](https://www.ted.com/talks/thomas_thwaites_how_i_built_a_toaster_from_scratch?language=en)
+- [<i class="fab fa-youtube"></i> YouTube: How to Make a $1500 Sandwich in Only 6 Months"](https://www.youtube.com/watch?v=URvWSsAgtJE)
+
+## <i class="fas fa-chalkboard-teacher"></i> Slides
+
+Below, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. Note while in going through the slides, you can type <kbd>h</kbd> to see a special list of viewing options, and type <kbd>o</kbd> for an outline view of all the slides.
+
+The lower button will allow you to download a PDF version of the slides. I suggest printing the slides beforehand and using them to take additional notes in class (*not everything* is in the slides)!
+
+`r blogdown::shortcode("slide-links")`

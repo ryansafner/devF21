@@ -25,9 +25,13 @@ lessons:
   - title: '<span class="fake-header-table">Models of Economic Development</span>'
     header: True
 
-  - title: "2.1 — The Microeconomics of Development"
-
-  - title: "2.2 — The Macroeconomics of Development"
+  - title: "2.1 — The Microeconomics of Development I: Division of Labor"
+    content: "2.1-content"
+    slides: "2.1-slides"
+    
+  - title: "2.2 — The Microeconomics of Development II: Markets & Prices"
+  
+  - title: "2.3 — The Macroeconomics of Development"
 
   - title: '<span class="fake-header-table">Policies & Exogenous Factors</span>'
   

@@ -54,10 +54,10 @@ class: inverse
 
 # Outline
 
-### [The Fundamental Purpose of Markets]()
-### [The Static Benefits of Markets]()
-### [The Dynamic Benefits of Markets]()
-### [The Socialist Calculation Debate, Redux]()
+### [The Fundamental Purpose of Markets](#3)
+### [The Static Benefits of Markets](#13)
+### [The Dynamic Benefits of Markets](#24)
+### [The Socialist Calculation Debate, Redux](#52)
 
 ---
 
@@ -1205,7 +1205,6 @@ class: inverse, center, middle
 
 - Competition is not a *noun* (perfect competition), it's an (active) *verb*!
 
-- Key question is, how will the knowledge of the optimal allocation of resources, optimal prices, and optimal technologies be **created and discovered**?
   - It **cannot** be known in advance!
 ]
 ]

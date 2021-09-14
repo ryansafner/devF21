@@ -30,8 +30,12 @@ lessons:
     slides: "2.1-slides"
     
   - title: "2.2 — The Microeconomics of Development II: Markets & Prices"
+    content: "2.2-content"
+    slides: "2.2-slides"
+
+  - title: "2.3 — The Macroeconomics of Development I: Exogenous Growth Theory"
   
-  - title: "2.3 — The Macroeconomics of Development"
+  - title: "2.4 — The Macroeconomics of Development II: Endogenous Growth Theory"
 
   - title: '<span class="fake-header-table">Policies & Exogenous Factors</span>'
   

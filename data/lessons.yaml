@@ -33,9 +33,13 @@ lessons:
     content: "2.2-content"
     slides: "2.2-slides"
 
-  - title: "2.3 — The Macroeconomics of Development I: Exogenous Growth Theory"
+  - title: "2.3 — The Macroeconomics of Development I: Classical Growth Theory"
+    content: "2.3-content"
+    slides: "2.3-slides"
+    
+  - title: "2.4 — The Macroeconomics of Development II: Exogenous Growth Theory"
   
-  - title: "2.4 — The Macroeconomics of Development II: Endogenous Growth Theory"
+  - title: "2.5 — The Macroeconomics of Development III: Endogenous Growth Theory"
 
   - title: '<span class="fake-header-table">Policies & Exogenous Factors</span>'
   

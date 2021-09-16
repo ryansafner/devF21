@@ -1,0 +1,102 @@
+---
+title: "2.3 — The Macroeconomics of Development I: Classical Growth Theory — Class Content"
+draft: false
+linktitle: "2.3 — Macroeconomics of Development I: Classical Growth Theory"
+date: "2020-06-08"
+menu:
+  content:
+    parent: Course content
+    weight: 8
+type: docs
+output:
+  blogdown::html_page:
+    toc: true
+slides: "2.3-slides"
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+<div id="TOC">
+<ul>
+<li><a href="#overview"><i class="fas fa-info-circle fa-lg"></i> Overview</a></li>
+<li><a href="#readings"><i class="fas fa-book-reader fa-lg"></i> Readings</a></li>
+<li><a href="#recommended-readings">Recommended Readings:</a>
+<ul>
+<li><a href="#slides"><i class="fas fa-chalkboard-teacher"></i> Slides</a></li>
+</ul></li>
+<li><a href="#math-appendix">Math Appendix</a>
+<ul>
+<li><a href="#cobb-douglas-functions">Cobb-Douglas Functions</a></li>
+</ul></li>
+</ul>
+</div>
+
+<p>{{% alert note %}}
+<em>Thursday, September 16, 2021</em>
+{{% /alert %}}</p>
+<div id="overview" class="section level2">
+<h2><i class="fas fa-info-circle fa-lg"></i> Overview</h2>
+<p>Here we explore the famous growth models of an economy. This lesson will be the most technical of the semester, but remember there are no homeworks or exams that have you use the models to calculate equilibrium outcomes. It is more important that you understand the basic mechanisms and the major conclusions of the models. Modern economic development, macroeconomics, and public policy literatures and debates rely heavily on these models!</p>
+<p>We begin with a short history of economic thought on growth, from the mercantilists and classicals through the famous neoclassical models and their extensions in the 1950s-1980s. Before we reach the major growth models, we mention, among others, David Ricardo for his insistence on diminishing returns and the steady state, the Harrod-Domar model for the first major milestone in growth modeling, and Nicholas Kaldor for his famous “stylized facts” that growth models must explain.</p>
+<p>In thinking about how to “model” an economy in a way that policymakers can exploit (e.g. manipulate key choice variables that can be changed) and assess the results, consider again: what exactly are we able to control? What knowledge must policymakers possess? What incentives ensure it gets implemented “the way we want?”</p>
+</div>
+<div id="readings" class="section level2">
+<h2><i class="fas fa-book-reader fa-lg"></i> Readings</h2>
+</div>
+<div id="recommended-readings" class="section level1">
+<h1>Recommended Readings:</h1>
+<ul>
+<li><a href="/readings/Hayek-1945.pdf"><i class="fas fa-file-pdf"></i> Hayek (1945), “The Use of Knowledge in Society”</a></li>
+<li><a href="/readings/Alchian-1950.pdf"><i class="fas fa-file-pdf"></i> Alchian (1950), “Uncertainty, Evolution, and Economic Theory”</a></li>
+</ul>
+<div id="slides" class="section level2">
+<h2><i class="fas fa-chalkboard-teacher"></i> Slides</h2>
+<p>Below, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. Note while in going through the slides, you can type <kbd>h</kbd> to see a special list of viewing options, and type <kbd>o</kbd> for an outline view of all the slides.</p>
+<p>The lower button will allow you to download a PDF version of the slides. I suggest printing the slides beforehand and using them to take additional notes in class (<em>not everything</em> is in the slides)!</p>
+<p>{{% slide-links %}}</p>
+</div>
+</div>
+<div id="math-appendix" class="section level1">
+<h1>Math Appendix</h1>
+<div id="cobb-douglas-functions" class="section level2">
+<h2>Cobb-Douglas Functions</h2>
+<p>A Cobb-Douglas function takes the form:</p>
+<p><span class="math display">\[y=Ax_1^\alpha x_2 ^\beta\]</span></p>
+<p>It is often used for utility functions <span class="math inline">\((y\)</span> is utility, <span class="math inline">\(x_1\)</span> and <span class="math inline">\(x_2\)</span> are goods) and production functions <span class="math inline">\((y\)</span> is output, <span class="math inline">\(x_1\)</span> and <span class="math inline">\(x_2\)</span> are factors of production, such as <span class="math inline">\(L\)</span> and <span class="math inline">\(K).\)</span></p>
+<p>It is often converted into logarithmic form by taking the natural logs:</p>
+<p><span class="math display">\[ln \, y = ln \, A + \alpha \, ln \, x_1 + \beta \, ln \, x_2\]</span></p>
+<p>This function is (surprisingly) easy to work with for its many useful properties:</p>
+<ol style="list-style-type: decimal">
+<li>Returns to scale
+<ul>
+<li>If <span class="math inline">\(\alpha+\beta &gt; 1\)</span>: increasing returns to scale</li>
+<li>If <span class="math inline">\(\alpha+\beta = 1\)</span>: constant returns to scale</li>
+<li>If <span class="math inline">\(\alpha+\beta &lt; 1\)</span>: decreasing returns to scale</li>
+</ul></li>
+<li>Elasticities/Shares
+<ul>
+<li>In the constant returns to scale case (the exponents sum to 1), often rewritten as <span class="math inline">\(y=Ax_1^{\alpha}x_2^{1-\alpha}\)</span>:
+<ul>
+<li><span class="math inline">\(\alpha\)</span> represents the (fraction of income spent - in utility case; output elasticity - in production case) of each <span class="math inline">\(x_i\)</span>
+<ul>
+<li>e.g. if <span class="math inline">\(u=x^{0.4}y^{0.6}\)</span>, consumer spends 40% of income on <span class="math inline">\(x\)</span> and 60% on <span class="math inline">\(y\)</span></li>
+<li>e.g. if <span class="math inline">\(y=K^{0.4}L^{0.6}\)</span>, a 1% increase in <span class="math inline">\(K\)</span> generates a <span class="math inline">\(0.4\)</span>% increase in <span class="math inline">\(y\)</span></li>
+<li>Aggregate Production Function case: <span class="math inline">\(\alpha\)</span> is the “share” of output or income going to each factor</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>Desirable shape of function
+<ul>
+<li>Convex</li>
+<li>Positive but diminishing returns to each <span class="math inline">\(x_i\)</span>, <span class="math inline">\(\left(\frac{\partial y}{\partial x_i} &gt; 0, \, \frac{\partial^2 y}{\partial x_i^2} &lt; 0 \right)\)</span></li>
+</ul></li>
+</ol>
+<p>See more on Cobb-Douglas functions from my ECON 306 - Microeconomic Analysis course notes:</p>
+<ul>
+<li><a href="https://microf21.classes.ryansafner.com/content/1.3-content/#cobb-douglas-functions">Cobb Douglas Utility Functions</a></li>
+<li><a href="https://microf21.classes.ryansafner.com/content/1.4-content/#solving-the-constrained-optimization-problem-with-calculus">Constrained Optimization with Cobb-Douglas</a></li>
+<li><a href="https://microf21.classes.ryansafner.com/content/1.4-content/#solving-the-constrained-optimization-problem-with-calculus">Deriving Demand from Cobb-Douglas Utility</a></li>
+</ul>
+<p>For production, simply replace <span class="math inline">\(u\)</span> with <span class="math inline">\(y\)</span>, and <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> with <span class="math inline">\(l\)</span> and <span class="math inline">\(k\)</span>.</p>
+</div>
+</div>

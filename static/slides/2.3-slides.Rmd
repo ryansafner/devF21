@@ -54,15 +54,15 @@ class: inverse
 
 # Outline
 
-### [The Fundamental Purpose of Markets](#3)
-### [The Static Benefits of Markets](#13)
-### [The Dynamic Benefits of Markets](#24)
-### [The Socialist Calculation Debate, Redux](#52)
+### [Real Productivity](#3)
+### [Growth Models: A History](#13)
+### [20th Century Neoclassical Growth Models](#24)
+### [Working Tools](#52)
 
 ---
 
 class: inverse, center, middle
-# The Fundamental Purpose of Markets
+# Real Productivity
 
 ---
 
@@ -927,46 +927,6 @@ tribble(
 
 ]
 
-# The Harrod-Domar Model I
-
-.left-column[
-
-.center[
-![:scale 49%](../images/harrod.jpg) ![:scale 49%](../images/domar.jpg)
-
-**L**: Roy Harrod (1900-1978)
-
-**R**: Evsey Domar (1914-1997)
-
-]
-]
-
-.right-column[
-
-- .hi[Harrod-Domar Model] of economic growth
-
-- Based off of Keynesian macroeconomic concepts:
-    - **Marginal Propensity to Save (MPS)**, $\frac{\Delta S}{\Delta Y}$: proportion of (changes in) income saved $\in [0,1]$
-    - **Incremental Capital-Output Ratio (ICOR)**, $\frac{\Delta K}{\Delta Y}$<sup>1</sup>: addition to capital stock $K$ needed to produce an extra dollar of output $Y$
-
-- An economy's **equilibrium growth rate** $=\frac{MPS}{ICOR}$
-    - $\uparrow K \implies \uparrow Y \implies \uparrow S$
-    - We can impute the conditions necessary to yield a desired growth rate
-
-
-]
-
-.footnote[<sup>.red[1]</sup> Or `\\(\frac{\Delta I}{\Delta Y}\\)`, where `\\(I\\)` is *net investment*, the change in capital stock.]
-
-]
-
-.pull-right[
-.center[
-![](../images/factors.jpg)
-]
-
-]
-≈
 ---
 
 # Theoretical Microfoundations I
@@ -1331,6 +1291,7 @@ Nicholas Kaldor
 
 .right-column[
 
+.smallest[
 > "A satisfactory model concerning the nature of the growth process in a capitalist economy must also account for the remarkable historical constancies revealed by recent empirical investigations." (p.591)
 
 1. Output per worker grows over time
@@ -1344,7 +1305,7 @@ Nicholas Kaldor
 5. The return to capital is approximately constant over time
 
 6. Levels of output per person vary widely across countries
-
+]
 ]
 
 .source[Kaldor, Nicholas, 1957, "A Model of Economic Growth," *Economic Journal* 67(268): 591-624]

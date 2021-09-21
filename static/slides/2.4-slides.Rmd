@@ -76,7 +76,7 @@ class: inverse, center, middle
 
 $$Y=A*f(L,K,T)$$
 
-- Economists often classify inputs into broad categories:
+- Economists often categorize inputs:
 
 ]
 
@@ -94,8 +94,8 @@ tribble(
 ]
 
 .smallest[
-- "A" is called .hi-purple[total factor productivity], augments all factors to improve output
-  - Often called "technology" but more like "ideas, incentives, and institutions"
+- “A” is called .hi-purple[total factor productivity], augments all factors to improve output
+  - Often called “technology” but more like “ideas, incentives, & institutions”
 
 ]
 
@@ -295,7 +295,7 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
   #scale_colour_manual("Curves", values = line_colors, guide=F)+
   labs(x = "Labor (L)",
        y = "Output (Y)")+
-  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+  ggthemes::theme_pander(base_family = "Fira Sans Condensed", base_size=20)
 ```
 
 ]
@@ -342,7 +342,7 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
   #scale_colour_manual("Curves", values = line_colors, guide=F)+
   labs(x = "Labor (L)",
        y = "Output Per Worker")+
-  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+  ggthemes::theme_pander(base_family = "Fira Sans Condensed", base_size=20)
 ```
 
 ]
@@ -382,7 +382,7 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
   #scale_colour_manual("Curves", values = line_colors, guide=F)+
   labs(x = "Capital (K)",
        y = "Output (Y)")+
-  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+  ggthemes::theme_pander(base_family = "Fira Sans Condensed", base_size=20)
 ```
 
 ]
@@ -425,7 +425,7 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
   #scale_colour_manual("Curves", values = line_colors, guide=F)+
   labs(x = "Capital (K)",
        y = "Output per Unit of Capital")+
-  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+  ggthemes::theme_pander(base_family = "Fira Sans Condensed", base_size=20)
 ```
 
 ]
@@ -547,32 +547,43 @@ Economics Nobel 1987
 
 # The “Simple” Solow Model: Equations
 
+.smaller[
 (1) $C_t+I_t=Y_t=f(K,L)$
   - Income is equal to consumption plus investment
   - Output is equal to the production function
   - Income = Output 
+]
 
 --
 
+.smaller[
 (2) $I_t=sf(K_t,L_t)$
   - Investment is equal to the fraction of income (output) saved $s$ times output
+]
 
 --
 
+.smaller[
 (3) $K_{t+1}=K_t (1-\delta) + I_t$
   - The stock of capital $K$ changes over time from depreciation $(\delta)$ and new investment $I_t$
+]
 
 --
 
+.smaller[
 (4) $L_t=L$
   - The stock of labor is constant over time
-    
+]
+
 ---
 
 # The “Simple” Solow Model: Implications
 
-- $K_{t+1}=K_t(1-\delta)+sf(K_t,L_t)$
-    - Plugging equation 2 into equation 3
+- Capital growth over time:
+
+$$K_{t+1}=K_t(1-\delta)+sf(K_t,L_t)$$
+  
+  - Plugging equation 2 into equation 3
 
 --
 
@@ -718,7 +729,7 @@ ggplot(data = tibble(x=c(0,10)))+
   labs(x = "Capital per worker (k)",
        y = "Output per worker (y)",
        caption = expression(paste("Solow Model for ",y==k^{0.5}, ", ",delta==0.02, ", ",s==0.30)))+
-  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+  ggthemes::theme_pander(base_family = "Fira Sans Condensed", base_size=20)
 ```
 
 
@@ -771,7 +782,7 @@ sp<-ggplot(data = tibble(x=c(0,10)))+
   labs(x = "Capital per worker (k)",
        y = "Output per worker (y)",
        caption = expression(paste("Solow Model for ",y==k^{0.5}, ", ",delta==0.02, ", ",s==0.30)))+
-  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+  ggthemes::theme_pander(base_family = "Fira Sans Condensed", base_size=20)
 sp
 ```
 
@@ -826,7 +837,7 @@ ggplot(data = tibble(x=c(0,10)))+
   labs(x = "Capital per worker (k)",
        y = "Output per worker (y)",
        caption = expression(paste("Solow Model for ",y==k^{0.5}, ", ",delta==0.02, ", ",s[1]==0.30, ", ", s[2]==0.50)))+
-  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+  ggthemes::theme_pander(base_family = "Fira Sans Condensed", base_size=20)
 ```
 
 
@@ -842,13 +853,13 @@ ggplot(data = tibble(x=c(0,10)))+
     - $s_1=0.30$
     - $s_2=0.50$
 
-- Investment $i_t$ increases
+- .green[Investment] $i_t$ increases
 
 - Steady state level of capital $k_t^*$ increases
 
-- Steady state output increases $y_t^*$
+- Steady state .blue[output] increases $y_t^*$
 
-- Steady state amount of consumption
+- Steady state amount of .purple[consumption]
     - Decreases at first from more savings 
     - Increases from more output produced
 ]
@@ -904,7 +915,7 @@ ggplot(data = tibble(x=c(0,10)))+
   labs(x = "Capital per worker (k)",
        y = "Output per worker (y)",
        caption = expression(paste("Solow Model for ",y==k^{0.5}, ", ",delta==0.02, ", ",s[1]==0.30, ", ", s[2]==0.50)))+
-  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+  ggthemes::theme_pander(base_family = "Fira Sans Condensed", base_size=20)
 ```
 
 
@@ -916,7 +927,7 @@ ggplot(data = tibble(x=c(0,10)))+
 
 .pull-left[
 
-- What if depreciation costs increase?
+- What if .red[depreciation] costs increase?
     - $\delta_1=0.02$
     - $\delta_2=0.04$
 
@@ -959,7 +970,7 @@ ggplot(data = tibble(x=c(0,10)))+
   labs(x = "Capital per worker (k)",
        y = "Output per worker (y)",
        caption = expression(paste("Solow Model for ",y==k^{0.5}, ", ",delta[1]==0.02, ", ",delta[2]==0.04, ", ", s==0.30)))+
-  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+  ggthemes::theme_pander(base_family = "Fira Sans Condensed", base_size=20)
 ```
 
 ]
@@ -970,17 +981,17 @@ ggplot(data = tibble(x=c(0,10)))+
 
 .pull-left[
 
-- What if depreciation costs increase?
+- What if .red[depreciation] costs increase?
     - $\delta_1=0.02$
     - $\delta_2=0.04$
 
-- Investment $i_t$ decreases
+- .green[Investment] $i_t$ decreases
 
 - Steady state level of capital $k_t^*$ decreases
 
-- Steady state output decreases $y_t^*$
+- Steady state .blue[output] decreases $y_t^*$
 
-- Steady state amount of consumption $c_t^*$ decreases 
+- Steady state amount of .purple[consumption] $c_t^*$ decreases 
 ]
 
 .pull-right[
@@ -1025,7 +1036,7 @@ ggplot(data = tibble(x=c(0,10)))+
   labs(x = "Capital per worker (k)",
        y = "Output per worker (y)",
        caption = expression(paste("Solow Model for ",y==k^{0.5}, ", ",delta[1]==0.02, ", ",delta[2]==0.04, ", ", s==0.30)))+
-  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+  ggthemes::theme_pander(base_family = "Fira Sans Condensed", base_size=20)
 ```
 
 
@@ -1038,16 +1049,16 @@ ggplot(data = tibble(x=c(0,10)))+
 .pull-left[
 
 .smallest[
-- Different values of $s$ lead to different steady state levels of $k^*$, which is *best*?
+- Different values of $s$ lead to different steady state levels of $k^*$, so **which is _best_?**
 
-- The best steady state is one where there is the highest possible consumption per person 
+- The best steady state is one where there is the highest possible .purple[consumption] per person 
 $$c^*=(1-s)f(k^*)$$
 
 - Increase in $s$
-    - Reduces consumption's share of income $(1-s)$
-    - Results in higher $k^*$ and higher $y^*$
+  - Reduces consumption's share of income $(1-s)$
+  - Results in higher $k^*$ and higher $y^*$
 
-- Find the value of $s$ (and $k^*)$ that *maximize* $c^*$
+- **Find the value of $s$ (and $k^*)$ that _maximizes_ $c^*$**
 ]
 ]
 
@@ -1074,7 +1085,7 @@ $$\begin{align*}
 MP_K & = \delta \\
 \end{align*}$$
 
-- **Golden Rule level of** $\mathbf{k^*_{GR}}$ where slope of depreciation line $=$ slope of production function, $f(k^*)$
+- .hi[Golden Rule level of] $\color{#e64173}{\mathbf{k^*_{GR}}}$ where slope of depreciation line $=$ slope of production function, $f(k^*)$
 
 ]
 
@@ -1111,7 +1122,7 @@ ggplot(data = tibble(x=c(0,10)))+
   labs(x = "Steady-State Capital per worker (k*)",
        y = "Steady-State Output per worker (y*)",
        caption = expression(paste("Solow Model for ",y==k^{0.5}, ", ",delta==0.02, ", s=?")))+
-  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+  ggthemes::theme_pander(base_family = "Fira Sans Condensed", base_size=20)
 ```
 
 ]
@@ -1122,9 +1133,9 @@ ggplot(data = tibble(x=c(0,10)))+
 
 .pull-left[
 
-- **Golden Rule level of** $\mathbf{k^*_{GR}}$ where slope of depreciation line $=$ slope of production function, $f(k^*)$
+- .hi[Golden Rule level of] $\color{#e64173}{\mathbf{k^*_{GR}}}$ where slope of depreciation line $=$ slope of production function, $f(k^*)$
 
-- **Golden Rule level of** $s_{GR} = \frac{\delta k^*_{GR}}{y^*_{GR}}$
+- .hi[Golden Rule level of] $\color{#e64173}{\mathbf{k^*_{GR}}} = \frac{\delta k^*_{GR}}{y^*_{GR}}$
     - In this example, $s_{GR}=\frac{0.02(625)}{25}=0.50$
 
 - Optimal level of savings is 0.50 or 50%!
@@ -1167,7 +1178,7 @@ solow_gr<-ggplot(data = tibble(x=c(0,10)))+
   labs(x = "Steady-State Capital per worker (k*)",
        y = "Steady-State Output per worker (y*)",
        caption = expression(paste("Solow Model for ",y==k^{0.5}, ", ",delta==0.02, ", ",s[GR]==0.50)))+
-  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+  ggthemes::theme_pander(base_family = "Fira Sans Condensed", base_size=20)
 solow_gr
 ```
 
@@ -1179,7 +1190,7 @@ solow_gr
 
 .pull-left[
 
-- Policy implications: policymakers can choose $s$ to $\max c_i^*$ at $k^*_{GR}$
+- Policy implications: policymakers can choose $s$ to maximize $c_i^*$ at $k^*_{GR}$
 
 - Change taxes or government spending
 
@@ -1243,11 +1254,11 @@ class: inverse, center, middle
 .quitesmall[
 - Add two new "laws of motion" beyond just capital: 
 
-- **Population** grows at constant rate $n$ over time
+- .hi-purple[Population] grows at constant rate $n$ over time
   - $L_{t+1}=L_t(1+n)$
   - $g_L = n$
 
-- **Technology** grows at constant rate $g$ over time
+- .hi-purple[Technology] grows at constant rate $g$ over time
   - $A_{t+1}=A_t(1+g)$
   - $g_A = g$ $(g$: growth rate of technology)
 
@@ -1310,8 +1321,9 @@ sp2<-ggplot(data = tibble(x=c(0,10)))+
   geom_segment(x=0,xend=kstar,y=output(kstar),yend=output(kstar), linetype="dashed")+
   geom_segment(x=0,xend=kstar,y=deprec(kstar),yend=deprec(kstar), linetype="dashed")+
   geom_segment(x=kstar,xend=kstar,y=0,yend=ystar, linetype="dashed")+
-  geom_segment(x=kstar, xend=kstar, y=invest(kstar), yend=output(kstar), size =1, color="blue")+
-  geom_label(aes(x=kstar+5, y=10), label="Consumption Available", color="blue")+
+  
+  annotate("segment", x = kstar, xend = kstar, y = invest(kstar), yend = output(kstar), color = "purple", size=2, alpha=0.9, arrow=arrow(length=unit(0.5,"cm"), ends="both", type="closed"))+
+  geom_label(aes(x=kstar+5, y=10), label="Consumption Available", color="purple")+
   scale_x_continuous(breaks=seq(0,400,50),
                      limits=c(0,400),
                      expand=expand_scale(mult=c(0,0.1)))+
@@ -1323,7 +1335,7 @@ sp2<-ggplot(data = tibble(x=c(0,10)))+
   labs(x = "Capital per worker (k)",
        y = "Output per worker (y)",
        caption = expression(paste("Solow Model for ",y==k^{0.5}, ", ",delta==0.02, ", ",s==0.30)))+
-  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+  ggthemes::theme_pander(base_family = "Fira Sans Condensed", base_size=20)
 sp2
 ```
 
@@ -1345,7 +1357,7 @@ sp2
 |----------|--------|-------------|
 | Capital per effective worker | $k=\frac{K}{AL}$ | 0 |
 | Output per effective worker | $y=\frac{Y}{AL}$ | 0 |
-| Output per worker | $\frac{Y}{L}=Ay$ | $g$ |
+| **Output per worker** | $\mathbf{\frac{Y}{L}=Ay}$ | $\mathbf{g}$ |
 | TFP | $A$ | $g$ |
 | Labor (population) | $L$ | $n$ |
 | Total Capital | $K=ALk$ | $n+g$ |
@@ -1354,7 +1366,7 @@ sp2
 ]
 
 .smallest[
-- Interesting: growth rate of output per worker grows *solely* from rate of TFP progress $(g)$!
+- Interesting: .hi-turquoise[growth rate of output per worker grows *solely* from rate of TFP progress `\\((g)\\)`!]
 ]
 ]
 
@@ -1386,7 +1398,7 @@ sp2
 ---
 
 class: inverse, center, middle
-# c
+# Cross-Country Comparisons
 
 ---
 
@@ -1409,12 +1421,19 @@ class: inverse, center, middle
 
 # Convergence: Technical
 
+.pull-left[
 - Near the balanced growth path $k \rightarrow (k^*)$ at a speed proportional to its distance from $k^*$:
 
 $$k(t) \approx k^* + e^{-[1-\alpha k^*](n+g+\delta) t}(k_0-k^*)$$
 
-- In other words - **the further away from (closer to) $k^*$ your country is, the faster (slower) you should grow**
+- In other words - .hi-turquoise[the further away from (closer to) $k^*$ your country is, the faster (slower) you should grow]
+]
 
+.pull-right[
+.center[
+![:scale 100%](../images/convergence.jpg)
+]
+]
 ---
 
 # Convergence? I
@@ -1439,7 +1458,7 @@ IMF_tidy <- IMF %>%
   filter(year<2020) # how does data go to 2024?
 ```
 
-```{r, fig.retina=3, fig.align="center"}
+```{r, fig.retina=3, fig.align="center", fig.width=12}
 IMF_tidy %>%
   filter(country %in% c("Brazil", "Japan", "Germany", "Russia", "China", "Singapore", "United States", "South Korea")) %>%
   ggplot(.,aes(x = year,
@@ -1452,7 +1471,7 @@ IMF_tidy %>%
        color = "")+
   scale_y_continuous(breaks=seq(0,100000,20000),
                                 labels = scales::dollar)+
-  theme_classic(base_family = "Fira Sans Condensed", base_size=20)+
+  ggthemes::theme_pander(base_family = "Fira Sans Condensed", base_size=20)+
   theme(legend.position="top")
 ```
 
@@ -1546,7 +1565,7 @@ convergence %>%
   guides(color = F)+
   scale_x_continuous(labels = scales::dollar)+
   scale_y_continuous(breaks = 1:3, labels = function(x){paste(x, "%")})+
-  theme_classic(base_family = "Fira Sans Condensed", base_size=20)+
+  ggthemes::theme_pander(base_family = "Fira Sans Condensed", base_size=20)+
   theme(legend.position="top")
 
 ```
@@ -1585,9 +1604,10 @@ convergence %>%
 
 > "While unconditional convergence was singularly absent in the past, there has been unconditional convergence, beginning (weakly) around 1990 and emphatically for the last two decades."
 
-]
 
 .source[Johnson, Paul and Chris Papageorgiou, 2018, "What Remains of Cross-Country Convergence?" *Journal of Economic Literature*, forthcoming]
+
+]
 
 ---
 
@@ -1639,7 +1659,7 @@ ggplot(tibble(x=1:10))+
   labs(x = "Agriculture",
        y = "Industry")+
   guides(color = F)+
-  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+  ggthemes::theme_pander(base_family = "Fira Sans Condensed", base_size=20)
 
 ```
 ]
@@ -1783,7 +1803,7 @@ Solow's findings for 1909-1949 in the United States:
 
 ---
 
-# The Solow Model: Growth Accounting IV
+# The Solow Model: Let's Try Some Growth Accounting
 
 ```{r}
 solow<-read_csv("../data/solow_growth_accounting.csv")
@@ -1814,22 +1834,22 @@ ggplot(data = solow)+
   scale_colour_manual("Series", values = line_colors)+
   labs(x = "Time",
        y = "Growth Rates (%)",
-       title = "Growth Accounting for 1950-2010",
+       title = "Growth Accounting for U.S., 1950-2010",
        caption = "Data Sources: BEA")+
-  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+  ggthemes::theme_pander(base_family = "Fira Sans Condensed", base_size=20)
 ```
 
 ---
 
-# Growth Accounting: TFP
+# The Solow Model: Let's Try Some Growth Accounting
 
 ```{r, fig.retina=3, fig.align="center", fig.width=12}
 ggplot(data = solow)+
   aes(x = Year)+
   geom_hline(yintercept = 0, color = "black", size = 1)+
   geom_line(aes(y = A_change, color="Technology (A)"),  size = 2)+
-  geom_hline(aes(yintercept=mean(A_change,na.rm=T)), color = "green", linetype="dashed", size = 1)+
-  geom_text(aes(x=1980, y=0.5+mean(A_change,na.rm=T)), label="Average TFP Growth: 1.373%", size = 5, color = "green")+
+  geom_hline(aes(yintercept=mean(A_change,na.rm=T)), color = "black", linetype="dashed", size = 1)+
+  geom_text(aes(x=1980, y=0.5+mean(A_change,na.rm=T)), label="Average TFP Growth: 1.373%", size = 5, color = "black")+
   scale_x_continuous(breaks=seq(1950,2010,10),
                      limits=c(1948,2012))+
   #scale_y_continuous(breaks=seq(0,10,1),
@@ -1838,7 +1858,27 @@ ggplot(data = solow)+
   scale_colour_manual("Series", values = line_colors)+
   labs(x = "Time",
        y = "Growth Rates (%)",
-       title = "Growth Accounting for 1950-2010",
+       title = "Growth Accounting for  U.S., 1950-2010",
        caption = "Data Sources: BEA")+
-  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+  ggthemes::theme_pander(base_family = "Fira Sans Condensed", base_size=20)
 ```
+
+---
+
+# TFP in the U.S.
+
+.center[
+![](../images/tfp-fed.png)
+]
+
+.source[Source: [Federal Reserve Bank of San Francisco](https://www.frbsf.org/economic-research/indicators-data/total-factor-productivity-tfp/)]
+
+---
+
+# TFP in the U.S.: Not What It C/Should Be?
+
+.center[
+![](../images/tfp-trend.png)
+]
+
+.source[Sources: [Eli Dourado](https://elidourado.com/tfp/); [Federal Reserve Bank of San Francisco](https://www.frbsf.org/economic-research/indicators-data/total-factor-productivity-tfp/)]

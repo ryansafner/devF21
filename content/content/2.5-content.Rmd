@@ -1,0 +1,62 @@
+---
+title: "2.5 — The Macroeconomics of Development III: Endogenous Growth Theory — Class Content"
+draft: false
+linktitle: "2.5 — Macroeconomics of Development III: Endogenous Growth Theory"
+date: "2020-06-08"
+menu:
+  content:
+    parent: Course content
+    weight: 10
+type: docs
+output:
+  blogdown::html_page:
+    toc: true
+slides: "2.5-slides"
+---
+
+{{% alert note %}}
+*Thursday, September 23, 2021*
+{{% /alert %}}
+
+{{% alert warning %}}
+We will not have class Thursday September 23. Instead, I have a video lecture on this material. 
+
+We will have our next discussion on Tuesday, September 27. Please see the [readings](/content/2.5-content) (in the next class page).
+{{% /alert %}}
+
+## <i class="fas fa-info-circle fa-lg"></i> Overview
+
+We now turn to the famous Romer model, or "*endogenous* growth" model of Paul Romer (and coauthors). Here (inside a Solow-type model) TFP is something economies (firms and governments) can *explicitly* invest in (via R&D, education, etc.) to determine TFP *endogenously*.
+
+## <i class="fas fa-book-reader fa-lg"></i> Readings
+
+## Required Reading
+
+- <i class="fas fa-book"></i> Chapter 3 in Easterly, 2002, *The Elusive Quest for Growth*
+
+### Primary Sources
+
+- [<i class="fas fa-file-pdf"></i> Hall and Jones (1999), "Why Do Some Countries Produce So Much More Output Per Worker Than Others?"](/readings/Hall-Jones-1999.pdf)
+- [<i class="fas fa-file-pdf"></i> Romer (1990), "Endogenous Technological Change"](/readings/Romer-1990.pdf)
+
+### Questions to Guide Your Reading
+
+- Easterly accuses the Solow model of "capital fundamentalism." What does he mean by this? How are (other) ideas about development and development policy affected by "capital fundamentalism?"
+
+- Easterly's primary accusation against "capital fundamentalism" is that it is incompatible with "people respond to incentives." How is this evident (or not) in the Solow model? The Romer model?
+
+- How do the events of the early to mid 20<sup>th</sup> Century (the Great Depression, industrialization and forced savings in the Soviet Union, etc) find their way into mid-century growth models?
+
+- If (physical, human, etc) capital is so important for growth, why can't we just "send" capital to developing countries and watch them grow?
+
+- Consider the difference between "catch up growth" and "cutting-edge growth." How does this explain the rapid growth of countries like Singapore, Hong Kong, China, South Korea, Taiwan, etc?
+
+- The U.S. is on the frontier, and fighting hard for "cutting-edge growth." Do you think we "are running out of ideas" or that we are growing slowly because there are diminishing returns to innovation? 
+
+## <i class="fas fa-chalkboard-teacher"></i> Slides
+
+Below, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. Note while in going through the slides, you can type <kbd>h</kbd> to see a special list of viewing options, and type <kbd>o</kbd> for an outline view of all the slides.
+
+The lower button will allow you to download a PDF version of the slides. I suggest printing the slides beforehand and using them to take additional notes in class (*not everything* is in the slides)!
+
+`r blogdown::shortcode("slide-links")`

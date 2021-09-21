@@ -1,0 +1,1377 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>2.4 — Exogenous Growth Theory</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Ryan Safner  Assistant Professor of Economics   safner@hood.edu   ryansafner/devF21   devF21.classes.ryansafner.com " />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/remark-css/hygge.css" rel="stylesheet" />
+    <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
+    <script src="libs/tile-view/tile-view.js"></script>
+    <link href="libs/tachyons/tachyons.min.css" rel="stylesheet" />
+    <script src="libs/freezeframe/freezeframe.min.js"></script>
+    <script src="libs/xaringanExtra-freezeframe/freezeframe-init.js"></script>
+    <script id="xaringanExtra-freezeframe-options" type="application/json">{"selector":"img[src$=\"gif\"]","trigger":"click","overlay":false,"responsive":true,"warnings":true}</script>
+    <script src="libs/htmlwidgets/htmlwidgets.js"></script>
+    <script src="libs/plotly-binding/plotly.js"></script>
+    <script src="libs/typedarray/typedarray.min.js"></script>
+    <script src="libs/jquery/jquery.min.js"></script>
+    <link href="libs/crosstalk/css/crosstalk.css" rel="stylesheet" />
+    <script src="libs/crosstalk/js/crosstalk.min.js"></script>
+    <link href="libs/plotly-htmlwidgets-css/plotly-htmlwidgets.css" rel="stylesheet" />
+    <script src="libs/plotly-main/plotly-latest.min.js"></script>
+    <script src="https://use.fontawesome.com/5235085b15.js"></script>
+    <link rel="stylesheet" href="custom.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# 2.4 — Exogenous Growth Theory
+## ECON 317 • Economic Development • Fall 2021
+### Ryan Safner<br> Assistant Professor of Economics <br> <a href="mailto:safner@hood.edu"><i class="fa fa-paper-plane fa-fw"></i>safner@hood.edu</a> <br> <a href="https://github.com/ryansafner/devF21"><i class="fa fa-github fa-fw"></i>ryansafner/devF21</a><br> <a href="https://devF21.classes.ryansafner.com"> <i class="fa fa-globe fa-fw"></i>devF21.classes.ryansafner.com</a><br>
+
+---
+
+
+
+
+class: inverse
+
+# Outline
+
+### [Neoclassical Working Tools](#3)
+### [The “Simple” Solow Model](#15)
+### [The “Full” Solow Model](#42)
+### [Cross-Country Comparisons](#47)
+### [Growth Accounting](#60)
+
+---
+
+class: inverse, center, middle
+# Neoclassical Working Tools
+
+---
+
+# An Aggregate Production Function I
+
+.pull-left[
+
+.smallest[
+- .hi[Aggregate production function]: rate at which an economy converts inputs into output&lt;sup&gt;.magenta[1]&lt;/sup&gt;
+
+`$$Y=A*f(L,K,T)$$`
+
+- Economists often classify inputs into broad categories:
+
+]
+
+.quitesmall[
+&lt;table&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt; Factor &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Owned By &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Earns &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Land (T) &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Landowners &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Rent &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Labor (L) &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Laborers &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Wages &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Capital (K) &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Capitalists &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Interest &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+]
+
+.smallest[
+- "A" is called .hi-purple[total factor productivity], augments all factors to improve output
+  - Often called "technology" but more like "ideas, incentives, and institutions"
+
+]
+
+]
+
+.pull-right[
+.center[
+![](../images/factors.jpg)
+]
+]
+
+---
+
+# Theoretical Microfoundations I
+
+.pull-left[
+
+- Assume `\(N\)` firms `\((i=1,2,\cdots, N)\)` all have the **same** production technology
+`$$y_i=a*f(L_i,K_i,T_i)$$`
+
+- All firms minimize cost of production and face the same factor prices:&lt;sup&gt;.magenta[1]&lt;/sup&gt;
+    - `\(p_L=w=MP_L\)`
+    - `\(p_K=i=MP_K\)`
+    - `\(p_T=r=MP_T\)`
+
+]
+
+.pull-right[
+.center[
+![](../images/corporation.jpg)
+]
+]
+
+.footnote[&lt;sup&gt;.magenta[1]&lt;/sup&gt; Assuming competitive markets, all factor prices (wages, interest, rents) are equal to the marginal productivity of labor, capital, and land, respectively.]
+
+---
+
+# Theoretical Microfoundations II
+
+.pull-left[
+
+- The economy behaves “as if” there is a single firm with technology:
+`$$Y=A*f(L,K,T)$$`
+and facing factor prices, where aggregate inputs and output are:
+
+`$$\begin{align*}
+L&amp;=l_1+l_2+ \cdots + l_N\\
+K&amp;=k_1+k_2+ \cdots + k_N\\
+T&amp;=t_1+t_2+ \cdots + t_N\\
+Y&amp;=y_1+y_2+ \cdots + y_N\\
+\end{align*}$$`
+
+]
+
+.pull-right[
+.center[
+![](../images/corporation.jpg)
+]
+]
+---
+
+# An Aggregate Production Function: Implications
+.smaller[
+Assuming constant returns to scale (output and all inputs scale at the same proportionate rate):
+
+- If two countries have the same technology, there is no economic advantage to size
+
+- Labor productivity `\(\left(\frac{Y}{L}\right)\)`, output-per-worker/hour, is determined only by `\(\left(\frac{K}{L}\right)\)`, capital-per-worker/hour
+
+`$$Y = MP_LL + MP_KK + MP_T T$$`
+
+- With competitive markets, firms pay each factor its marginal product, firms earn no profits&lt;sup&gt;.magenta[1]&lt;/sup&gt;
+]
+
+.footnote[&lt;sup&gt;.magenta[1]&lt;/sup&gt; This is also called the "product exhaustion theorem," and comes from [Euler's Theorem for homogeneous functions](https://en.wikipedia.org/wiki/Homogeneous_function#Positive_homogeneity) (constant returns functions are homogeneous of degree 1).]
+
+---
+
+# An Aggregate Production Function: Cobb-Douglas I
+
+.pull-left[
+.smallest[
+- Common functional form in economics: .hi[Cobb-Douglas]
+
+`$$Y=AK^{\alpha}L^{1-\alpha}$$`
+
+- Exponents `\((\alpha)\)` and `\((1-\alpha)\)` are “output-elasticities”
+    - A 1% increase in K (L) will yield an `\(\alpha\)`% `\((1-\alpha)%\)` increase in Y
+
+- Constant returns to scale&lt;sup&gt;.magenta[1]&lt;/sup&gt;: a k% increase in *all* inputs will yield a k% increase in `\(Y\)`
+
+- [More about Cobb-Douglas functions](http://microf21.classes.ryansafner.com/content/1.4-content)
+
+]
+]
+
+.pull-right[
+
+`$$Y = K^{0.5}L^{0.5}$$`
+
+<div id="htmlwidget-617b2c236e2a1e314dbe" style="width:504px;height:396px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-617b2c236e2a1e314dbe">{"x":{"visdat":{"6d725696baa5":["function () ","plotlyVisDat"]},"cur_data":"6d725696baa5","attrs":{"6d725696baa5":{"x":[0,1,2,3,4,5,6,7,8,9,10],"y":[0,1,2,3,4,5,6,7,8,9,10],"z":[[0,0,0,0,0,0,0,0,0,0],[0,1,1.4142135623731,1.73205080756888,2,2.23606797749979,2.44948974278318,2.64575131106459,2.82842712474619,3],[0,1.4142135623731,2,2.44948974278318,2.82842712474619,3.16227766016838,3.46410161513775,3.74165738677394,4,4.24264068711928],[0,1.73205080756888,2.44948974278318,3,3.46410161513775,3.87298334620742,4.24264068711928,4.58257569495584,4.89897948556636,5.19615242270663],[0,2,2.82842712474619,3.46410161513775,4,4.47213595499958,4.89897948556636,5.29150262212918,5.65685424949238,6],[0,2.23606797749979,3.16227766016838,3.87298334620742,4.47213595499958,5,5.47722557505166,5.91607978309962,6.32455532033676,6.70820393249937],[0,2.44948974278318,3.46410161513775,4.24264068711928,4.89897948556636,5.47722557505166,6,6.48074069840786,6.92820323027551,7.34846922834953],[0,2.64575131106459,3.74165738677394,4.58257569495584,5.29150262212918,5.91607978309962,6.48074069840786,7,7.48331477354788,7.93725393319377],[0,2.82842712474619,4,4.89897948556636,5.65685424949238,6.32455532033676,6.92820323027551,7.48331477354788,8,8.48528137423857],[0,3,4.24264068711928,5.19615242270663,6,6.70820393249937,7.34846922834953,7.93725393319377,8.48528137423857,9]],"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"surface","inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"scene":{"xaxis":{"title":"K"},"yaxis":{"title":"L"},"zaxis":{"title":"Output"}},"hovermode":"closest","showlegend":false,"legend":{"yanchor":"top","y":0.5}},"source":"A","config":{"showSendToCloud":false},"data":[{"colorbar":{"title":"","ticklen":2,"len":0.5,"lenmode":"fraction","y":1,"yanchor":"top"},"colorscale":[["0","rgba(68,1,84,1)"],["0.0416666666666667","rgba(70,19,97,1)"],["0.0833333333333333","rgba(72,32,111,1)"],["0.125","rgba(71,45,122,1)"],["0.166666666666667","rgba(68,58,128,1)"],["0.208333333333333","rgba(64,70,135,1)"],["0.25","rgba(60,82,138,1)"],["0.291666666666667","rgba(56,93,140,1)"],["0.333333333333333","rgba(49,104,142,1)"],["0.375","rgba(46,114,142,1)"],["0.416666666666667","rgba(42,123,142,1)"],["0.458333333333333","rgba(38,133,141,1)"],["0.5","rgba(37,144,140,1)"],["0.541666666666667","rgba(33,154,138,1)"],["0.583333333333333","rgba(39,164,133,1)"],["0.625","rgba(47,174,127,1)"],["0.666666666666667","rgba(53,183,121,1)"],["0.708333333333333","rgba(79,191,110,1)"],["0.75","rgba(98,199,98,1)"],["0.791666666666667","rgba(119,207,85,1)"],["0.833333333333333","rgba(147,214,70,1)"],["0.875","rgba(172,220,52,1)"],["0.916666666666667","rgba(199,225,42,1)"],["0.958333333333333","rgba(226,228,40,1)"],["1","rgba(253,231,37,1)"]],"showscale":true,"x":[0,1,2,3,4,5,6,7,8,9,10],"y":[0,1,2,3,4,5,6,7,8,9,10],"z":[[0,0,0,0,0,0,0,0,0,0],[0,1,1.4142135623731,1.73205080756888,2,2.23606797749979,2.44948974278318,2.64575131106459,2.82842712474619,3],[0,1.4142135623731,2,2.44948974278318,2.82842712474619,3.16227766016838,3.46410161513775,3.74165738677394,4,4.24264068711928],[0,1.73205080756888,2.44948974278318,3,3.46410161513775,3.87298334620742,4.24264068711928,4.58257569495584,4.89897948556636,5.19615242270663],[0,2,2.82842712474619,3.46410161513775,4,4.47213595499958,4.89897948556636,5.29150262212918,5.65685424949238,6],[0,2.23606797749979,3.16227766016838,3.87298334620742,4.47213595499958,5,5.47722557505166,5.91607978309962,6.32455532033676,6.70820393249937],[0,2.44948974278318,3.46410161513775,4.24264068711928,4.89897948556636,5.47722557505166,6,6.48074069840786,6.92820323027551,7.34846922834953],[0,2.64575131106459,3.74165738677394,4.58257569495584,5.29150262212918,5.91607978309962,6.48074069840786,7,7.48331477354788,7.93725393319377],[0,2.82842712474619,4,4.89897948556636,5.65685424949238,6.32455532033676,6.92820323027551,7.48331477354788,8,8.48528137423857],[0,3,4.24264068711928,5.19615242270663,6,6.70820393249937,7.34846922834953,7.93725393319377,8.48528137423857,9]],"type":"surface","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+
+]
+
+.footnote[&lt;sup&gt;.magenta[1]&lt;/sup&gt; Only when all exponents sum to 1. In technical terms, the production function is "homogeneous of degree 1"]
+
+---
+
+# An Aggregate Production Function: Cobb-Douglas I
+
+.pull-left[
+
+.smallest[
+`$$Y=AK^{\alpha}L^{1-\alpha}$$`
+
+- GDP `\((Y)\)`: “Total Output” `\(=\)` “Total Income” for all factor-owners
+
+- Exponents `\(\alpha\)` and `\((1-\alpha)\)` are the .hi-purple[Factor Shares] of National Income
+    - `\(\alpha\)`: capital's share of national income
+    - `\((1-\alpha)\)`: labor's share of national income
+
+- Empirically, very stable: 
+    - Capital's share: `\(\alpha \approx 0.3\)`
+    - Labor's share: `\(1-\alpha \approx 0.7\)`
+]
+]
+
+.pull-right[
+
+`$$Y = K^{0.3}L^{0.7}$$`
+
+<div id="htmlwidget-20887fdd4a5cc6357cba" style="width:504px;height:396px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-20887fdd4a5cc6357cba">{"x":{"visdat":{"6d72b80da89":["function () ","plotlyVisDat"]},"cur_data":"6d72b80da89","attrs":{"6d72b80da89":{"x":[0,1,2,3,4,5,6,7,8,9,10],"y":[0,1,2,3,4,5,6,7,8,9,10],"z":[[0,0,0,0,0,0,0,0,0,0],[0,1,1.62450479271247,2.15766927997459,2.63901582154579,3.08516931360005,3.50514408640719,3.90452877712272,4.28709385014517,4.65553672174608],[0,1.23114441334492,2,2.65640247988667,3.24900958542494,3.79828896466187,4.31533855994919,4.8070387906991,5.27803164309158,5.73163802609979],[0,1.39038917031591,2.25869387091371,3,3.66925901856961,4.28958600222047,4.87351437813741,5.42881452689825,5.96072886136978,6.47300783992378],[0,1.5157165665104,2.46228882668983,3.27041507270805,4,4.67624223911311,5.31280495977334,5.91815895190149,6.49801917084988,7.05647413514804],[0,1.62065659669276,2.63276440866847,3.49684095207215,4.27693839996475,5,5.68063488599444,6.32790031962066,6.94790692887875,7.54502629924318],[0,1.71176985940971,2.78077834063182,3.69343324003475,4.51738774182742,5.28109984219629,6,6.68365467587651,7.33851803713921,7.96920743966],[0,1.792789962521,2.91239588644217,3.86824782757836,4.73120107580139,5.53106057809996,6.28398713530065,7,7.68585882292576,8.34639950489428],[0,1.86606598307361,3.0314331330208,4.02635324608353,4.92457765337967,5.75712950813162,6.54083014541611,7.28610833092073,8,8.68753870940041],[0,1.93318204493176,3.14046349717734,4.17116751094773,5.10169800250316,5.96419392262606,6.77608161274113,7.54816492585302,8.28773285603803,9]],"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"surface","inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"scene":{"xaxis":{"title":"K"},"yaxis":{"title":"L"},"zaxis":{"title":"Output"}},"hovermode":"closest","showlegend":false,"legend":{"yanchor":"top","y":0.5}},"source":"A","config":{"showSendToCloud":false},"data":[{"colorbar":{"title":"","ticklen":2,"len":0.5,"lenmode":"fraction","y":1,"yanchor":"top"},"colorscale":[["0","rgba(68,1,84,1)"],["0.0416666666666667","rgba(70,19,97,1)"],["0.0833333333333333","rgba(72,32,111,1)"],["0.125","rgba(71,45,122,1)"],["0.166666666666667","rgba(68,58,128,1)"],["0.208333333333333","rgba(64,70,135,1)"],["0.25","rgba(60,82,138,1)"],["0.291666666666667","rgba(56,93,140,1)"],["0.333333333333333","rgba(49,104,142,1)"],["0.375","rgba(46,114,142,1)"],["0.416666666666667","rgba(42,123,142,1)"],["0.458333333333333","rgba(38,133,141,1)"],["0.5","rgba(37,144,140,1)"],["0.541666666666667","rgba(33,154,138,1)"],["0.583333333333333","rgba(39,164,133,1)"],["0.625","rgba(47,174,127,1)"],["0.666666666666667","rgba(53,183,121,1)"],["0.708333333333333","rgba(79,191,110,1)"],["0.75","rgba(98,199,98,1)"],["0.791666666666667","rgba(119,207,85,1)"],["0.833333333333333","rgba(147,214,70,1)"],["0.875","rgba(172,220,52,1)"],["0.916666666666667","rgba(199,225,42,1)"],["0.958333333333333","rgba(226,228,40,1)"],["1","rgba(253,231,37,1)"]],"showscale":true,"x":[0,1,2,3,4,5,6,7,8,9,10],"y":[0,1,2,3,4,5,6,7,8,9,10],"z":[[0,0,0,0,0,0,0,0,0,0],[0,1,1.62450479271247,2.15766927997459,2.63901582154579,3.08516931360005,3.50514408640719,3.90452877712272,4.28709385014517,4.65553672174608],[0,1.23114441334492,2,2.65640247988667,3.24900958542494,3.79828896466187,4.31533855994919,4.8070387906991,5.27803164309158,5.73163802609979],[0,1.39038917031591,2.25869387091371,3,3.66925901856961,4.28958600222047,4.87351437813741,5.42881452689825,5.96072886136978,6.47300783992378],[0,1.5157165665104,2.46228882668983,3.27041507270805,4,4.67624223911311,5.31280495977334,5.91815895190149,6.49801917084988,7.05647413514804],[0,1.62065659669276,2.63276440866847,3.49684095207215,4.27693839996475,5,5.68063488599444,6.32790031962066,6.94790692887875,7.54502629924318],[0,1.71176985940971,2.78077834063182,3.69343324003475,4.51738774182742,5.28109984219629,6,6.68365467587651,7.33851803713921,7.96920743966],[0,1.792789962521,2.91239588644217,3.86824782757836,4.73120107580139,5.53106057809996,6.28398713530065,7,7.68585882292576,8.34639950489428],[0,1.86606598307361,3.0314331330208,4.02635324608353,4.92457765337967,5.75712950813162,6.54083014541611,7.28610833092073,8,8.68753870940041],[0,1.93318204493176,3.14046349717734,4.17116751094773,5.10169800250316,5.96419392262606,6.77608161274113,7.54816492585302,8.28773285603803,9]],"type":"surface","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+
+]
+
+---
+
+# Aggregate Production Function: Labor I
+
+.pull-left[
+
+- Look at Labor, holding other factors constant:&lt;sup&gt;.magenta[1]&lt;/sup&gt;
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.green[**Example**]: When `\\(\bar{K}=9\\)`
+]
+`$$Y=3L^{0.5}$$`
+
+]
+
+.pull-right[
+
+
+
+&lt;img src="2.4-slides_files/figure-html/unnamed-chunk-5-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+]
+
+.footnote[&lt;sup&gt;.magenta[1]&lt;/sup&gt; We often consider "the short run" where `\\(K\\)` is fixed, and production functions are simply functions of labor with fixed capital `\\(y=f(\bar{k},l)\\)`.]
+
+---
+
+# Aggregate Production Function: Labor II
+
+.pull-left[
+.smallest[
+- Look at Labor, holding other factors constant: 
+
+- The .hi[marginal product of labor]: the additional output produced by an additional unit of labor (holding other factors constant)
+
+`$$MP_L=\frac{\Delta Y}{\Delta L}$$`
+
+- The .hi[average product of labor]: output per worker
+
+`$$AP_L=\frac{Y}{L}$$`
+
+]
+]
+.pull-right[
+
+
+
+&lt;img src="2.4-slides_files/figure-html/unnamed-chunk-7-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+
+# Aggregate Production Function: Capital I
+
+.pull-left[
+.smallest[
+- Look at Capital, holding other factors constant:
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.green[**Example**]: When `\\(\bar{L}=9\\)`
+]
+`$$Y=3K^{0.5}$$`
+
+]
+]
+
+.pull-right[
+
+
+
+&lt;img src="2.4-slides_files/figure-html/unnamed-chunk-9-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+
+# Aggregate Production Function: Capital II
+
+.pull-left[
+
+- The .hi[marginal product of capital]: the additional output produced by an additional unit of capital (holding other factors constant)
+
+`$$MP_K=\frac{\Delta Y}{\Delta K}$$`
+
+- The .hi[average product of capital]: output per unit of capital
+
+`$$AP_K=\frac{Y}{K}$$`
+
+]
+
+.pull-right[
+
+
+
+&lt;img src="2.4-slides_files/figure-html/unnamed-chunk-11-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+
+# Capital and Labor
+
+.pull-left[
+
+- Often compare **capital-to-labor ratio** `\(\left(\frac{K}{L} \right)\)`
+
+- .hi[Capital "widening"]: stock of capital increases, but capital per worker `\(\left(\frac{K}{L}\right)\)` does not change
+    - Increase in `\(K\)` is same rate as increase in labor and depreciation
+
+- .hi[Capital "deepening"]: stock of capital per worker `\(\left(\frac{K}{L}\right)\)` is increasing  
+
+]
+
+.pull-right[
+.center[
+![](../images/gmworkers.jpg)
+]
+
+]
+
+---
+
+class: inverse, center, middle
+# The Solow Model
+
+---
+
+# Kaldor's Stylized Facts About Growth
+
+.left-column[
+
+.center[
+![:scale 80%](../images/kaldor.jpg)
+
+Nicholas Kaldor
+
+(1908-1986)
+
+]
+]
+
+.right-column[
+
+.smallest[
+&gt; "A satisfactory model concerning the nature of the growth process in a capitalist economy must also account for the remarkable historical constancies revealed by recent empirical investigations." (p.591)
+
+1. Output per worker grows over time
+
+2. Capital per worker grows over time
+
+3. The capital-to-output ratio is approximately constant over time
+
+4. Capital and labor's share of output is approximately constant over time
+
+5. The return to capital is approximately constant over time
+
+6. Levels of output per person vary widely across countries
+
+
+]
+
+.source[Kaldor, Nicholas, 1957, "A Model of Economic Growth," *Economic Journal* 67(268): 591-624]
+
+]
+
+---
+
+# The Solow (Neoclassical) Growth Model
+
+.left-column[
+
+.center[
+![:scale 75%](../images/solow.jpg)
+.smallest[
+Robert Solow
+
+(1924-)
+
+Economics Nobel 1987
+]
+]
+]
+
+.right-column[
+
+.smallest[
+&gt; "All theory depends on assumptions which are not quite true. That is what makes it theory. The art of successful theorizing is to make the inevitable simplifying assumptions in such a way that the final results are not very sensitive," (p.65)
+
+&gt; "The characteristic and powerful conclusion of the Harrod-Domar line of thought is that even for the long run the economic system is at best balanced on a knife-edge of equilibrium growth...The bulk of [Solow's] paper is devoted to a model of long-run growth which accepts all of the Harrod-Domar assumptions [but] instead I suppose that [output] is produced by labor and capital under the **standard neoclassical conditions**," (pp.65-66)
+
+]
+
+
+
+.source[Solow, Robert, 1956, "A Contribution to the Theory of Economic Growth," *Quarterly Journal of Economics* 70(1): 65-94]
+
+]
+---
+
+# The “Simple” Solow Model: Key Assumptions
+
+- An aggregate Cobb-Douglas production function
+- Diminishing returns to factors, `\(\downarrow MP_L\)` and `\(\downarrow MP_K\)`
+- Can accumulate physical capital `\((K)\)`
+- Technology grows .hi-purple[exogenously] (some fixed rate determined outside of the model)
+- Constant rate of Savings and of Investment `\((s)\)`
+
+- I am going to leave out excess parts of the model: role of taxes, interest rates, etc, on consumption, saving, and investment&lt;sup&gt;.magenta[1]&lt;/sup&gt;
+
+.footnote[&lt;sup&gt;.magenta[1]&lt;/sup&gt; This isn't a macroeconomics course!]
+
+---
+
+# The “Simple” Solow Model: Equations
+
+(1) `\(C_t+I_t=Y_t=f(K,L)\)`
+  - Income is equal to consumption plus investment
+  - Output is equal to the production function
+  - Income = Output 
+
+--
+
+(2) `\(I_t=sf(K_t,L_t)\)`
+  - Investment is equal to the fraction of income (output) saved `\(s\)` times output
+
+--
+
+(3) `\(K_{t+1}=K_t (1-\delta) + I_t\)`
+  - The stock of capital `\(K\)` changes over time from depreciation `\((\delta)\)` and new investment `\(I_t\)`
+
+--
+
+(4) `\(L_t=L\)`
+  - The stock of labor is constant over time
+    
+---
+
+# The “Simple” Solow Model: Implications
+
+- `\(K_{t+1}=K_t(1-\delta)+sf(K_t,L_t)\)`
+    - Plugging equation 2 into equation 3
+
+--
+
+- .hi-purple[Steady-State equilibrium]: `\(\delta K = sf(K,L)\)`
+    - Amount of capital depreciation is equal to the amount saved &amp; invested in new capital formation
+    - Capital growth “breaks even” to have a constant amount of `\(K\)` over time
+
+---
+
+
+# Equations and Implications, in Terms of `\(k\)`
+
+- Restate model in terms of `\(k \equiv \frac{K}{L}\)`, i.e. divide everything by `\(L\)` to get “per worker”
+  - `\(y = \frac{Y}{L}\)`, output per worker
+  - `\(k = \frac{K}{L}\)`, capital per worker
+
+--
+
+1. `\(c_t+i_t=y_t=f(k_t)\)`
+
+2. `\(i_t=sf(k_t)\)`
+
+3. `\(k_{t+1}=k_t(1-\delta)+i_t\)`
+
+--
+
+- Implications
+
+1. `\(k_{t+1}=k_t(1-\delta)+sf(k_t)\)`
+
+2. Steady-State equilibrium: `\(\delta k = sf(k)\)`
+
+---
+
+
+
+
+# Graphically: Capital and Depreciation I
+
+.pull-left[
+
+- Whenever .green[Investment] `\(&gt;\)` .red[Depreciation]:
+    - Capital stock is **growing** over time, `\(g_K &gt; 0\)`
+    - Adding more *new* capital than is *lost* to depreciation
+    - Movement to the right on graph `\(k \rightarrow\)`
+]
+
+.pull-right[
+
+&lt;img src="2.4-slides_files/figure-html/unnamed-chunk-12-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+
+]
+
+---
+
+# Graphically: Capital and Depreciation II
+
+.pull-left[
+
+- Whenever .green[Investment] `\(&lt;\)` .red[Depreciation]:
+    - Capital stock is **shrinking** over time, `\(g_K &lt; 0\)`
+    - Adding less *new* capital than is *lost* to depreciation
+    - Movement to the left on graph `\(\leftarrow k\)`
+]
+
+.pull-right[
+
+&lt;img src="2.4-slides_files/figure-html/unnamed-chunk-13-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+
+]
+
+---
+
+# Graphically: Capital &amp; the Steady State
+
+.pull-left[
+
+.smallest[
+- Whenever .green[Investment] `\(=\)` .red[Depreciation]
+  - Capital stock reaches a **steady state**, `\(g_K = 0\)`
+  - Adding exactly as much *new* capital that is *lost* to depreciation
+  - No movement on graph
+
+- .green[**Steady State level** of capital]: `\(k_t^*: sf(k_t)=\delta k_t, \, g_k=0\)`
+
+- .blue[**Steady State level** of output]
+  - .purple[Amount available for consumption], `\(c_t^*=y_t^*-i_t^*\)`
+]
+
+]
+
+.pull-right[
+
+&lt;img src="2.4-slides_files/figure-html/unnamed-chunk-14-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+
+]
+
+---
+
+# Comparative Statics: A Change in Savings I
+
+.pull-left[
+
+- What if consumers decide to **save more**? 
+    - `\(s_1=0.30\)`
+    - `\(s_2=0.50\)`
+
+]
+
+.pull-right[
+
+&lt;img src="2.4-slides_files/figure-html/unnamed-chunk-15-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+
+]
+
+---
+
+# Comparative Statics: A Change in Savings II
+
+.pull-left[
+
+- What if consumers decide to **save more**? 
+    - `\(s_1=0.30\)`
+    - `\(s_2=0.50\)`
+
+- Investment `\(i_t\)` increases
+
+- Steady state level of capital `\(k_t^*\)` increases
+
+- Steady state output increases `\(y_t^*\)`
+
+- Steady state amount of consumption
+    - Decreases at first from more savings 
+    - Increases from more output produced
+]
+
+.pull-right[
+
+
+
+&lt;img src="2.4-slides_files/figure-html/unnamed-chunk-16-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+
+]
+
+---
+
+# Comparative Statics: A Change in Depreciation I
+
+.pull-left[
+
+- What if depreciation costs increase?
+    - `\(\delta_1=0.02\)`
+    - `\(\delta_2=0.04\)`
+
+]
+
+.pull-right[
+
+
+
+&lt;img src="2.4-slides_files/figure-html/unnamed-chunk-17-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+
+# Comparative Statics: A Change in Depreciation II
+
+.pull-left[
+
+- What if depreciation costs increase?
+    - `\(\delta_1=0.02\)`
+    - `\(\delta_2=0.04\)`
+
+- Investment `\(i_t\)` decreases
+
+- Steady state level of capital `\(k_t^*\)` decreases
+
+- Steady state output decreases `\(y_t^*\)`
+
+- Steady state amount of consumption `\(c_t^*\)` decreases 
+]
+
+.pull-right[
+
+&lt;img src="2.4-slides_files/figure-html/unnamed-chunk-18-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+
+]
+
+---
+
+# The Golden Rule Level of k I
+
+.pull-left[
+
+.smallest[
+- Different values of `\(s\)` lead to different steady state levels of `\(k^*\)`, which is *best*?
+
+- The best steady state is one where there is the highest possible consumption per person 
+`$$c^*=(1-s)f(k^*)$$`
+
+- Increase in `\(s\)`
+    - Reduces consumption's share of income `\((1-s)\)`
+    - Results in higher `\(k^*\)` and higher `\(y^*\)`
+
+- Find the value of `\(s\)` (and `\(k^*)\)` that *maximize* `\(c^*\)`
+]
+]
+
+.pull-right[
+
+&lt;img src="2.4-slides_files/figure-html/unnamed-chunk-19-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+
+]
+
+---
+
+# The Golden Rule Level of k II
+
+.pull-left[
+
+`$$\max_{c^*} c^* = \underbrace{f(k^*)}_{y^*} - \underbrace{\delta k^*}_{=i^* \text{ in SS}}$$`
+
+`$$\begin{align*}
+\frac{d \, c^*}{d \, k^*} &amp;= \frac{d \, f(k^*)}{d \, k^*} - \frac{d \, \delta k^*}{d \, k^*}\\ 
+0 &amp; = MP_K - \delta \\
+MP_K &amp; = \delta \\
+\end{align*}$$`
+
+- **Golden Rule level of** `\(\mathbf{k^*_{GR}}\)` where slope of depreciation line `\(=\)` slope of production function, `\(f(k^*)\)`
+
+]
+
+.pull-right[
+
+&lt;img src="2.4-slides_files/figure-html/unnamed-chunk-20-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+
+# The Golden Rule Level of k III
+
+.pull-left[
+
+- **Golden Rule level of** `\(\mathbf{k^*_{GR}}\)` where slope of depreciation line `\(=\)` slope of production function, `\(f(k^*)\)`
+
+- **Golden Rule level of** `\(s_{GR} = \frac{\delta k^*_{GR}}{y^*_{GR}}\)`
+    - In this example, `\(s_{GR}=\frac{0.02(625)}{25}=0.50\)`
+
+- Optimal level of savings is 0.50 or 50%!
+]
+
+.pull-right[
+
+&lt;img src="2.4-slides_files/figure-html/unnamed-chunk-21-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+
+# The Golden Rule Level of k IV
+
+.pull-left[
+
+- Policy implications: policymakers can choose `\(s\)` to `\(\max c_i^*\)` at `\(k^*_{GR}\)`
+
+- Change taxes or government spending
+
+]
+
+.pull-right[
+
+&lt;img src="2.4-slides_files/figure-html/unnamed-chunk-22-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+
+# Main Properties of the Solow Model
+
+.pull-left[
+
+1. There exists a unique steady state capital to labor ratio, `\(k^*\)`
+    - Where investment = depreciation
+    - `\(sf(k)=\delta(k)\)`
+
+2. Higher savings rate `\(s\)` implies a higher steady state value of `\(k^*\)`
+
+3. An economy **converges** over time to the steady state level of `\(k^*\)`
+
+]
+
+.pull-right[
+
+&lt;img src="2.4-slides_files/figure-html/unnamed-chunk-23-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# The "Simple" Solow Model and Kaldor's Facts
+
+1. In steady state, `\(g_y=0\)` and `\(g_k=0\)`: output and capital (per worker) do now grow!
+
+2. The only explanation that fits with Kaldor's facts (1-2) is that all countries must be BELOW their steady states
+
+3. Growth would have to be slowing down over time
+
+- These are motivations for the "full Solow" model
+
+---
+
+class: inverse, center, middle
+
+# The “Full” Solow Model
+
+---
+
+# The “Full” Solow Model I
+
+.pull-left[
+
+.quitesmall[
+- Add two new "laws of motion" beyond just capital: 
+
+- **Population** grows at constant rate `\(n\)` over time
+  - `\(L_{t+1}=L_t(1+n)\)`
+  - `\(g_L = n\)`
+
+- **Technology** grows at constant rate `\(g\)` over time
+  - `\(A_{t+1}=A_t(1+g)\)`
+  - `\(g_A = g\)` `\((g\)`: growth rate of technology)
+
+- Redefine `\(k \equiv \frac{K_t}{A_tL_t}\)` as capital per *effective* worker
+  - Labor augmented by technology, hence `\(A_t \times L_t\)`
+  - `\(A_{t+1}L_{t+1} = A_tL_t(1+n)(1+g)\)`
+]
+]
+
+.pull-right[
+.center[
+![](../images/popgrowth.jpg)
+]
+]
+
+---
+
+# The “Full” Solow Model II
+
+- Long story short, our new takeaway implications:
+
+1. `\(\Delta k = sf(k_t)-(\delta+n+g)k_t\)`
+  - Capital per effective worker is equal to investment (first term) minus **break-even investment**
+
+2. Break even investment: `\((\delta+n+g)k\)`
+  - Amount of investment necessary to keep `\(k\)` constant, consists of:
+      - `\(\delta k\)`: to replace capital depreciation
+      - `\(nk\)`: to provide capital to new workers
+      - `\(gk\)`: to provide capital for new "effective workers" created by technology
+
+---
+
+# The “Full” Solow Model: Graphically I
+
+.pull-left[
+
+- Whenever .green[Investment] `\(=\)` .red[Break-even Investment]
+    - Capital stock reaches a **steady state**, `\(g_K = 0\)`
+    - Adding exactly as much *new* capital that is *needed* to break-even
+    - No movement on graph
+
+- .green[**Steady State level** of capital]: `\(k_t^*: sf(k_t)=(\delta+n+g)k_t, \, g_k=0\)`
+
+- .blue[**Steady State level** of output]
+    - Amount available for consumption, `\(c_t^*=y_t^*-i_t^*\)`
+
+]
+
+.pull-right[
+
+&lt;img src="2.4-slides_files/figure-html/unnamed-chunk-24-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+
+]
+
+---
+
+# The “Full” Solow Model: Graphically II
+
+.pull-left[
+
+.smallest[
+- Growth rates in the *steady state*:
+]
+
+.quitesmall[
+| Variable | Symbol | Growth Rate |
+|----------|--------|-------------|
+| Capital per effective worker | `\(k=\frac{K}{AL}\)` | 0 |
+| Output per effective worker | `\(y=\frac{Y}{AL}\)` | 0 |
+| Output per worker | `\(\frac{Y}{L}=Ay\)` | `\(g\)` |
+| TFP | `\(A\)` | `\(g\)` |
+| Labor (population) | `\(L\)` | `\(n\)` |
+| Total Capital | `\(K=ALk\)` | `\(n+g\)` |
+| Total Output | `\(Y = yAL\)` | `\(n+g\)` |
+
+]
+
+.smallest[
+- Interesting: growth rate of output per worker grows *solely* from rate of TFP progress `\((g)\)`!
+]
+]
+
+.pull-right[
+
+&lt;img src="2.4-slides_files/figure-html/unnamed-chunk-25-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+
+]
+
+---
+
+# The “Full” Solow Model and Kaldor's Facts
+
+1. Output per worker grows at rate `\(g\)` (Kaldor's Fact 1)
+
+2. Capital per worker grows at rate `\(g\)` (Kaldor's Fact 2)
+
+3. Capital and output grow at the same rate over time (Kaldor's Fact 3)
+
+4. Capital and labor's share of output `\((\alpha\)` and `\(1-\alpha\)`, respectively) do not change over time (Kaldor's Fact 4)
+
+5. The return to capital is constant (it can be shown to be `\(r=\alpha(k^*)^{\alpha-1}\)`)
+
+- What about Kaldor's Fact 6: levels of output per worker vary widely across countries?
+
+---
+
+class: inverse, center, middle
+# c
+
+---
+
+# Solow Model Cross-Country Comparisons: Convergence
+
+.pull-left[
+
+- All else equal, poor countries (low `\(\frac{Y}{L}\)` and `\(\frac{K}{L})\)` should grow faster than rich ones (high `\(\frac{Y}{L}\)` and `\(\frac{K}{L})\)`
+
+- Income gap between wealthy and poor countries should cause living standards to .hi[converge] over time
+]
+
+.pull-right[
+.center[
+![:scale 100%](../images/convergence.jpg)
+]
+]
+
+---
+
+# Convergence: Technical
+
+- Near the balanced growth path `\(k \rightarrow (k^*)\)` at a speed proportional to its distance from `\(k^*\)`:
+
+`$$k(t) \approx k^* + e^{-[1-\alpha k^*](n+g+\delta) t}(k_0-k^*)$$`
+
+- In other words - **the further away from (closer to) `\(k^*\)` your country is, the faster (slower) you should grow**
+
+---
+
+# Convergence? I
+
+
+
+&lt;img src="2.4-slides_files/figure-html/unnamed-chunk-26-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+
+---
+
+# Convergence? II
+
+.left-column[
+.center[
+![:scale 80%](../images/jamesbessen.jpg)
+
+James Bessen
+
+1958-
+]
+]
+
+.right-column[
+
+.smallest[
+&gt; "By the early twentieth century, British textile equipment manufacturers were shipping power looms and other textile equipment around the globe. Mills in India, China, and elsewhere not only used the same equipment as British mills, but they were often run by experienced British managers aided by British master weavers and spinners and engineers. Nevertheless, their output per worker was far less than that of the English or American mills because their workers -- using the exact same machines -- lacked the same knowledge and skills. Western weavers were 6.5 times more productive. The English and American cotton textile industries held a sustained economic advantage for decades, despite paying much higher wages," (pp.18-19).
+]
+
+.source[Bessen, James, 2015, *Learning by Doing: The Real Connection between Innovation, Wages, and Wealth*, New Haven, CT: Yale University Press]
+
+]
+
+---
+
+# Convergence? III
+
+.left-column[
+.center[
+![:scale 80%](../images/jamesbessen.jpg)
+
+James Bessen
+
+1958-
+]
+]
+
+.right-column[
+
+.smallest[
+&gt; "[T]he technical knowledge needed to install, manage, and operate this technology, along with the necessary institutiosn and organizations to allow large numbers of workers to acquire this knowledge, did not appear in these countries for many decades. Cotton textile workers in China, India, and Japan in 1910 had the same machines as those in England, but their productivity was far less than that of the English or American workers because they lacked the same knowledge and skills. Even when English managers ran mills in India and China, productivity tended to be low because the English managers had to adapt their knowledge to a different environment and culture.," (p.98).
+]
+
+.source[Bessen, James, 2015, *Learning by Doing: The Real Connection between Innovation, Wages, and Wealth*, New Haven, CT: Yale University Press]
+
+]
+
+---
+
+# Convergence? IV
+
+.pull-left[
+
+- All else is not equal! 
+
+- Solow model predicts .hi[conditional convergence]: countries converge to their *own* steady states determined by saving, population growth, and education `\((s, n, g)\)`
+
+- *IF* countries had similar institutions, then they should converge
+]
+
+.pull-right[
+.center[
+![](../images/growthpuzzle.png)
+
+[From MR University](https://mru.org/courses/principles-economics-macroeconomics/solow-model-economic-growth)
+]
+]
+
+---
+
+# Conditional Convergence
+
+&lt;img src="2.4-slides_files/figure-html/unnamed-chunk-27-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+.source[Pritchett, Lant, 1997, "Divergence, Big Time," *Journal of Economic Perspectives* 11(3): 3-17]
+
+---
+
+# Divergence, Big Time
+
+.pull-left[
+.center[
+![:scale 80%](../images/divergencebigtime.png)
+]
+]
+
+.pull-right[
+
+&gt; "[F]rom 1870 to 1990 the ratio of per capita incomes between the richest and the poorest countries increased by roughly a factor of five and that the difference in income between the richest country and all others has increased by an order of magnitude."
+
+]
+
+.source[Pritchett, Lant, 1997, "Divergence, Big Time," *Journal of Economic Perspectives* 11(3): 3-17]
+
+---
+
+# And Now *Convergence*, Big Time? 
+
+.pull-left[
+.center[
+![:scale 80%](../images/convergencebigtime.png)
+]
+]
+
+.pull-right[
+
+&gt; "While unconditional convergence was singularly absent in the past, there has been unconditional convergence, beginning (weakly) around 1990 and emphatically for the last two decades."
+
+]
+
+.source[Johnson, Paul and Chris Papageorgiou, 2018, "What Remains of Cross-Country Convergence?" *Journal of Economic Literature*, forthcoming]
+
+---
+
+# Convergence
+
+.pull-left[
+
+- Consider two types of economic growth
+
+- .blue["Cutting-edge Growth"]
+    - tends to be much slower
+    - has to push out the PPF with *new* innovation and progress
+    
+- .red["Catching-up Growth"]
+    - tends to be much faster
+    - can *mimic* and import *existing* innovation from other countries
+
+]
+
+.pull-right[
+
+&lt;img src="2.4-slides_files/figure-html/unnamed-chunk-28-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Growth on the Frontier is Hard I
+
+.pull-left[
+
+.center[
+![:scale 75%](../images/sciencedmr.png)
+
+Source: [The Atlantic (Nov 16, 2018)](https://www.theatlantic.com/science/archive/2018/11/diminishing-returns-science/575665/)
+]
+]
+
+.pull-right[
+.center[
+![:scale 75%](../images/runningoutofideas.png)
+
+Source: [Freakonomics (Nov 29, 2017)](http://freakonomics.com/podcast/no-new-ideas/)
+]
+
+]
+
+---
+
+# Growth on the Frontier is Hard II
+
+.pull-left[
+.center[
+![:scale 60%](../images/gordonriseandfall.png)
+]
+]
+
+.pull-right[
+.center[
+![:scale 70%](../images/greatstagnation.jpg)
+]
+]
+
+---
+
+class: inverse, center, middle
+# Growth Accounting
+
+---
+
+# The Solow Model: Growth Accounting I
+
+.smallest[
+`$$g_Y=\frac{F_A A}{Y}*g_A+ \alpha g_K+(1-\alpha)g_L$$`
+
+- Output growth `\(g_Y\)` can be explained as the growth of "technology" `\(g_A\)` and the growth of factors `\((\alpha g_K + (1-\alpha)g_L)\)`&lt;sup&gt;.magenta[1]&lt;/sup&gt;
+
+.footnote[&lt;sup&gt;.magenta[1]&lt;/sup&gt; All `\\(g\\)`'s stand for growth rates, or percentage change, of the relevant variable `\\((Y, A, K, L)\\)`. See the [class notes page](/content/2.4-content) for a derivation of Growth Accounting based on Solow (1957)]
+
+]
+
+--
+
+.smallest[
+- Used to determine how much of total output can be explained by growth in factors and "everything else," known as the .hi[Solow Residual] - often interpreted as "technology" 
+]
+
+--
+
+.smallest[
+- We can directly measure (roughly) `\(Y, L, K\)` and `\(\alpha\)`, but not `\(\frac{F_A A}{Y}\)`, the Solow residual
+    - Measure it as `\(\text{Solow Residual}=g_Y- \alpha g_K-(1-\alpha)g_L\)`
+]
+
+
+.source[Solow, Robert, 1957, "Technical Change and the Aggregate Production Function," *The Review of Economics and Statistics* 39(3): 312-320]
+
+---
+
+# The Solow Model: Growth Accounting II
+
+.left-column[
+
+.center[
+![:scale 75%](../images/solow.jpg)
+
+.smallest[
+Robert Solow
+
+(1924-)
+
+Economics Nobel 1987
+]
+]
+]
+
+.right-column[
+
+.center[
+![:scale 75%](../images/solowcalculations.png)
+]
+
+]
+
+.source[Solow, Robert, 1957, "Technical Change and the Aggregate Production Function," *The Review of Economics and Statistics* 39(3): 312-320]
+
+---
+
+# The Solow Model: Growth Accounting III
+.left-column[
+
+.center[
+![:scale 75%](../images/solow.jpg)
+
+.smallest[
+Robert Solow
+
+(1924-)
+
+Economics Nobel 1987
+]
+]
+]
+
+.right-column[
+
+.smallest[
+Solow's findings for 1909-1949 in the United States:
+
+1. Output per worker grew by about 100%
+2. Capital-to-labor ratio grew by about 30% ("capital-deepening")
+3. Technology grew by about 87.5%
+    - i.e. 87.5% of the growth in output per worker came from Technology; 12.5% from increases in capital per worker
+4. Measure of Technology fell in a number of recession/depression years and rose during expansions -- technology is "pro-cyclical"
+5. Aggregate production function displays a positive and diminishing marginal product of capital
+
+]
+]
+
+.source[Solow, Robert, 1957, "Technical Change and the Aggregate Production Function," *The Review of Economics and Statistics* 39(3): 312-320]
+
+
+---
+
+# The Solow Model: Growth Accounting IV
+
+
+
+&lt;img src="2.4-slides_files/figure-html/unnamed-chunk-30-1.png" width="864" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Growth Accounting: TFP
+
+&lt;img src="2.4-slides_files/figure-html/unnamed-chunk-31-1.png" width="864" style="display: block; margin: auto;" /&gt;
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="macros.js"></script>
+<script src="https://platform.twitter.com/widgets.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9",
+"slideNumberFormat": "<div class=\"progress-bar-container\">\n  <div class=\"progress-bar\" style=\"width: calc(%current% / %total% * 100%);\">\n  </div>\n</div>\n"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_HTMLorMML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

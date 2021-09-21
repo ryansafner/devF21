@@ -20,13 +20,14 @@ slides: "2.3-slides"
 <ul>
 <li><a href="#overview"><i class="fas fa-info-circle fa-lg"></i> Overview</a></li>
 <li><a href="#readings"><i class="fas fa-book-reader fa-lg"></i> Readings</a></li>
-<li><a href="#recommended-readings">Recommended Readings:</a>
+<li><a href="#optionalreferenced-readings">Optional/Referenced Readings:</a>
 <ul>
 <li><a href="#slides"><i class="fas fa-chalkboard-teacher"></i> Slides</a></li>
-</ul></li>
+<li><a href="#interactive-solow-model">Interactive Solow Model</a></li>
 <li><a href="#math-appendix">Math Appendix</a>
 <ul>
 <li><a href="#cobb-douglas-functions">Cobb-Douglas Functions</a></li>
+</ul></li>
 </ul></li>
 </ul>
 </div>
@@ -43,11 +44,11 @@ slides: "2.3-slides"
 <div id="readings" class="section level2">
 <h2><i class="fas fa-book-reader fa-lg"></i> Readings</h2>
 </div>
-<div id="recommended-readings" class="section level1">
-<h1>Recommended Readings:</h1>
+<div id="optionalreferenced-readings" class="section level1">
+<h1>Optional/Referenced Readings:</h1>
 <ul>
-<li><a href="/readings/Hayek-1945.pdf"><i class="fas fa-file-pdf"></i> Hayek (1945), “The Use of Knowledge in Society”</a></li>
-<li><a href="/readings/Alchian-1950.pdf"><i class="fas fa-file-pdf"></i> Alchian (1950), “Uncertainty, Evolution, and Economic Theory”</a></li>
+<li><a href="https://www.nber.org/chapters/c6064.pdf"><i class="fas fa-file-pdf"></i> Nordhaus (2000), “Do Real-Output and Real-Wage Measures Capture Reality?”</a></li>
+<li><a href="https://www.npr.org/sections/money/2018/10/08/655597272/episode-534-the-history-of-light-nobel-edition"><i class="fas fa-podcast"></i> <em>NPR Planet Money Podcast</em>: The History of Light, Nobel Edition "</a></li>
 </ul>
 <div id="slides" class="section level2">
 <h2><i class="fas fa-chalkboard-teacher"></i> Slides</h2>
@@ -55,11 +56,19 @@ slides: "2.3-slides"
 <p>The lower button will allow you to download a PDF version of the slides. I suggest printing the slides beforehand and using them to take additional notes in class (<em>not everything</em> is in the slides)!</p>
 <p>{{% slide-links %}}</p>
 </div>
+<div id="interactive-solow-model" class="section level2">
+<h2>Interactive Solow Model</h2>
+<ul>
+<li><a href="https://ryansafner.shinyapps.io/Solow/">Visualizing the Solow Model</a></li>
+</ul>
+<p>This is an example that I wrote in R/Shiny in previously, to visualize what it is we are looking at in the Solow Model. As I find more time, I may update this and integrate it into our slides, but until then, I will just post a link.</p>
+<p>You can adjust things about the (Cobb-Douglas) production function, savings rate, depreciation rate, population growth rate, and TFP growth rate, and see how it would affect the graph and the equilibrium.</p>
+<p>Note I have not added calculations or the golden rule yet. Moving <span class="math inline">\(k\)</span> around just shows where <span class="math inline">\(k\)</span> would start, and then it would have to grow/shrink to get to <span class="math inline">\(k^*\)</span>.</p>
 </div>
-<div id="math-appendix" class="section level1">
-<h1>Math Appendix</h1>
-<div id="cobb-douglas-functions" class="section level2">
-<h2>Cobb-Douglas Functions</h2>
+<div id="math-appendix" class="section level2">
+<h2>Math Appendix</h2>
+<div id="cobb-douglas-functions" class="section level3">
+<h3>Cobb-Douglas Functions</h3>
 <p>A Cobb-Douglas function takes the form:</p>
 <p><span class="math display">\[y=Ax_1^\alpha x_2 ^\beta\]</span></p>
 <p>It is often used for utility functions <span class="math inline">\((y\)</span> is utility, <span class="math inline">\(x_1\)</span> and <span class="math inline">\(x_2\)</span> are goods) and production functions <span class="math inline">\((y\)</span> is output, <span class="math inline">\(x_1\)</span> and <span class="math inline">\(x_2\)</span> are factors of production, such as <span class="math inline">\(L\)</span> and <span class="math inline">\(K).\)</span></p>
@@ -98,5 +107,6 @@ slides: "2.3-slides"
 <li><a href="https://microf21.classes.ryansafner.com/content/1.4-content/#solving-the-constrained-optimization-problem-with-calculus">Deriving Demand from Cobb-Douglas Utility</a></li>
 </ul>
 <p>For production, simply replace <span class="math inline">\(u\)</span> with <span class="math inline">\(y\)</span>, and <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> with <span class="math inline">\(l\)</span> and <span class="math inline">\(k\)</span>.</p>
+</div>
 </div>
 </div>

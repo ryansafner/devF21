@@ -28,10 +28,10 @@ In thinking about how to "model" an economy in a way that policymakers can explo
 
 ## <i class="fas fa-book-reader fa-lg"></i> Readings
 
-# Recommended Readings:
+# Optional/Referenced Readings:
 
-- [<i class="fas fa-file-pdf"></i> Hayek (1945), "The Use of Knowledge in Society"](/readings/Hayek-1945.pdf)
-- [<i class="fas fa-file-pdf"></i> Alchian (1950), "Uncertainty, Evolution, and Economic Theory"](/readings/Alchian-1950.pdf)
+- [<i class="fas fa-file-pdf"></i> Nordhaus (2000), "Do Real-Output and Real-Wage Measures Capture Reality?"](https://www.nber.org/chapters/c6064.pdf)
+- [<i class="fas fa-podcast"></i> *NPR Planet Money Podcast*: The History of Light, Nobel Edition "](https://www.npr.org/sections/money/2018/10/08/655597272/episode-534-the-history-of-light-nobel-edition)
 
 ## <i class="fas fa-chalkboard-teacher"></i> Slides
 
@@ -41,9 +41,19 @@ The lower button will allow you to download a PDF version of the slides. I sugge
 
 `r blogdown::shortcode("slide-links")`
 
-# Math Appendix
+## Interactive Solow Model
 
-## Cobb-Douglas Functions
+- [Visualizing the Solow Model](https://ryansafner.shinyapps.io/Solow/)
+
+This is an example that I wrote in R/Shiny in previously, to visualize what it is we are looking at in the Solow Model. As I find more time, I may update this and integrate it into our slides, but until then, I will just post a link. 
+
+You can adjust things about the (Cobb-Douglas) production function, savings rate, depreciation rate, population growth rate, and TFP growth rate, and see how it would affect the graph and the equilibrium. 
+
+Note I have not added calculations or the golden rule yet. Moving $k$ around just shows where $k$ would start, and then it would have to grow/shrink to get to $k^*$. 
+
+## Math Appendix
+
+### Cobb-Douglas Functions
 
 A Cobb-Douglas function takes the form: 
 

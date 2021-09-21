@@ -1,0 +1,94 @@
+---
+title: "2.4 — The Macroeconomics of Development II: Exogenous Growth Theory — Class Content"
+draft: false
+linktitle: "2.4 — Macroeconomics of Development II: Exogenous Growth Theory"
+date: "2020-06-08"
+menu:
+  content:
+    parent: Course content
+    weight: 9
+type: docs
+output:
+  blogdown::html_page:
+    toc: true
+slides: "2.4-slides"
+---
+
+{{% alert note %}}
+*Tuesday, September 21, 2021*
+{{% /alert %}}
+
+{{% alert warning %}}
+We will have our next discussion on Tuesday, September 27. Please see the [readings](/content/2.5-content) (in the next class page).
+{{% /alert %}}
+
+## <i class="fas fa-info-circle fa-lg"></i> Overview
+
+Here we explore the famous growth models of an economy. This lesson will be the most technical of the semester, but remember there are no homeworks or exams that have you use the models to calculate equilibrium outcomes. It is more important that you understand the basic mechanisms and the major conclusions of the models. Modern economic development, macroeconomics, and public policy literatures and debates rely heavily on these models!
+
+We look first at the famous Solow model, or "*exogenous* growth" model of Robert Solow. Physical capital plays a central role in the model, requiring an economy to accumulate an optimal stock of physical capital (relative to labor) in order to achieve a steady-state growth path. The more surprising element is that growth in output empirically is explained almost entirely (about 80%) by achievements in "technology" or "total factor productivity (TFP)," the unmeasurable "Solow residual." In these models, the growth of TFP is given *exogenously.*
+
+## <i class="fas fa-book-reader fa-lg"></i> Readings
+
+### Optional/Referenced Readings:
+
+- <i class="fab fa-youtube"></i> Marginal Revolution University Videos on [Growth, Capital Accumulation, and the Economics of Ideas](https://mru.org/courses/principles-economics-macroeconomics/solow-model-economic-growth)
+- [<i class="fas fa-external-link-square-alt"></i> "Everything You Know About Cross-Country Convergence is Now Wrong"](https://www.cgdev.org/blog/everything-you-know-about-cross-country-convergence-now-wrong)
+- [<i class="fas fa-external-link-square-alt"></i> "Science Is Getting Less Bang for Its Buck"](https://www.theatlantic.com/science/archive/2018/11/diminishing-returns-science/575665/)
+- [<i class="fas fa-podcast"></i> *Freakonomics Radio*: "Are We Running Out of Ideas?"](http://freakonomics.com/podcast/no-new-ideas/)
+
+### Primary Sources
+
+- [<i class="fas fa-file-pdf"></i> Solow (1956), "A Contribution to the Theory of Economic Growth"](/readings/Solow-1956)
+- [<i class="fas fa-file-pdf"></i> Solow (1957), "Technical Change and the Aggregate Production Function"](/readings/Solow-1957)
+- [<i class="fas fa-file-pdf"></i> Pritchett (1997), "Divergence, Big Time"](/readings/Pritchett-1997)
+
+## <i class="fas fa-chalkboard-teacher"></i> Slides
+
+Below, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. Note while in going through the slides, you can type <kbd>h</kbd> to see a special list of viewing options, and type <kbd>o</kbd> for an outline view of all the slides.
+
+The lower button will allow you to download a PDF version of the slides. I suggest printing the slides beforehand and using them to take additional notes in class (*not everything* is in the slides)!
+
+`r blogdown::shortcode("slide-links")`
+
+## Math Appendix
+
+### Growth Accounting
+
+Take the production function of the general form: 
+$$Y=f(A,L,K)$$
+where $Y$ is output, $K$ is total capital stock, $L$ is total labor, and $A$ is TFP. 
+
+Take standard assumptions about $f$: it is increasing in $A$, $L$, & $K$, and is homogenous of degree 1 (constant returns to scale), so we can assume perfect competition, whereby:
+
+$$\begin{align*}
+\frac{dY}{dK}=MP_K&=r\\
+\frac{dY}{dL}=MP_L&=w\\
+\end{align*}$$
+
+Totally differentiate the production function:
+
+$$dY=F_A dA+F_K dK + F_L dL$$
+
+where $F_i$ denotes the partial derivative of $F$ w.r.t. factor $i$, aka the marginal product of $i$. With perfect competition, this becomes:
+
+\begin{align*}
+dY&=F_A dA + MP_K dK+ MP_L dL\\
+dY&=F_A dA + r dK + w dL\\
+\end{align*}
+
+Divide by $Y$ and convert each change into growth rates:
+
+$$\frac{dY}{Y}=\left(\frac{F_A A}{Y}\right)\left(\frac{dA}{A}\right)+\left(\frac{rK}{Y}\right)\left(\frac{dK}{K}\right)+\left(\frac{wL}{L}\right)\left(\frac{dL}{L}\right)$$
+
+Now, denote the growth rate (% change over time) of each factor $i$ as $g_i=\frac{di}{i}$:
+
+$$g_Y=(\frac{F_A A}{Y})*g_A + (\frac{rK}{Y})*g_K+(\frac{wL}{Y})*g_L$$
+
+Then $\frac{rK}{Y}$ is the share of total income that goes to capital, denoted $\alpha$, and $\frac{wL}{Y}$ is the share that goes to labor, denoted as $1-\alpha$. Re-express the equation as:
+
+$$g_Y=\frac{F_A A}{Y}*g_A+ \alpha g_K+(1-\alpha)g_L$$
+
+In principle, $\alpha, g_Y, g_L$ are observable, but the Solow residual term $\frac{F_A A}{Y}$ isn't. We can measure it as the portion of increase in total income not accounted for by (weighted) growth of factor inputs:
+
+$$\text{Solow Residual}=g_Y-\alpha g_K-(1-\alpha)g_L$$

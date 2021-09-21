@@ -1,0 +1,100 @@
+---
+title: "2.4 — The Macroeconomics of Development II: Exogenous Growth Theory — Class Content"
+draft: false
+linktitle: "2.4 — Macroeconomics of Development II: Exogenous Growth Theory"
+date: "2020-06-08"
+menu:
+  content:
+    parent: Course content
+    weight: 9
+type: docs
+output:
+  blogdown::html_page:
+    toc: true
+slides: "2.4-slides"
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+<div id="TOC">
+<ul>
+<li><a href="#overview"><i class="fas fa-info-circle fa-lg"></i> Overview</a></li>
+<li><a href="#readings"><i class="fas fa-book-reader fa-lg"></i> Readings</a>
+<ul>
+<li><a href="#optionalreferenced-readings">Optional/Referenced Readings:</a></li>
+<li><a href="#primary-sources">Primary Sources</a></li>
+</ul></li>
+<li><a href="#slides"><i class="fas fa-chalkboard-teacher"></i> Slides</a></li>
+<li><a href="#math-appendix">Math Appendix</a>
+<ul>
+<li><a href="#growth-accounting">Growth Accounting</a></li>
+</ul></li>
+</ul>
+</div>
+
+<p>{{% alert note %}}
+<em>Tuesday, September 21, 2021</em>
+{{% /alert %}}</p>
+<p>{{% alert warning %}}
+We will have our next discussion on Tuesday, September 27. Please see the <a href="/content/2.5-content">readings</a> (in the next class page).
+{{% /alert %}}</p>
+<div id="overview" class="section level2">
+<h2><i class="fas fa-info-circle fa-lg"></i> Overview</h2>
+<p>Here we explore the famous growth models of an economy. This lesson will be the most technical of the semester, but remember there are no homeworks or exams that have you use the models to calculate equilibrium outcomes. It is more important that you understand the basic mechanisms and the major conclusions of the models. Modern economic development, macroeconomics, and public policy literatures and debates rely heavily on these models!</p>
+<p>We look first at the famous Solow model, or “<em>exogenous</em> growth” model of Robert Solow. Physical capital plays a central role in the model, requiring an economy to accumulate an optimal stock of physical capital (relative to labor) in order to achieve a steady-state growth path. The more surprising element is that growth in output empirically is explained almost entirely (about 80%) by achievements in “technology” or “total factor productivity (TFP),” the unmeasurable “Solow residual.” In these models, the growth of TFP is given <em>exogenously.</em></p>
+</div>
+<div id="readings" class="section level2">
+<h2><i class="fas fa-book-reader fa-lg"></i> Readings</h2>
+<div id="optionalreferenced-readings" class="section level3">
+<h3>Optional/Referenced Readings:</h3>
+<ul>
+<li><i class="fab fa-youtube"></i> Marginal Revolution University Videos on <a href="https://mru.org/courses/principles-economics-macroeconomics/solow-model-economic-growth">Growth, Capital Accumulation, and the Economics of Ideas</a></li>
+<li><a href="https://www.cgdev.org/blog/everything-you-know-about-cross-country-convergence-now-wrong"><i class="fas fa-external-link-square-alt"></i> “Everything You Know About Cross-Country Convergence is Now Wrong”</a></li>
+<li><a href="https://www.theatlantic.com/science/archive/2018/11/diminishing-returns-science/575665/"><i class="fas fa-external-link-square-alt"></i> “Science Is Getting Less Bang for Its Buck”</a></li>
+<li><a href="http://freakonomics.com/podcast/no-new-ideas/"><i class="fas fa-podcast"></i> <em>Freakonomics Radio</em>: “Are We Running Out of Ideas?”</a></li>
+</ul>
+</div>
+<div id="primary-sources" class="section level3">
+<h3>Primary Sources</h3>
+<ul>
+<li><a href="/readings/Solow-1956"><i class="fas fa-file-pdf"></i> Solow (1956), “A Contribution to the Theory of Economic Growth”</a></li>
+<li><a href="/readings/Solow-1957"><i class="fas fa-file-pdf"></i> Solow (1957), “Technical Change and the Aggregate Production Function”</a></li>
+<li><a href="/readings/Pritchett-1997"><i class="fas fa-file-pdf"></i> Pritchett (1997), “Divergence, Big Time”</a></li>
+</ul>
+</div>
+</div>
+<div id="slides" class="section level2">
+<h2><i class="fas fa-chalkboard-teacher"></i> Slides</h2>
+<p>Below, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. Note while in going through the slides, you can type <kbd>h</kbd> to see a special list of viewing options, and type <kbd>o</kbd> for an outline view of all the slides.</p>
+<p>The lower button will allow you to download a PDF version of the slides. I suggest printing the slides beforehand and using them to take additional notes in class (<em>not everything</em> is in the slides)!</p>
+<p>{{% slide-links %}}</p>
+</div>
+<div id="math-appendix" class="section level2">
+<h2>Math Appendix</h2>
+<div id="growth-accounting" class="section level3">
+<h3>Growth Accounting</h3>
+<p>Take the production function of the general form:
+<span class="math display">\[Y=f(A,L,K)\]</span>
+where <span class="math inline">\(Y\)</span> is output, <span class="math inline">\(K\)</span> is total capital stock, <span class="math inline">\(L\)</span> is total labor, and <span class="math inline">\(A\)</span> is TFP.</p>
+<p>Take standard assumptions about <span class="math inline">\(f\)</span>: it is increasing in <span class="math inline">\(A\)</span>, <span class="math inline">\(L\)</span>, &amp; <span class="math inline">\(K\)</span>, and is homogenous of degree 1 (constant returns to scale), so we can assume perfect competition, whereby:</p>
+<p><span class="math display">\[\begin{align*}
+\frac{dY}{dK}=MP_K&amp;=r\\
+\frac{dY}{dL}=MP_L&amp;=w\\
+\end{align*}\]</span></p>
+<p>Totally differentiate the production function:</p>
+<p><span class="math display">\[dY=F_A dA+F_K dK + F_L dL\]</span></p>
+<p>where <span class="math inline">\(F_i\)</span> denotes the partial derivative of <span class="math inline">\(F\)</span> w.r.t. factor <span class="math inline">\(i\)</span>, aka the marginal product of <span class="math inline">\(i\)</span>. With perfect competition, this becomes:</p>
+<p><span class="math display">\[\begin{align*}
+dY&amp;=F_A dA + MP_K dK+ MP_L dL\\
+dY&amp;=F_A dA + r dK + w dL\\
+\end{align*}\]</span></p>
+<p>Divide by <span class="math inline">\(Y\)</span> and convert each change into growth rates:</p>
+<p><span class="math display">\[\frac{dY}{Y}=\left(\frac{F_A A}{Y}\right)\left(\frac{dA}{A}\right)+\left(\frac{rK}{Y}\right)\left(\frac{dK}{K}\right)+\left(\frac{wL}{L}\right)\left(\frac{dL}{L}\right)\]</span></p>
+<p>Now, denote the growth rate (% change over time) of each factor <span class="math inline">\(i\)</span> as <span class="math inline">\(g_i=\frac{di}{i}\)</span>:</p>
+<p><span class="math display">\[g_Y=(\frac{F_A A}{Y})*g_A + (\frac{rK}{Y})*g_K+(\frac{wL}{Y})*g_L\]</span></p>
+<p>Then <span class="math inline">\(\frac{rK}{Y}\)</span> is the share of total income that goes to capital, denoted <span class="math inline">\(\alpha\)</span>, and <span class="math inline">\(\frac{wL}{Y}\)</span> is the share that goes to labor, denoted as <span class="math inline">\(1-\alpha\)</span>. Re-express the equation as:</p>
+<p><span class="math display">\[g_Y=\frac{F_A A}{Y}*g_A+ \alpha g_K+(1-\alpha)g_L\]</span></p>
+<p>In principle, <span class="math inline">\(\alpha, g_Y, g_L\)</span> are observable, but the Solow residual term <span class="math inline">\(\frac{F_A A}{Y}\)</span> isn’t. We can measure it as the portion of increase in total income not accounted for by (weighted) growth of factor inputs:</p>
+<p><span class="math display">\[\text{Solow Residual}=g_Y-\alpha g_K-(1-\alpha)g_L\]</span></p>
+</div>
+</div>

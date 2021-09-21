@@ -1878,7 +1878,7 @@ ggplot(data = solow)+
 # TFP in the U.S.: Not What It C/Should Be?
 
 .center[
-![](../images/tfp-trend.png)
+![:scale 65%](../images/tfp-trend.png)
 ]
 
 .source[Sources: [Eli Dourado](https://elidourado.com/tfp/); [Federal Reserve Bank of San Francisco](https://www.frbsf.org/economic-research/indicators-data/total-factor-productivity-tfp/)]

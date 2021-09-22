@@ -26,7 +26,7 @@ We will have our next discussion on Tuesday, September 27. Please see the requir
 
 ## <i class="fas fa-info-circle fa-lg"></i> Overview
 
-We now turn to the famous Romer model, or "*endogenous* growth" model of Paul Romer (and coauthors). Here (inside a Solow-type model) TFP is something economies (firms and governments) can *explicitly* invest in (via R&D, education, etc.) to determine TFP *endogenously*.
+We now turn to the famous Romer model, or "*endogenous* growth" model of Paul Romer (and related papers by others). Here (inside a Solow-type model) TFP is something economies (firms and governments) can *explicitly* invest in (via R&D, education, etc.) to determine TFP *endogenously*.
 
 ## <i class="fas fa-book-reader fa-lg"></i> Readings
 

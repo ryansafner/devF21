@@ -21,7 +21,7 @@ slides: "2.5-slides"
 {{% alert warning %}}
 We will not have class Thursday September 23. Instead, I have a video lecture on this material. 
 
-We will have our next discussion on Tuesday, September 27. Please see the [readings](/content/2.5-content) (in the next class page).
+We will have our next discussion on Tuesday, September 27. Please see the required [readings](/content/2.5-content) below.
 {{% /alert %}}
 
 ## <i class="fas fa-info-circle fa-lg"></i> Overview

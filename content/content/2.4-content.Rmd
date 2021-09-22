@@ -19,7 +19,7 @@ slides: "2.4-slides"
 {{% /alert %}}
 
 {{% alert warning %}}
-We will have our next discussion on Tuesday, September 27. Please see the [readings](/content/2.5-content) (in the next class page).
+We will have our next discussion on Tuesday, September 27. Please see the required  [readings](/content/2.5-content) (in the next class page).
 {{% /alert %}}
 
 ## <i class="fas fa-info-circle fa-lg"></i> Overview
@@ -41,7 +41,10 @@ We look first at the famous Solow model, or "*exogenous* growth" model of Robert
 
 - [<i class="fas fa-file-pdf"></i> Solow (1956), "A Contribution to the Theory of Economic Growth"](/readings/Solow-1956)
 - [<i class="fas fa-file-pdf"></i> Solow (1957), "Technical Change and the Aggregate Production Function"](/readings/Solow-1957)
-- [<i class="fas fa-file-pdf"></i> Pritchett (1997), "Divergence, Big Time"](/readings/Pritchett-1997)
+- [<i class="fas fa-file-pdf"></i> Pritchett (1997), "Divergence, Big Time"](/readings/Pritchett-1997.pdf)
+- [<i class="fas fa-file-pdf"></i> Johnson and Papageorgiou (2020), "What Remains of Cross-Country Convergence?"](/readings/Johnson-Papageorgiou-2020.pdf)
+
+
 
 ## <i class="fas fa-chalkboard-teacher"></i> Slides
 
@@ -50,6 +53,16 @@ Below, you can find the slides in two formats. Clicking the image will bring you
 The lower button will allow you to download a PDF version of the slides. I suggest printing the slides beforehand and using them to take additional notes in class (*not everything* is in the slides)!
 
 `r blogdown::shortcode("slide-links")`
+
+## Interactive Solow Model
+
+- [Visualizing the Solow Model](https://ryansafner.shinyapps.io/Solow/)
+
+This is an example that I wrote in R/Shiny in previously, to visualize what it is we are looking at in the Solow Model. As I find more time, I may update this and integrate it into our slides, but until then, I will just post a link. 
+
+You can adjust things about the (Cobb-Douglas) production function, savings rate, depreciation rate, population growth rate, and TFP growth rate, and see how it would affect the graph and the equilibrium. 
+
+Note I have not added calculations or the golden rule yet. Moving $k$ around just shows where $k$ would start, and then it would have to grow/shrink to get to $k^*$. 
 
 ## Math Appendix
 

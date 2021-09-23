@@ -54,10 +54,10 @@ class: inverse
 
 # Outline
 
-### [Real Productivity](#3)
-### [Growth Models: A History](#13)
-### [20th Century Neoclassical Growth Models](#24)
-### [Working Tools](#52)
+### [What About *Human* Capital?](#3)
+### [Endogenous Growth](#13)
+### [Digression: The Economics of Ideas](#24)
+### [The Romer Model](#52)
 
 ---
 
@@ -1107,6 +1107,32 @@ $$g=\frac{\delta H - \Lambda \rho}{\sigma \Lambda + 1}$$
 
 .center[
 ![](../images/growthpuzzle.png)
+]
+
+---
+
+# Some Shameless Self-Promotion
+
+.pull-left[
+
+.quitesmall[
+- Paper with Santiago Gangotena: [“A Tale of Two Capitals: Modeling the Interaction between Ideas, Physical Capital, and Growth”](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3789195)
+
+- We critique endogenous growth models like Romer
+  - They merely *assume* knowledge grows proportional to the stock of existing knowledge
+  - We assert that knowledge is created and disseminated via a **network**, and successful growth depends on the structure of the network (determined by institutions)
+
+- We use this model to explain three puzzles in economic history:
+  1. “Ideas before their time”
+  2. Simultaneous independent discovery
+  3. The failure of technology transfer programs
+]
+]
+
+.pull-right[
+.center[
+![](../images/twocapitals.png)
+]
 ]
 
 ---

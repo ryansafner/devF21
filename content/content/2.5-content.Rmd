@@ -40,6 +40,7 @@ We now turn to the famous Romer model, or "*endogenous* growth" model of Paul Ro
 Modelling the Interaction between Ideas, Physical Capital, and Growth"](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3789195)
 - [<i class="fas fa-file-pdf"></i> Hall and Jones (1999), "Why Do Some Countries Produce So Much More Output Per Worker Than Others?"](/readings/Hall-Jones-1999.pdf)
 - [<i class="fas fa-file-pdf"></i> Romer (1990), "Endogenous Technological Change"](/readings/Romer-1990.pdf)
+- [<i class="fas fa-chalkboard-teacher"></i> My ECON 315 Lecture on Intellectual Property](https://laws21.classes.ryansafner.com/slides/2.6-slides)
 
 ### Questions to Guide Your Reading
 

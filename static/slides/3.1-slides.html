@@ -1,0 +1,1271 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>3.1 — Growth Regressions &amp; Aid Theory</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Ryan Safner  Assistant Professor of Economics   safner@hood.edu   ryansafner/devF21   devF21.classes.ryansafner.com " />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/remark-css/hygge.css" rel="stylesheet" />
+    <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
+    <script src="libs/tile-view/tile-view.js"></script>
+    <link href="libs/tachyons/tachyons.min.css" rel="stylesheet" />
+    <script src="libs/freezeframe/freezeframe.min.js"></script>
+    <script src="libs/xaringanExtra-freezeframe/freezeframe-init.js"></script>
+    <script id="xaringanExtra-freezeframe-options" type="application/json">{"selector":"img[src$=\"gif\"]","trigger":"click","overlay":false,"responsive":true,"warnings":true}</script>
+    <script src="https://use.fontawesome.com/5235085b15.js"></script>
+    <link rel="stylesheet" href="custom.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# 3.1 — Growth Regressions &amp; Aid Theory
+## ECON 317 • Economic Development • Fall 2021
+### Ryan Safner<br> Assistant Professor of Economics <br> <a href="mailto:safner@hood.edu"><i class="fa fa-paper-plane fa-fw"></i>safner@hood.edu</a> <br> <a href="https://github.com/ryansafner/devF21"><i class="fa fa-github fa-fw"></i>ryansafner/devF21</a><br> <a href="https://devF21.classes.ryansafner.com"> <i class="fa fa-globe fa-fw"></i>devF21.classes.ryansafner.com</a><br>
+
+---
+
+
+
+
+class: inverse
+
+# Outline
+
+### [Digression: Growth Regressions &amp; Program Evaluation](#3)
+### [The Theoretical Foundations of Foreign Aid](#13)
+
+---
+
+# Unit III
+
+.pull-left[
+
+- In this unit, we will consider a lot of explanations for variation in GDP per capita
+
+- Focus on things that are **external** or a country cannot control
+  1. Foreign Aid (as recipient)
+  2. Geographical features
+]
+
+.pull-right[
+.center[
+![](../images/)
+]
+]
+
+---
+
+# Unit III
+
+.pull-left[
+
+- Today and next class (and discussion) will be about Foreign Aid
+
+- But first, today, we will have to spend some time talking about the empirics of development literature
+  - Growth regressions
+  - Program evaluation
+
+- All comes down to regression models
+]
+
+.pull-right[
+
+]
+
+---
+
+class: inverse, center, middle
+
+# Digression: Growth Regressions &amp; Program Evaluation
+
+---
+
+# Growth Regressions
+
+.pull-left[
+.smallest[
+- Development papers are very empirical
+
+- Take data (of varying quality) from countries around the world and try to see: 
+
+&gt; .hi-turquoise[What factors explain variation in GDP per capita around the world?]
+
+- .hi[Dependent variable] `\(\color{#e64173}{Y}\)`: GDP per capita (or growth rate)
+
+- .hi[Independent variables] `\(\color{#e64173}{X_1, X_2, \cdots X_k}\)`: things that can plausibly affect GDP per capita
+]
+]
+
+.pull-right[
+
+.center[
+![](../images/statsgraphs.jpg)
+]
+]
+---
+
+# Linear Regression
+
+.pull-left[
+.smallest[
+- .hi[Linear regression] is the process of fitting a line to data
+
+`$$Y=\beta_0+\beta_1X+u$$`
+
+- `\(\beta_0\)`: intercept `\((Y\)` when `\(X=0)\)`
+
+- `\(\beta_1\)`: slope, the marginal effect of `\(X\)` on `\(Y\)`: `\(\frac{\Delta Y}{\Delta X}\)`
+
+- `\(u\)`: error term, contains *everything* other than `\(X\)` that affects `\(Y\)`
+]
+]
+.pull-right[
+
+&lt;img src="3.1-slides_files/figure-html/unnamed-chunk-1-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+
+# Linear Regression
+
+.pull-left[
+
+.smallest[
+- This idea of a “line through data points” is simplified, just to give you intuition
+  - Can be nonlinear, curves, etc.
+  - More than one `\(X\)` variable
+  - More advanced methods and models
+
+- If you want to know more, take my [econometrics class](http://metricsf21.classes.ryansafner.com)
+]
+
+.center[
+![:scale 40%](https://metricsf21.classes.ryansafner.com/images/metrics_hex.png)
+]
+]
+
+.pull-right[
+&lt;img src="3.1-slides_files/figure-html/unnamed-chunk-2-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Linear Regression: Example
+
+.pull-left[
+
+.smaller[
+- Some data on economic freedom and gdp per capita
+
+- Suppose we want to estimate a regression model
+
+`$$\widehat{\text{gdp per capita}} = \beta_0 + \beta_1 \, \text{ef}$$`
+
+]
+]
+
+.pull-right[
+
+&lt;img src="3.1-slides_files/figure-html/unnamed-chunk-3-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Linear Regression: Example
+
+.pull-left[
+
+.smallest[
+
+
+- Estimated regression equation:
+
+$$
+\widehat{\text{GDP per capita}} = -86,400 + 14704 \, \text{ef}
+$$
+- Intercept `\((\beta_0)\)`: -86,400
+  - Predicted GDP per capita for an economic freedom score of 0
+  - Not often interpretable
+
+- Slope `\((\beta_1)\)`: 14,704
+  - The marginal effect of economic freedom on GDP per capita
+  - A 1 point increase in Economic Freedom (0-10) increases GDP per capita by $14,704
+
+]
+]
+.pull-right[
+&lt;img src="3.1-slides_files/figure-html/unnamed-chunk-5-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# How to Read a Regression Table
+
+.pull-left[
+
+.smallest[
+- Regression results are presented in a table like this
+  - Estimates of `\(\beta_0\)` and `\(\beta_1\)`
+  - Standard errors of `\(\beta_0\)` and `\(\beta_1\)` in parentheses below
+  - Indicate statistical significance (with asterisks)
+  - Measures of regression fit `\(R^2\)`, `\(\sigma\)`, etc.
+
+- Often includes multiple models (columns) and multiple independent variables (rows)
+]
+]
+
+.pull-right[
+<table class="huxtable" style="border-collapse: collapse; border: 0px; margin-bottom: 2em; margin-top: 2em; ; margin-left: auto; margin-right: auto;  " id="tab:unnamed-chunk-6">
+<col><col><tr>
+<th style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0.8pt 0pt 0pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;"></th><th style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0.8pt 0pt 0.4pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">GDP per capita</th></tr>
+<tr>
+<th style="vertical-align: top; text-align: left; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">Intercept</th><td style="vertical-align: top; text-align: right; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0pt 0pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">-86400.07 ***</td></tr>
+<tr>
+<th style="vertical-align: top; text-align: left; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;"></th><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">(13361.77)&nbsp;&nbsp;&nbsp;</td></tr>
+<tr>
+<th style="vertical-align: top; text-align: left; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">Economic Freedom</th><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">14704.30 ***</td></tr>
+<tr>
+<th style="vertical-align: top; text-align: left; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;"></th><td style="vertical-align: top; text-align: right; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0.4pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">(1935.13)&nbsp;&nbsp;&nbsp;</td></tr>
+<tr>
+<th style="vertical-align: top; text-align: left; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">N</th><td style="vertical-align: top; text-align: right; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0pt 0pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">112&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr>
+<th style="vertical-align: top; text-align: left; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">R-Squared</th><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">0.34&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr>
+<th style="vertical-align: top; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0.8pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">SER</th><td style="vertical-align: top; text-align: right; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0.8pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">15881.92&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr>
+<th colspan="2" style="vertical-align: top; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.8pt 0pt 0pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;"> *** p &lt; 0.001;  ** p &lt; 0.01;  * p &lt; 0.05.</th></tr>
+</table>
+
+]
+
+---
+
+# How to Read a Regression Table
+
+.pull-left[
+
+.smallest[
+- Again, marginal effect of Economic Freedom on GDP per capita is 14704.
+
+- `\(R^2\)` indicates 34% of variation in GDP per capita is explained by this (very simple) model
+]
+]
+
+.pull-right[
+<table class="huxtable" style="border-collapse: collapse; border: 0px; margin-bottom: 2em; margin-top: 2em; ; margin-left: auto; margin-right: auto;  " id="tab:unnamed-chunk-7">
+<col><col><tr>
+<th style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0.8pt 0pt 0pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;"></th><th style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0.8pt 0pt 0.4pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">GDP per capita</th></tr>
+<tr>
+<th style="vertical-align: top; text-align: left; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">Intercept</th><td style="vertical-align: top; text-align: right; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0pt 0pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">-86400.07 ***</td></tr>
+<tr>
+<th style="vertical-align: top; text-align: left; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;"></th><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">(13361.77)&nbsp;&nbsp;&nbsp;</td></tr>
+<tr>
+<th style="vertical-align: top; text-align: left; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">Economic Freedom</th><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">14704.30 ***</td></tr>
+<tr>
+<th style="vertical-align: top; text-align: left; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;"></th><td style="vertical-align: top; text-align: right; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0.4pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">(1935.13)&nbsp;&nbsp;&nbsp;</td></tr>
+<tr>
+<th style="vertical-align: top; text-align: left; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">N</th><td style="vertical-align: top; text-align: right; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0pt 0pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">112&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr>
+<th style="vertical-align: top; text-align: left; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">R-Squared</th><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">0.34&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr>
+<th style="vertical-align: top; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0.8pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">SER</th><td style="vertical-align: top; text-align: right; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0.8pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">15881.92&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr>
+<th colspan="2" style="vertical-align: top; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.8pt 0pt 0pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;"> *** p &lt; 0.001;  ** p &lt; 0.01;  * p &lt; 0.05.</th></tr>
+</table>
+
+]
+
+---
+
+# Multivariate Regression: Motivation
+
+.pull-left[
+
+- Any good statistics class will repeat: .hi[correlation does not imply causation]
+
+- **But it can, with the right tools**
+  - Econometrics is all about using the right tools to actually make .hi[causal inferences] from sample data
+]
+
+.pull-right[
+.center[
+![](../images/causation.jpg)
+]
+]
+
+
+---
+
+# Randomized Control Trials (RCTs) I
+
+.pull-left[
+.smallest[
+- The *ideal* way to demonstrate causation is through a .hi-turquoise[randomized control trial (RCT)] or “random experiment”
+  - *Randomly* assign experimental units (e.g. people, firms, etc.) into groups
+  - .hi[Treatment group(s)] get a (kind of) treatment
+  - .hi-purple[Control group] gets no treatment 
+  - Compare results of treatment and control groups to observe the .hi-slate[average treatment effect (ATE)]
+  
+]
+]
+
+.pull-right[
+
+.center[
+![:scale 90%](../images/groupsplit.jpeg)
+]
+]
+
+---
+
+# Random Control Trials (RCTs) II
+
+.center[
+![:scale 75%](../images/rct.png)
+
+Classic (simplified) procedure of a randomized control trial (RCT) from medicine
+]
+
+---
+
+# Random Control Trials (RCTs) III
+
+.center[
+![:scale 50%](../images/scienceplacebocomic.PNG)
+]
+
+---
+
+# Random Control Trials (RCTs) IV
+
+.pull-left[
+
+- .hi-turquoise[Random assignment] to groups ensures that the *only* differences between members of the treatment(s) and control groups is *receiving treatment or not*
+
+]
+
+.pull-right[
+
+.pull-left[
+.center[
+![:scale 80%](../images/3apples.jpg)
+Treatment Group
+]
+]
+
+.pull-right[
+.center[
+![:scale 100%](../images/3oranges.jpg)
+Control Group
+]
+]
+]
+
+---
+
+# Random Control Trials (RCTs) IV
+
+.pull-left[
+
+- .hi-turquoise[Random assignment] to groups ensures that the *only* differences between members of the treatment(s) and control groups is *receiving treatment or not*
+
+- .hi-orange[Selection bias:] (pre-existing) differences between members of treatment and control groups *other* than treatment, that affect the outcome 
+
+]
+
+.pull-right[
+
+.pull-left[
+.center[
+![:scale 80%](../images/3apples.jpg)
+Treatment Group
+]
+]
+
+.pull-right[
+.center[
+![:scale 100%](../images/3oranges.jpg)
+Control Group
+
+.orange[(Selection Bias)]
+]
+]
+]
+
+---
+
+# Random Assignment: The Silver Bullet
+
+.pull-left[
+
+- If treatment is .hi[randomly assigned] for a large sample, it eliminates selection bias!
+
+- Treatment and control groups differ *on average* by nothing *except* treatment status
+
+- Creates *ceterus paribus* conditions in economics: groups are identical *on average* (holding constant age, sex, height, etc.)
+
+]
+
+.pull-right[
+
+.pull-left[
+.center[
+![](../images/3apples.jpg)
+Treatment Group
+]
+]
+
+.pull-right[
+.center[
+![](../images/3apples.jpg)
+Control Group
+]
+]
+]
+
+---
+
+
+background-image: url(../images/rctgoldstandard.png)
+background-size: cover
+
+---
+
+# RCTs are All the Rage
+
+.pull-left[
+.center[
+
+&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;Professors Esther Duflo and Abhijit Banerjee, co-directors of MIT&amp;#39;s &lt;a href="https://twitter.com/JPAL?ref_src=twsrc%5Etfw"&gt;@JPAL&lt;/a&gt;, receive congratulations on the big news this morning. They share in the &lt;a href="https://twitter.com/hashtag/NobelPrize?src=hash&amp;amp;ref_src=twsrc%5Etfw"&gt;#NobelPrize&lt;/a&gt; in economic sciences “for their experimental approach to alleviating global poverty.”&lt;br&gt; &lt;br&gt;Photo: Bryce Vickmark &lt;a href="https://t.co/NWeTrjR2Bq"&gt;pic.twitter.com/NWeTrjR2Bq&lt;/a&gt;&lt;/p&gt;&amp;mdash; Massachusetts Institute of Technology (MIT) (@MIT) &lt;a href="https://twitter.com/MIT/status/1183752282988564480?ref_src=twsrc%5Etfw"&gt;October 14, 2019&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt; 
+
+]
+]
+
+.pull-right[
+.center[
+.smallest[
+[Vox (Oct 14, 2019)](https://www.vox.com/future-perfect/2019/10/14/20913928/nobel-prize-economics-duflo-banerjee-kremer)
+]
+
+![](../images/voxnobelrcts.png)
+
+]
+]
+
+---
+
+# But Not Everyone Agrees I
+
+.left-column[
+
+.center[
+![:scale 75%](../images/deaton.jpg)
+
+Angus Deaton
+
+Economics Nobel 2015
+]
+
+]
+.right-column[
+.smaller[
+&gt; The RCT is a useful tool, but I think that is a mistake to put method ahead of substance. I have written papers using RCTs...[but] no RCT can ever legitimately claim to have established causality. My theme is that RCTs have no special status, they have no exemption from the problems of inference that econometricians have always wrestled with, and there is nothing that they, and only they, can accomplish.
+
+]
+]
+
+.source[Deaton, Angus, 2019, [“Randomization in the Tropics Revisited: A Theme and Eleven Variations”](https://scholar.princeton.edu/sites/default/files/deaton/files/deaton_randomization_revisited_v2_2019_01.pdf), Working Paper]
+
+---
+
+# But Not Everyone Agrees II
+
+.left-column[
+.center[
+![:scale 75%](../images/pritchett.jpg)
+
+Lant Pritchett
+
+]
+]
+
+.right-column[
+.smallest[
+&gt; “People keep saying that the recent Nobelists "studied global poverty." This is exactly wrong. They made a commitment to a method, not a subject, and their commitment to method prevented them from studying global poverty.”
+
+&gt; “At a conference at Brookings in 2008 Paul Romer (last years Nobelist) said: "You guys are like going to a doctor who says you have an allergy and you have cancer. With the skin rash we can divide you skin into areas and test variety of substances and identify with precision and some certainty the cause. Cancer we have some ideas how to treat it but there are a variety of approaches and since we cannot be sure and precise about which is best for you, we will ignore the cancer and not treat it.”
+
+]
+]
+
+.source[[Source](https://www.facebook.com/lant.pritchett/posts/10218688602381690)]
+
+---
+
+# But Not Everyone Agrees III
+
+.left-column[
+
+.center[
+![:scale 75%](../images/deaton.jpg)
+
+Angus Deaton
+
+Economics Nobel 2015
+]
+
+]
+.right-column[
+
+&gt; “Lant Pritchett is so fun to listen to, sometimes you could forget that he is completely full of shit.”
+
+]
+
+.source[[Source](https://medium.com/@ismailalimanik/lant-pritchett-the-debate-about-rcts-in-development-is-over-ec7a28a82c17)]
+
+---
+
+# RCTs and External Validity
+
+.pull-left[
+.smaller[
+- Even if a study is .hi-purple[internally valid] (used statistics correctly, etc.) we must still worry about .hi-purple[external validity]:
+
+- Is the finding .hi-turquoise[generalizable] to the whole population?
+
+- If we find something in India, does that extend to Bolivia? France?
+
+- Subjects of studies &amp; surveys are often .hi-purple[WEIRD]: .hi-purple[W]estern, .hi-purple[E]ducated, and from .hi-purple[I]ndustrialized .hi-purple[R]ich .hi-purple[D]emocracies
+]
+]
+
+.pull-right[
+.center[
+![](../images/weirdpsychology.png)
+
+.smallest[
+[APA (2010)](https://www.apa.org/monitor/2010/05/weird)
+]
+]
+]
+
+---
+
+# RCTs and External Validity
+
+.pull-left[
+.center[
+![](../images/vapingstudy.png)
+]
+
+]
+
+--
+
+.pull-right[
+
+&lt;blockquote class="twitter-tweet"&gt;&lt;p lang="en" dir="ltr"&gt;IN MICE&lt;a href="https://t.co/mLuKBRhsAb"&gt;https://t.co/mLuKBRhsAb&lt;/a&gt;&lt;/p&gt;&amp;mdash; justsaysinmice (@justsaysinmice) &lt;a href="https://twitter.com/justsaysinmice/status/1305905728591335424?ref_src=twsrc%5Etfw"&gt;September 15, 2020&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt; 
+
+[In Mice twitter account](https://twitter.com/justsaysinmice?lang=en)
+]
+
+---
+
+# The Quest for Causal Effects I
+
+.pull-left[
+- RCTs are considered the “gold standard” for causal claims
+
+- But society is not our laboratory (probably a good thing!)
+
+- We can rarely conduct experiments to get data
+]
+
+.pull-right[
+.center[
+![:scale 100%](../images/madlaboratory.jpg)
+]
+]
+
+---
+
+# The Quest for Causal Effects II
+
+.pull-left[
+- Instead, we often rely on .hi-purple[observational data]
+
+- This data is *not random*!
+
+- Must take extra care in forming an .hi[identification strategy]
+
+- To make good claims about causation in society, we must get clever! 
+]
+
+.pull-right[
+.center[
+![:scale 100%](../images/fieldobserver.jpg)
+]
+]
+
+---
+
+# Natural Experiments
+
+.pull-left[
+
+- Economists often resort to searching for .hi[natural experiments]
+
+- Some events beyond our control occur that separate *otherwise similar* entities into a "treatment" group and a "control" group that we can compare 
+
+- e.g. natural disasters, U.S. State laws, military draft 
+]
+
+.pull-right[
+.center[
+![](../images/nskorea2.png)
+]
+]
+
+---
+
+# Clever Research Designs Identify Causality
+
+&lt;img src="3.1-slides_files/figure-html/unnamed-chunk-8-1.png" width="1080" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Multivariate Econometric Models Overview
+
+.smallest[
+`$$Y_i = \beta_0 + \beta_1 X_{1i} + \beta_2 X_{2i} + \cdots + \beta_kX_{ki} +u_i$$`
+]
+
+--
+
+.smallest[
+- `\(Y\)` is the .hi[dependent variable] of interest
+    - AKA "response variable," "regressand," "Left-hand side (LHS) variable"
+]
+
+--
+
+.smallest[
+- `\(X_1\)` and `\(X_2\)` are .hi[independent variables]
+    - AKA "explanatory variables", "regressors," "Right-hand side (RHS) variables", "covariates"
+]
+--
+
+.smallest[
+- Our data consists of a spreadsheet of observed values of `\((X_{1i}, X_{2i}, Y_i)\)`
+]
+
+--
+
+.smallest[
+- To model, we .hi-turquoise["regress Y on `\\(X_1\\)` and `\\(X_2\\)`"]
+]
+--
+.smallest[
+- `\(\beta_0, \beta_1, \cdots, \beta_k\)` are .hi-purple[parameters] that describe the population relationships between the variables
+  - We estimate `\(k+1\)` parameters (“betas”)
+
+]
+
+---
+# What are Good Independent Variables? I
+
+.pull-left[
+
+- Previous GDP per Capita
+
+- Investment share of GDP
+
+- Macroeconomic variables
+
+- Foreign Aid
+
+- Geography
+
+- Culture
+
+- Political institutions
+
+]
+
+.pull-right[
+
+.center[
+![:scale 100%](../images/economicgrowth.jpeg)
+]
+]
+
+---
+
+# What are Good Independent Variables? II
+
+.pull-left[
+
+- Recall we are limited by the data we can find and measure
+
+- A lot of variables used are .hi-purple[proxy] variables that are correlated with something we care about, but can't measure
+  - Inflation rate
+  - Ethnolinguistic fractionalization
+  - Region dummy variables
+  - "Black market premium on foreign exchange"
+  - Polity IV index of political institutions
+
+]
+
+.pull-right[
+.center[
+![](../images/streetlampeffect.jpeg)
+]
+]
+
+---
+
+# "Kitchen-Sink" Regressions
+
+.center[
+![:scale 55%](../images/kitchensinkgrowthreg.png)
+
+Burnside and Dollar (2000: 852)
+]
+
+.source[Burnside, Craig and David Dollar, 2000, "Aid, Policies, and Growth," *American Economic Review* 90(4): 847-868]
+
+---
+
+# "Kitchen-Sink" Regressions
+
+.smallest[
+$$
+`\begin{align*}
+\text{GDP per capita growth} &amp;= \beta_0 + \beta_1 \text{Initial GDP} + \beta_2 + \text{Ethnic fractionalization}+ \\
+&amp; \beta_3 \text{Assassinations} + \beta_4 \text{Distance from equator} + \cdots \\
+\end{align*}`
+$$
+]
+
+---
+
+# How to Read a Regression Table I
+
+.pull-left[
+.center[
+![:scale 70%](../images/burnsidereg1.png)
+]
+]
+
+.pull-right[
+- Each column is a particular model
+
+- Number next to each variable (row) is the **marginal effect** of that variable on outcome variable
+    - Holding other included variables constant
+    - *A 1 unit change in that variable `\(\implies\)` a (that number) change in outcome variable*
+
+- Number in parentheses below it is the standard error of the estimate
+    - If it is less than half of the estimate, **statistically significant**
+
+]
+
+.source[Burnside, Craig and David Dollar, 2000, "Aid, Policies, and Growth," *American Economic Review* 90(4): 847-868]
+
+---
+
+# How to Read a Regression Table II
+
+.pull-left[
+.center[
+![:scale 70%](../images/burnsidereg2.png)
+]
+]
+
+.pull-right[
+
+- `\(R^2\)`: goodness of fit of regression
+  - Percent of overall variation in outcome explained by the model
+  - Higher is better (and rarer in the real world)
+]
+
+.source[Burnside, Craig and David Dollar, 2000, "Aid, Policies, and Growth," *American Economic Review* 90(4): 847-868]
+
+---
+
+class: inverse, center, middle
+
+# Foreign Aid, A History
+
+---
+
+# Aid for Growth
+
+.pull-left[
+
+- We restrict our exploration to **foreign aid for the purpose of causing economic growth/development**
+
+- NOT aid for humanitarian crises or natural disaster recovery
+
+- NOT aid for military/peacekeeping efforts
+
+- NOT aid for specific causes (i.e. reduce malaria)
+    - Note these might be related to economic growth!
+]
+
+.pull-right[
+.center[
+![:scale 100%](../images/economicgrowth.jpeg)
+]
+
+]
+
+---
+
+# Foreign Aid: A Timeline I
+
+.pull-left[
+
+- Historical ideas behind foreign aid as a necessary, desirable, or admirable goal of rich, Western countries
+
+- A moral imperative to “bring civilization” to lesser developed countries
+  - Imperialism, colonialism, scientific racism
+
+- Rudyard Kipling, “The White Man's Burden” (1899)
+]
+
+.pull-right[
+.center[
+![](../images/whitemansburden.jpg)
+]
+]
+
+---
+
+# Foreign Aid: A Timeline II
+
+.pull-left[
+
+- 1940s-1950s: World War II ends
+
+- 1945-1951: Marshall Plan to rebuild war-torn Europe
+
+- 1946: Harrod-Domar model -&gt; "financing gap"
+]
+
+.pull-right[
+.center[
+![:scale 70%](../images/marshallplan.JPG)
+]
+]
+
+---
+
+# Foreign Aid: A Timeline III
+
+.pull-left[
+- 1950s-1960s:
+
+- 1960 Rostow's stages of growth model
+
+- Cold War starts, “Red scare” in U.S.
+
+- Foreign aid to “Rhird World” takes off, in part to protect it from Soviets
+]
+
+.pull-right[
+.center[
+![:scale 65%](../images/redscare.jpg)
+]
+]
+
+---
+
+# The *Invention* of "Development" and Foreign Aid
+
+.pull-left[
+.center[
+![:scale 75%](../images/jfkusaid.jpg)
+
+John F. Kennedy addressing USAID
+]
+]
+
+.pull-right[
+
+.smaller[
+“There is no escaping our obligations: our moral obligations as a wise leader and good neighbor in the interdependent community of free nations – our economic obligations as the wealthiest people in a world of largely poor people, as a nation no longer dependent upon the loans from abroad that once helped us develop our own economy – and our political obligations as the single largest counter to the adversaries of freedom.” – John F. Kennedy
+
+- Foreign Assistance Act of 1961 creates U.S. Agency for International Development (USAID)
+]
+]
+
+.source[Source: [USAID](https://www.usaid.gov/who-we-are/usaid-history)]
+
+---
+
+# Foreign Aid: A Timeline III
+
+.pull-left[
+
+- Before 1980s:
+- Protectionist trade-policies
+- Import-substitution industrialization
+
+]
+
+.pull-right[
+.center[
+![:scale 100%](../images/tradebarriers.jpg)
+]
+]
+
+---
+
+# La Decada Perdida
+
+.pull-left[
+.center[
+![](../images/latinamerica.png)
+]
+]
+
+.pull-left[
+
+- 1982: Mexico announces it can no longer finance its debts
+
+- 1980s Latin American debt crisis
+
+- Also in Africa and Middle East
+
+]
+
+---
+
+# 1980s: The Rise of Structural Adjustment Lending
+
+.pull-left[
+
+- IMF and World Bank begin to make general loans (instead of for specific projects) to developing countries, **conditional on "structural adjustment"**
+
+- Governments would be required to make growth-enhancing policy changes in exchange for loans
+
+- What were these? Eventually became known as...
+]
+
+.pull-right[
+.center[
+![:scale 100%](../images/imfbuilding.jpg)
+]
+]
+
+---
+
+# 1990s: The Washington Consensus
+
+.center[
+![:scale 75%](../images/washingtonconsensustable.png)
+]
+
+.source[Rodrik, Dani, 2006, "Goodbye Washington Consensus, Hello Washington Confusion?" *Journal of Economic Literature* 44(4): 973-987]
+
+---
+
+# Criticism of IMF, SAL, and Washington Consensus
+
+.center[
+![](../images/imfcartoon.jpg)
+]
+
+---
+
+# Foreign Aid Today I
+
+.center[
+![:scale 65%](https://www.dropbox.com/s/shwflwnn7dsr42z/uasidmap.png?raw=1)
+
+Source: [USAID Explorer](https://explorer.usaid.gov)
+]
+
+
+---
+
+# Foreign Aid Today II
+
+.center[
+![:scale 65%](https://www.dropbox.com/s/qt309gbca1pg70t/aidovertime.png?raw=1)
+
+Source: [USAID Explorer](https://explorer.usaid.gov/aid-trends.html)
+]
+
+---
+
+# Foreign Aid Today III
+
+.center[
+![:scale 70%](https://www.dropbox.com/s/8mwmr16785brmap/countriesrecipients.jpg?raw=1)
+]
+
+---
+
+# Foreign Aid Today IV
+
+.pull-left[
+
+- 57% of American voters believe we give too much foreign aid (2017) [Source: Rasmussen Reports](http://www.rasmussenreports.com/public_content/politics/general_politics/march_2017/most_see_u_s_foreign_aid_as_a_bad_deal_for_america)
+- 6% say it's not enough
+- 27% say it's about right
+
+- Foreign aid is less than 1% of our federal spending
+
+]
+
+.pull-right[
+
+.center[
+![](https://www.dropbox.com/s/b5qcs2cqjmhbqc0/feedback.png?raw=1)
+]
+]
+
+---
+
+# Foreign Aid Today V
+
+.center[
+![:scale 80%](https://www.dropbox.com/s/a4epaaukhx5m5xy/usaidovertime.jpg?raw=1)
+]
+
+---
+
+class: inverse, center, middle
+
+# The Theoretical Foundations of Foreign Aid
+
+---
+
+# The Harrod-Domar Model
+
+.left-column[
+
+.center[
+![:scale 49%](../images/harrod.jpg) ![:scale 49%](../images/domar.jpg)
+
+**L**: Roy Harrod (1900-1978)
+
+**R**: Evsey Domar (1914-1997)
+
+]
+]
+
+.right-column[
+.smaller[
+- **“Knife's Edge” equilibrium**: a single savings rate and ICOR that permits stable growth
+    - Growth too low `\(\implies\)` depression
+    - Growth too high `\(\implies\)` hyperinflation
+
+- Highly simplistic, yet extremely influential
+    - Focus on unconsumed *surplus* to be used for investment
+    - GDP growth rate `\(\propto\)` Investment share of GDP
+    - Tendency to think "Development" `\(=\)` Growth `\(=\)` Industrialization
+    - Ripe for top-down development policy &amp; planning
+]
+]
+
+
+---
+
+# The Harrod-Domar Model
+
+.left-column[
+
+.center[
+![:scale 49%](../images/harrod.jpg) ![:scale 49%](../images/domar.jpg)
+
+**L**: Roy Harrod (1900-1978)
+
+**R**: Evsey Domar (1914-1997)
+
+]
+]
+
+.right-column[
+
+- .hi[“Financing gap”] between “required” investment rate (predicted from model) and a country's *actual* saving rate
+
+- Low income countries can't increase savings `\(\implies\)`.hi-turquoise[foreign aid] from countries with higher savings will lead directly to rapid growth&lt;sup&gt;.red[1]&lt;/sup&gt;
+
+]
+
+.footnote[&lt;sup&gt;.red[1]&lt;/sup&gt; **Remember this argument!**]
+
+---
+
+# The Harrod-Domar Model IV
+
+.left-column[
+.center[
+![:scale 80%](../images/easterly.png)
+
+William Easterly
+
+1957-
+
+]
+]
+.right-column[
+
+&gt; “To sum up, Domar's model was not intended as a growth model, made no sense as a growth model, and was repudiated as a growth model. So it was ironic that Domar's growth model became, and continues to be today, the most widely applied growth model in economic history,” (p.28).
+
+]
+.source[Easterly, William, 2010, *The Elusive Quest for Growth: Economists Adventures and Misadventures in the Tropics* Cambridge: MIT Press]
+
+---
+
+# The Poverty Trap Argument
+
+.pull-left[
+
+- .hi[Poverty trap] argument:
+
+- In order to escape poverty, people must invest in capital goods to improve productivity
+
+- In order to invest, people must first save some of their income
+
+- Low-income people need to spend all of their income on subsistence
+
+- Thus, they are trapped in a poverty trap
+]
+
+.pull-right[
+.center[
+![](../images/povertytrap.jpg)
+]
+]
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="macros.js"></script>
+<script src="https://platform.twitter.com/widgets.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9",
+"slideNumberFormat": "<div class=\"progress-bar-container\">\n  <div class=\"progress-bar\" style=\"width: calc(%current% / %total% * 100%);\">\n  </div>\n</div>\n"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_HTMLorMML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

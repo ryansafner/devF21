@@ -47,8 +47,13 @@ lessons:
 
   - title: '<span class="fake-header-table">Policies & Exogenous Factors</span>'
   
-  - title: "3.1 — Foreign Aid"
-
+  - title: "3.1 — Foreign Aid I: Growth Regressions, Program Evaluation & Aid Theory"
+    content: "3.1-content"
+    slides: "3.1-slides"
+    
+  - title: "3.2 — Foreign Aid II: Empirical Findings"
+    content: "3.2-content"
+    
   - title: "3.2 — Geography and Other Uncontrollable Factors"
 
   - title: '<i class="fas fa-laptop-code"></i> **Short Paper 1**'

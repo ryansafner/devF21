@@ -1,7 +1,7 @@
 ---
-title: "3.2 — Foreign Aid II: Empirical Findings — Class Content"
+title: "3.2 — Foreign Aid II: How Effective Is/Was Aid? — Class Content"
 draft: false
-linktitle: "3.2 — Foreign Aid II: Empirical Findings"
+linktitle: "3.2 — Foreign Aid II: How Effective Is/Was Aid?"
 date: "2020-06-08"
 menu:
   content:
@@ -15,11 +15,11 @@ slides: "3.2-slides"
 ---
 
 {{% alert note %}}
-*Tuesday, September 30, 2021*
+*Tuesday, October 5, 2021* and *Thursday October 7*
 {{% /alert %}}
 
 {{% alert warning %}}
-We will have a discussion today on the required [readings](/content/3.2-content#Required-reading).
+We will have a discussion **Thursday, October 7** on the required [readings](/content/3.2-content#Required-reading).
 {{% /alert %}}
 
 ## <i class="fas fa-info-circle fa-lg"></i> Overview

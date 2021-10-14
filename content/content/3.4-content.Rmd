@@ -1,0 +1,64 @@
+---
+title: "3.4 — Geography: The Curse of Resources & the Reversal of Fortune — Class Content"
+draft: false
+linktitle: "3.4 — Geography: The Diamond Hypothesis"
+date: "2020-06-08"
+menu:
+  content:
+    parent: Course content
+    weight: 13
+type: docs
+output:
+  blogdown::html_page:
+    toc: true
+slides: "3.4-slides"
+---
+
+{{% alert note %}}
+*Tuesday, October 19, 2021*
+{{% /alert %}}
+
+{{% alert warning %}}
+We will have a discussion **Thursday, October 21** on the required readings below.
+{{% /alert %}}
+
+## <i class="fas fa-info-circle fa-lg"></i> Overview
+
+We come to the last key arguments for what causes some nations to become wealthy and others poor. While we cannot cover an exhaustive list of important factors (this class would be several semesters), we can cover the remaining major arguments. I will over-simplify and lump several into what we might call "geographic determinism:" countries are destined to be wealthy or poor based on their geographies.
+
+This comes into play in several ways, first, the famous geographic determinist argument in Jared Diamond's famous *Guns, Germs, and Steel*: regions that span across a single latitude (East-West) were destined to develop before those that span across longitude (North-South) due to climate and geographically-driven variation domesticable plant and animal species.
+
+## <i class="fas fa-book-reader fa-lg"></i> Readings
+
+## Required Reading
+
+- <i class="fas fa-book"></i> Chapter 2 in Acemoglu and Robinson, 2012, *Why Nations Fail*
+- [<i class="fas fa-file-pdf"></i> Sachs, Mellinger, and Gallup (2001), "The Geography of Poverty"](/readings/Sachs-Mellinger-Gallup-2001.pdf)
+
+## Questions to Read For
+
+- How much do of a role do you think geography (however construed) plays in helping or hurting economic development? Can countries with favorable geography fail to grow? Can countries with unfavorable geography succeed despite it?
+
+- Do you believe there is a "natural resource curse?" Is it inevitable?
+
+- Now that you understand the resource curse, do you believe *foreign aid* is similar to the resource curse? Recall from last lesson that Ovaska (2003) argues aid is *worse* than the curse of resources!
+
+- Perhaps geography *used* to matter a lot for development when transaction costs were historically prohibitively high. But with today's technology and infrastructure, is geography as much of a factor as it may have once been? Why or why not?
+
+- How might geography influence institutions?
+
+- Some countries have unfavorable geography due to being landlocked, consisting of unproductive marshland, or are endowed with no resources, yet are incredibly wealthy today (e.g. Switzerland, Luxemborg, Singapore). How can we explain this?
+
+- If you believe geography is important for determining economic development, is Africa uniquely disadvantaged for development because of its geography? If so, does it require foreign aid for growth to overcome these disadvantages?
+
+- Acemoglu and Robinson argue against not only what they call "the geography hypothesis" but also the "culture hypothesis" and the "ignorance hypothesis" as explanations for variation in income per capita around the world today. What are each of these hypotheses? How do Acemoglu and Robinson argue they are problematic? Do you agree or disagree?
+
+- What is the "reversal of fortune" that Acemoglu and Robinson talk about? If we go back to 1500, what types of geography did all world's wealthy civilizations share? What about poor civilizations? Why the major reversal? What is the role of institutions in this reversal?
+
+## <i class="fas fa-chalkboard-teacher"></i> Slides
+
+Below, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. Note while in going through the slides, you can type <kbd>h</kbd> to see a special list of viewing options, and type <kbd>o</kbd> for an outline view of all the slides.
+
+The lower button will allow you to download a PDF version of the slides. I suggest printing the slides beforehand and using them to take additional notes in class (*not everything* is in the slides)!
+
+`r blogdown::shortcode("slide-links")`

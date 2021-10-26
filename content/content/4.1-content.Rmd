@@ -1,0 +1,84 @@
+---
+title: "4.1 — Introduction to Political Economy"
+draft: false
+linktitle: "4.1 — Introduction to Political Economy"
+date: "2020-06-08"
+menu:
+  content:
+    parent: Course content
+    weight: 14
+type: docs
+output:
+  blogdown::html_page:
+    toc: true
+slides: "4.1-slides"
+---
+
+{{% alert note %}}
+*Tuesday, October 26, 2021*
+{{% /alert %}}
+
+{{% alert warning %}}
+We will have a discussion **Thursday, October 21** on the required readings below.
+{{% /alert %}}
+
+## <i class="fas fa-info-circle fa-lg"></i> Overview
+
+We come to the last key arguments for what causes some nations to become wealthy and others poor. While we cannot cover an exhaustive list of important factors (this class would be several semesters), we can cover the remaining major arguments. I will over-simplify and lump several into what we might call "geographic determinism:" countries are destined to be wealthy or poor based on their geographies.
+
+This comes into play in several ways, first, the famous geographic determinist argument in Jared Diamond's famous *Guns, Germs, and Steel*: regions that span across a single latitude (East-West) were destined to develop before those that span across longitude (North-South) due to climate and geographically-driven variation domesticable plant and animal species.
+
+## <i class="fas fa-book-reader fa-lg"></i> Readings
+
+## Required Reading
+
+- <i class="fas fa-book"></i> Chapter 3 in Acemoglu and Robinson, 2012, *Why Nations Fail*
+
+Chapter 3 outlines the central thesis of the book: that differences in income per capita around the world today, and the trajectories of economic development are determined by political and economic institutions. AJR^[The common nickname for "Acemoglu, Johnson, and Robinson", who frequently collaborate on these issues (see the primary sources below).] distinguish between "inclusive institutions" and "extractive institutions," and describe how the distribution of political power affects political institutions, which in turn affect economic institutions, which affects a nation's ability to sustain economic growth.  
+
+## Strongly Recommended
+
+- <i class="fas fa-book"></i> Chapter 1 in Acemoglu and Robinson, 2012, *Why Nations Fail*
+
+Chapter 1 sets the stage with a number of stories that emphasize the differences in inclusive vs. extractive institutions, primarily by comparing the colonization experience of the Spanish in South/Central America and the English in North America.
+
+## Primary Sources
+
+- [<i class="fas fa-file-pdf"></i> Stigler (1971), "The Theory of Economic Regulation"](/readings/Stigler-1971.pdf)
+- [<i class="fas fa-file-pdf"></i> Kreuger (1974), "The Political Economy of the Rent-Seeking Society"](/readings/Kreuger-1974.pdf)
+- [<i class="fas fa-file-pdf"></i> Acemoglu and Robinson (2000), "Political Losers as a Barrier to Economic Development"](/readings/Acemoglu-Robinson-2000.pdf)
+- [<i class="fas fa-file-pdf"></i> Acemoglu, Johnson, and Robinson (2001), "The Colonial Origins of Comparative Development: An Empirical Investigation"](/readings/Acemoglu-Johnson-Robinson-2001.pdf)
+- [<i class="fas fa-file-pdf"></i> Acemoglu and Johnson (2005), "Unbundling Institutions"](/readings/Acemoglu-Johnson-2005.pdf)
+- [<i class="fas fa-file-pdf"></i> Baumol (1990), "Entrepreneurship: Productive, Unproductive, and Destructive"](/readings/Baumol-1990.pdf)
+- [<i class="fas fa-file-pdf"></i> Tullock (1967), "The Welfare Cost of Tariffs, Monopolies, and Theft"](/readings/Tullock-1967.pdf)
+- [<i class="fas fa-file-pdf"></i> Alchian (1950), "Uncertainty, Evolution, and Economic Theory"](/readings/Alchian-1950.pdf)
+- [<i class="fas fa-file-pdf"></i> Murphy, Shleifer, Vishny (1991), "The Allocation of Talent: Implications for Growth"](/readings/Murphy-Shleifer-Vishny-1991.pdf)
+- [<i class="fas fa-file-pdf"></i> Glaesar et. al (2004), "Do Institutions Cause Growth?"](/readings/Glaesar-et-al-2004.pdf)
+
+## Questions to Read For
+
+- How much do of a role do you think geography (however construed) plays in helping or hurting economic development? Can countries with favorable geography fail to grow? Can countries with unfavorable geography succeed despite it?
+
+- Do you believe there is a "natural resource curse?" Is it inevitable?
+
+- Now that you understand the resource curse, do you believe *foreign aid* is similar to the resource curse? Recall from last lesson that Ovaska (2003) argues aid is *worse* than the curse of resources!
+
+- Perhaps geography *used* to matter a lot for development when transaction costs were historically prohibitively high. But with today's technology and infrastructure, is geography as much of a factor as it may have once been? Why or why not?
+
+- How might geography influence institutions?
+
+- Some countries have unfavorable geography due to being landlocked, consisting of unproductive marshland, or are endowed with no resources, yet are incredibly wealthy today (e.g. Switzerland, Luxemborg, Singapore). How can we explain this?
+
+- If you believe geography is important for determining economic development, is Africa uniquely disadvantaged for development because of its geography? If so, does it require foreign aid for growth to overcome these disadvantages?
+
+- Acemoglu and Robinson argue against not only what they call "the geography hypothesis" but also the "culture hypothesis" and the "ignorance hypothesis" as explanations for variation in income per capita around the world today. What are each of these hypotheses? How do Acemoglu and Robinson argue they are problematic? Do you agree or disagree?
+
+- What is the "reversal of fortune" that Acemoglu and Robinson talk about? If we go back to 1500, what types of geography did all world's wealthy civilizations share? What about poor civilizations? Why the major reversal? What is the role of institutions in this reversal?
+
+## <i class="fas fa-chalkboard-teacher"></i> Slides
+
+Below, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. Note while in going through the slides, you can type <kbd>h</kbd> to see a special list of viewing options, and type <kbd>o</kbd> for an outline view of all the slides.
+
+The lower button will allow you to download a PDF version of the slides. I suggest printing the slides beforehand and using them to take additional notes in class (*not everything* is in the slides)!
+
+`r blogdown::shortcode("slide-links")`

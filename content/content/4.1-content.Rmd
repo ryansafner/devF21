@@ -15,11 +15,11 @@ slides: "4.1-slides"
 ---
 
 {{% alert note %}}
-*Tuesday, October 26, 2021*
+*Tuesday, October 26* and *Thursday, October 28, 2021*
 {{% /alert %}}
 
 {{% alert warning %}}
-We will have a discussion **Thursday, October 21** on the required readings below.
+We will have a discussion **Tuesday, November 2** on the required readings below.
 {{% /alert %}}
 
 ## <i class="fas fa-info-circle fa-lg"></i> Overview

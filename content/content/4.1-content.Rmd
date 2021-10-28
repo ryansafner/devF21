@@ -51,9 +51,10 @@ Chapter 1 sets the stage with a number of stories that emphasize the differences
 - [<i class="fas fa-file-pdf"></i> Acemoglu and Johnson (2005), "Unbundling Institutions"](/readings/Acemoglu-Johnson-2005.pdf)
 - [<i class="fas fa-file-pdf"></i> Baumol (1990), "Entrepreneurship: Productive, Unproductive, and Destructive"](/readings/Baumol-1990.pdf)
 - [<i class="fas fa-file-pdf"></i> Tullock (1967), "The Welfare Cost of Tariffs, Monopolies, and Theft"](/readings/Tullock-1967.pdf)
-- [<i class="fas fa-file-pdf"></i> Alchian (1950), "Uncertainty, Evolution, and Economic Theory"](/readings/Alchian-1950.pdf)
 - [<i class="fas fa-file-pdf"></i> Murphy, Shleifer, Vishny (1991), "The Allocation of Talent: Implications for Growth"](/readings/Murphy-Shleifer-Vishny-1991.pdf)
 - [<i class="fas fa-file-pdf"></i> Glaesar et. al (2004), "Do Institutions Cause Growth?"](/readings/Glaesar-et-al-2004.pdf)
+- [<i class="fas fa-file-pdf"></i> Mitchell (2012), "The Pathology of Privilege — The Economic Consequences of Government Favoritism"](/readings/Mitchell-2012.pdf)
+- [<i class="fas fa-file-pdf"></i> Munger and Villareal-Diaz (2019), "The Road to Crony Capitalism"](/readings/Munger-Villareal-Diaz-2019.pdf)
 
 ## Questions to Read For
 

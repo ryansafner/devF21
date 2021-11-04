@@ -18,10 +18,6 @@ slides: "4.2-slides"
 *Thursday, November 4, 2021*
 {{% /alert %}}
 
-{{% alert warning %}}
-We will have a discussion **Tuesday, November 2** on the required readings below.
-{{% /alert %}}
-
 ## <i class="fas fa-info-circle fa-lg"></i> Overview
 
 We continue our exploration of the role of economic and political institutions on economic development and economic history. We start by going back hundreds to thousands of years, to describe common institutional patterns in the pre-modern (i.e. before c.1500-1800) world. We look will examine three major themes:

@@ -84,6 +84,7 @@ The last two are podcasts on the Simon-Ehrlich wager. The first (*Planet Money*)
 - What does it mean, according to Scott, to "see like a State." Why is this so difficult?
 
 - What parallels do you see between historical societies (e.g. Medieval Europe) with low state capacity or "illegibility" and developing countries today?
+
 ## <i class="fas fa-chalkboard-teacher"></i> Slides
 
 Below, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. Note while in going through the slides, you can type <kbd>h</kbd> to see a special list of viewing options, and type <kbd>o</kbd> for an outline view of all the slides.

@@ -30,7 +30,7 @@ Finally, the role of state capacity is critical in development (Acemoglu and Rob
 
 ## <i class="fas fa-book-reader fa-lg"></i> Readings
 
-## Required Reading
+### Required Reading
 
 - [<i class="fas fa-book"></i>Chapter 1 in Scott (1999) *Seeing Like a State*](/readings/Scott-1999-Ch1.pdf)
 - [<i class="fas fa-file-pdf"></i> Olson (1993), "Dictatorship, Democracy, and Development"](/readings/Olson-1993.pdf)
@@ -41,7 +41,7 @@ Second, Mancur Olson's work is a very famous model that describes the different 
 
 Overall, we will be considering economic history from the very beginning of human society up through the modern era. This was characterized by Malthusian population pressures, so we will explore this as well.
 
-# Recommended
+### Recommended
 
 - [<i class="fas fa-external-link-square-alt"></i> Alexander, (2017), "Book Review: Seeing Like a State" (Slate Star Codex blog)](https://slatestarcodex.com/2017/03/16/book-review-seeing-like-a-state/)
 - [<i class="fab fa-youtube"></i> Bill Wurtz: history of the entire world i guess](https://www.youtube.com/watch?v=xuCn8ux2gbs)
@@ -57,7 +57,7 @@ Additionally, as Malthusian pre-modern economies are primarily subsistence agric
 
 The last two are podcasts on the Simon-Ehrlich wager. The first (*Planet Money*) is a good description of what happened, the second (*Economics Detective Radio*) is a great interview with an economist working on what might have happened for the *second* proposed sequel to the bet (and gets into the differences Ehrlich and Simon had in worldviews).
 
-## Primary/Mentioned Sources
+### Primary/Mentioned Sources
 
 - [<i class="fas fa-external-link-square-alt"></i> Malthus, (1798), "An Essay on the Principle of Population"](https://www.econlib.org/library/Malthus/malPop.html)
 - [<i class="fas fa-file-pdf"></i> Ashraf and Galor (2011), "Dynamics and Stagnation in the Malthusian Epoch"](/readings/Ashraf-Galor-2011.pdf)
@@ -65,7 +65,7 @@ The last two are podcasts on the Simon-Ehrlich wager. The first (*Planet Money*)
 - [<i class="fas fa-file-pdf"></i> Koyama and Johnson (2016), "States and Economic Growth: Capacity and Constraints"](/readings/Koyama-Johnson-2016.pdf)
 
 
-# Questions to Read For:
+### Questions to Read For:
 
 - Most theories of the state in the classical liberal Western tradition of political philosophy (Thomas Hobbes, John Locke, Thomas Jefferson & James Madison, John Rawls) suppose a "social contract" as the origin of the State - the agent that protects our rights. Olson (and others, we will see) argue the social contract is a fiction, and is not how states *actually* emerged. What are we to make of this?
 

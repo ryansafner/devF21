@@ -77,8 +77,13 @@ lessons:
     content: "4.2-content"
     slides: "4.2-slides"
 
-  - title: "4.3 — The Natural State and the Violence Trap"
-
+  - title: "4.3 — Limited Access Orders & The Natural State"
+    content: "4.3-content"
+    slides: "4.3-slides"
+    
+  - title: "4.4 — Selectorate Model & The Violence Trap"
+    content: "4.4-content"
+    
   - title: '<span class="fake-header-table">Making Comparisons and Case Studies</span>'
     header: True
 

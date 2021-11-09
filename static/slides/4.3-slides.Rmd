@@ -1,0 +1,1082 @@
+---
+title: "4.3 — The Natural State"
+subtitle: "ECON 317 • Economic Development • Fall 2021"
+author: 'Ryan Safner<br> Assistant Professor of Economics <br> <a href="mailto:safner@hood.edu"><i class="fa fa-paper-plane fa-fw"></i>safner@hood.edu</a> <br> <a href="https://github.com/ryansafner/devF21"><i class="fa fa-github fa-fw"></i>ryansafner/devF21</a><br> <a href="https://devF21.classes.ryansafner.com"> <i class="fa fa-globe fa-fw"></i>devF21.classes.ryansafner.com</a><br>'
+#date:
+output:
+  xaringan::moon_reader:
+    mathjax: "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_HTMLorMML" # rescales math with css changes https://github.com/yihui/xaringan/issues/143
+    lib_dir: libs
+    #seal: false
+    css: [custom.css, "hygge"] #, metropolis, metropolis-fonts
+    nature:
+      beforeInit: ["macros.js", "https://platform.twitter.com/widgets.js"] # first is for rescaling images , second is for embedding tweets, https://github.com/yihui/xaringan/issues/100
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+      slideNumberFormat: |
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+          </div>
+        </div>
+    includes:
+      in_header: header.html # for font awesome, used in title  
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(echo=F,
+                      message=F,
+                      warning=F,
+                      fig.retina = 3,
+                      fig.align = "center")
+library("tidyverse")
+library("ggrepel")
+library("fontawesome")
+library("ggthemes")
+xaringanExtra::use_tile_view()
+xaringanExtra::use_tachyons()
+xaringanExtra::use_freezeframe()
+
+update_geom_defaults("label", list(family = "Fira Sans Condensed"))
+update_geom_defaults("text", list(family = "Fira Sans Condensed"))
+
+set.seed(256)
+
+theme_slides <- theme_light() + 
+  theme(
+    text = element_text(family = "Fira Sans", size = 24)
+  )
+
+```
+
+class: inverse, center, middle
+
+### [The Story So Far](#3)
+### [North, Wallis, Weingast: Natural States/LAOs](#18)
+
+---
+
+class: inverse, center middle
+# The Story So Far
+
+---
+
+# The Story So Far
+
+.pull-left[
+.smallest[
+- Countries aren't poor out of ignorance or laziness
+
+]
+
+.quitesmall[
+> “[I]f ignorance were the problem, well-meaning leaders would quickly learn what types of policies increased their citizens' incomes and welfare, and would gravitate toward those policies.” (*Why Nations Fail*, p.65).
+
+]
+
+.smallest[
+- Institutions $\rightarrow$ outcomes, & politics (distribution of wealth & power) $\rightarrow$ institutions
+
+- Development and political-economic reform of institutions must be .hi[incentive-compatible]
+
+- Countries remain poor because .hi-purple[it's not in the interest of the elites to develop the country]
+]
+]
+
+.pull-right[
+
+.center[
+![](../images/whynationsfailreader.png)
+]
+]
+
+---
+
+# Why Do Elites Permit Reform?
+
+.left-column[
+
+.center[
+![](../images/acemoglurobinson.jpg)
+
+Daron Acemoglu and James Robinson
+
+]
+]
+
+.right-column[
+.smallest[
+> “To starkly illustrate our framework, consider a society in which there are two groups: an elite and the citizens. Nondemocracy is rule by the elite; democracy is rule by the more numerous groups who constitute the majority–in this case, the citizens. In nondemocracy, the elite gets the policies it wants; in democracy, the citizens have more power to get what they want. Because the elite loses under democracy, it naturally has an incentive to oppose or subvert it; yet, most democracies arise when they are created by the elite,” (p.10).
+
+]
+
+.source[Acemoglu, Daron and James A. Robinson, (2006). *Economic Origins of Dictatorship and Democracy*]
+]
+
+---
+
+# Recall AJR: *Political* Losers Block Development
+
+.left-column[
+.center[
+![](../images/acemoglurobinson.jpg)
+]
+]
+
+.right-column[
+.quitesmall[
+> ".hi[We argue that the effect of economic change on political power is a key factor in determining whether technological advances and beneficial economic changes will be blocked.] In other words, .hi[we propose a “political-loser hypothesis.”] We argue that .hi[it is groups whose political power (not economic rents) is eroded who will block technological advances.] If agents are economic losers but have no political power, they cannot impede technological progress. If they have and maintain political power (i.e., are not political losers), then they have no incentive to block progress. .hi[It is therefore agents who have political power and fear losing it who will have incentives to block.] Our analysis suggests that .hi[we should look more to the nature of political institutions and the determinants of the distribution of political power if we want to understand technological backwardness]," (pp.126-127)
+
+]
+
+.source[Acemoglu, Daron and James A. Robinson, 2000, "Political Losers as a Barrier to Economic Development," *American Economic Review* 90(2): 126-130]
+
+]
+
+---
+
+# Recall: The Hobbesian View
+
+
+.pull-left[
+.smallest[
+- .hi-purple[The State is our commitment device]
+
+- Citizens (in principle) sign a **social contract**, i.e. a "**constitution**" that *deliberately restricts* their liberties
+
+- In each of our interests to give up some liberties that restrict the liberties of others (e.g. theft, violence)
+
+- In exchange, we empower the State as our agent to punish those of us that fail to uphold the social contract
+
+- .hi[Politics]: rules which we agree are legitimate, that determine an outcome for us all, even if we *disagree* (or are harmed by) with the outcome 
+]
+]
+
+.pull-right[
+.center[
+![](../images/benevolentdespot.jpg)
+]
+]
+
+
+---
+
+# Recall: The State
+
+.left-column[
+.center[
+![:scale 80%](../images/weber.png)
+
+Max Weber
+
+1864-1920
+]
+]
+
+.right-column[
+
+
+> "[A] State is a human community that (successfully) claims the monopoly of the legitimate use of physical force within a given territory."
+
+.source[Weber, Max, 1919, [*Politics as a Vocation*](http://anthropos-lab.net/wp/wp-content/uploads/2011/12/Weber-Politics-as-a-Vocation.pdf)]
+
+]
+
+---
+
+# Recall: Madison's Paradox II
+
+- .hi[Madison's Paradox]: a State strong enough to protect rights is strong enough to violate them at its discretion
+
+.center[
+![:scale 70%](../images/policebrutality.jpg)
+]
+
+---
+
+# Recall: Credible Commitment
+
+.center[
+![:scale 75%](../images/odysseusstate.jpeg)
+
+*Odysseus and the Sirens* by John William Waterhouse, Scene from Homer's *The Odyssey*
+
+]
+
+---
+
+# Recall: Olson's Roving vs. Stationary Bandits
+
+.pull-left[
+.center[
+![scale 100%](../images/vikingraid2.jpg)
+]
+]
+
+.pull-right[
+.center[
+![:scale 88%](../images/caesarwarlord.jpg)
+]
+
+]
+
+---
+
+# Recall: State Capacity
+
+.pull-left[
+- Might simply be defined as the State’s ability to do things
+
+- In the simplest of early states, the stationary bandit just extracts taxes as ruling elite's revenues
+
+- Possibly to fund its armies
+
+- In more modern states, taxes used to provide public goods
+
+- One strong shorthand for state capacity: ability to raise tax revenue
+]
+
+.pull-right[
+.center[
+![:scale 100%](../images/goodgovernance.png)
+]
+]
+
+---
+
+# Some More Data on State Capacity & Development I
+
+.center[
+
+<iframe src="https://ourworldindata.org/grapher/country-level-taxes-vs-income" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+]
+
+.source[Source: [Our World in Data](https://ourworldindata.org/taxation)]
+
+---
+
+# Some More Data on State Capacity & Development II
+
+.center[
+
+<iframe src="https://ourworldindata.org/grapher/total-tax-revenue-gdp-vs-govt-effectiveness" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+]
+
+.source[Source: [Our World in Data](https://ourworldindata.org/grapher/total-tax-revenue-gdp-vs-govt-effectiveness)]
+
+---
+
+# Some More Data on State Capacity & Development III
+
+.center[
+
+<iframe src="https://ourworldindata.org/grapher/tax-revenue-national-income-longrun" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+
+]
+
+.source[Source: [Our World in Data](https://ourworldindata.org/taxation)]
+
+---
+
+# A Typology of States by Capacity/Development
+
+.pull-left[
+
+.center[
+**“Early” States**
+
+![:scale 60%](../images/patronage1.jpg)
+]
+
+.quitesmall[
+- No monopoly on violence
+
+- Hierarchical and unequal
+
+- Weak fiscal and legal capacity
+
+- Coercive authority(ies)
+
+- Personal elite patronage networks
+
+- No organizations exist outside of state
+]
+]
+
+.pull-left[
+
+
+.center[
+**“Modern” States**
+
+![:scale 60%](../images/congressassembled.png)
+]
+
+.quitesmall[
+- Centralized monopoly on violence within borders
+
+- Strong fiscal and legal capacity
+
+- Bureaucratic and impartial, rule-based
+
+- Competitive access to political power & economic activity
+
+- Individuals can create own non-state organizations
+]
+]
+
+---
+
+# Two Models of State Development
+
+.pull-left[
+
+.center[
+![](../images/nww.jpg)
+]
+]
+
+.pull-right[
+
+.center[
+![](../images/logicofpoliticalsurvival.jpg)
+]
+
+]
+
+---
+
+class: inverse, center, middle
+# North, Wallis, Weingast: Natural States/LAOs
+
+---
+
+# Three Orders of Human History
+
+.left-column[
+.center[
+![](../images/nww.jpg)
+]
+
+]
+
+.right-column[
+
+**1. Hunter-gatherers “stateless”)**
+
+**2. Limited-access order (“natural state”)**
+
+**3. Open-access order**
+
+]
+
+---
+
+# Order I: Hunter-Gatherers
+
+.pull-left[
+.center[
+![](../images/nomads.jpg)
+]
+]
+
+.pull-right[
+
+- More egalitarian
+
+- Rule by consensus or council of elders
+
+- Small personal units
+
+- Often informal rules
+
+- Olson: little incentive to produce or to steal
+]
+
+---
+
+# Order II: Natural States
+
+.pull-left[
+
+- .hi[Limited Access Order (LAO)] or .hi[“natural state”]
+
+- Most common form of society for millennia
+
+- *All* societies since Neolithic Revolution of settled agriculture have been natural states until some transitioned in 19<sup>th</sup>-21<sup>st</sup> Centuries
+
+- *Most* States (by numbers) today remain natural states!
+
+]
+
+.pull-right[
+
+.center[
+![:scale 100%](../images/tudors.jpeg)
+
+The Tudors of England
+]
+]
+
+---
+
+# Order III: Open Access Orders
+
+.pull-left[
+
+.smallest[
+- .hi[Open Access order] or .hi[“liberal democracy”]
+
+- Open competition in both economic and political spheres
+
+- Coalitions of multiplicity of groups required to enact national policy
+
+- Incumbents and rent-seeking will be opposed and checked by competitors
+
+- Rule of law, impartial, impersonal, professional bureaucracy
+
+- "The State" survives beyond any one ruler or regime
+]
+]
+.pull-right[
+
+.center[
+![](../images/voting.jpg)
+
+]
+]
+
+---
+
+# Patronage I
+
+.pull-left[
+.smallest[
+- .hi[Patronage]: elites with power provide access to political and economic resources to their allies
+
+- Entry into politics and the economy is controlled and permitted only to those with connections
+
+- People ally with powerful individuals for protection and access
+
+- Feudal Europe: lords have duty to protect serfs from invasion
+]
+]
+
+.pull-right[
+.center[
+![:scale 100%](../images/patronage1.jpg)
+]
+]
+
+---
+
+# Patronage II
+
+.pull-left[
+
+- Little/no separation between political, economic, and social spheres
+
+- Politics very high-stakes: decisions (or wars) determine who wins and who loses, at *everything*
+
+- Institutions are *personal*: who is king, lord, bishop *matters*
+  - .hi-turquoise[Impossible to have rule of law!]
+		
+]
+
+.pull-right[
+.center[
+![:scale 90%](../images/patronage2.jpg)
+]
+]
+
+---
+
+# Patronage III
+
+.pull-left[
+
+- A very clear hierarchy, often immutable
+
+- Very unequal society
+
+- A person is judged by their *status*, which is determined by their *identity* in the hierarchy
+  - Who they are *connected* to and who is their *patron*
+
+		
+]
+
+.pull-right[
+.center[
+![:scale 80%](../images/homageedward.jpg)
+]
+]
+
+---
+
+# Rule by the Clan
+
+.pull-left[
+.smallest[
+- The "State" is patrimonial - an elaborate web of personal relationship
+
+- An elite group's power to threaten social order comes from their patrimonial relationships
+  - ability to sway decisions among large group of people
+  - ability to enforce a boycott, embargo, etc.
+  - ability to raise an army for rebellion
+
+- Strongest connections lie with kin, clan, religious sect, or other ethnic group
+  - often perceived as a moral obligation
+]
+]
+
+.pull-right[
+.center[
+![](../images/clanflags.png)
+]
+]
+
+---
+
+# "I am the State"
+
+.left-column[
+
+.center[
+![:scale 90%](../images/louisxvi.jpg)
+.smallest[
+Louis XIV of France
+
+(1638-1715)
+]
+]
+]
+.right-column[
+
+> “L’etat c’est moi!”
+
+- This is what North, Wallis, and Weingast would call a "mature" natural state
+
+- The point is, the State is *synonymous* with the ruling elite (it has no separate existence)
+
+]
+
+---
+
+# Multiple Groups Vie for Control
+
+.pull-left[
+.smallest[
+- No single person or group rules society
+
+- States are weak and unable to project power
+
+- Elites may include military specialists, landlords, clergy, traders, etc.
+
+- Wealthy and powerful groups can threaten violence, social disorder, or withhold wealth or access
+  - Threat is often sufficient, fighting is costly
+
+]
+]
+.pull-right[
+.center[
+![:scale 100%](../images/rebellion.jpg)
+]
+]
+
+---
+
+# Multiple Groups Vie for Control
+
+.pull-left[
+
+- .hi-purple[There is no territorial monopoly on violence!]
+  - *Multiple* groups can credibly use or threaten violence
+
+- "The State" $\equiv$ **dominant coalition** of powerful elite groups
+
+- Dominant coalition agrees not to fight each other, respect each other's ability to extract rents from society
+
+]
+
+.pull-right[
+.center[
+![:scale 100%](../images/rebellion.jpg)
+]
+]
+
+---
+
+# The Proportionality Principle
+
+.pull-left[
+
+.smaller[
+- .hi[Proportionality principle]: for a stable political system, .hi-purple[rents must be allocated in proportion to groups' capacity for violence] 
+
+- Rational elites will revolt if they believe their relative strength is greater than the rents they are earning
+  - Other elites need to “buy off” their support or else risk revolt
+
+- Dynamics: if distribution of wealth and power changes, the allocation of rents must change! 
+]
+]
+
+.pull-right[
+.center[
+![:scale 100%](../images/baronswar.jpg)
+]
+]
+
+---
+
+# Power and Personality
+
+.pull-left[
+.smaller[
+- Elites are loyal to the king as a *person*, not as an office!
+
+- Loyalty depends on king's ability to distribute loot & rents to elites
+
+- “King” or “Warlord” does not control *territory*, controls *vassals* based on social networks and bundle of privileges
+
+- No formal administration, staff, etc; all private servants to King's household
+  - The “Office of the Exchequer” was once a trunk of loot under the King's bed
+]
+]
+
+.pull-right[
+.center[
+![:scale 55%](../images/henryviii.jpg)
+]
+]
+
+---
+
+# Monarchs are Often Weak Relative to Other Elites I
+
+.pull-left[
+
+- Monarch is just one ruler with his/her own land
+
+- Barons, earls, dukes, etc. have their own realms and sources of power
+  - nominally loyal to the monarch
+  - but if unhappy, barons can (and did) revolt against monarchs they didn’t support
+
+]
+
+.pull-right[
+.center[
+![:scale 90%](../images/francemercantilismmap.png)
+
+“France” in 1477
+]
+]
+
+---
+
+# Monarchs are Often Weak Relative to Other Elites II
+
+.pull-left[
+
+> "XXIX. NO Freeman shall be taken or imprisoned, or be disseised of his Freehold, or Liberties, or free Customs, or be outlawed, or exiled, or any other wise destroyed; nor will We not pass upon him, nor condemn him, but by lawful judgment of his Peers, or by the Law of the land. We will sell to no man, we will not deny or defer to any man either Justice or Right"
+
+- Magna Carta, 1215
+
+]
+
+.pull-right[
+.center[
+![:scale 100%](../images/magnacartasign.jpg)
+
+.quitesmall[
+English nobles forcing King John to sign the *Magna Carta* after defeating him in the First Barons’ War, 1215—1217
+]]
+]
+
+---
+
+# Economies in Natural States
+
+.pull-left[
+
+- Economy is entangled in monopolies, barriers to entry, rent extraction by elites
+
+- Often dominated by large landowners, merchant/craft guilds that set their own rules
+
+- Entry in markets requires patronage and protection of powerful elite
+
+- Regulated for “national security” — powerful groups not getting their cut $\implies$ risk of rebellion and violence 
+
+]
+
+.pull-right[
+.center[
+![:scale 100%](../images/guilds.jpg)
+]
+]
+
+---
+
+# Life for the Non-Elite
+
+.pull-left[
+
+- Non-elites have few rights and protections
+
+- Non-property owners, often work as agricultural laborers, tenants that rent out land from landowners
+
+- Often coerced labor: bonded labor, slavery, serfdom
+
+- Sometimes free laborers, but with no political or economic "rights" or power
+
+]
+
+.pull-right[
+.center[
+![](../images/serfs.jpg)
+]
+]
+
+---
+
+# Corruption
+
+.pull-left[
+.center[
+![](../images/medievalalliances.png)
+]
+]
+
+.pull-right[
+
+- Is this system “corrupt?”
+
+- What would an anti-corruption law achieve?
+
+- Important: .hi-purple[a successful Natural State .ul[wages peace]]
+
+- Elite groups **do not disarm**! Always must be able to credibly threaten violence against one another!
+]
+
+
+---
+
+# Weak States Struggle to Project Power
+
+.left-column[
+.center[
+![:scale 80%](../images/thediscoveryoffrance.jpg)
+]
+]
+
+.right-column[
+.quitesmall[
+> They had locally appointed officials – an agent to collect taxes and a guard to police the community. But laws, especially those relating to inheritance, were widely ignored and direct contact with the central power was extremely limited.
+
+> The state was perceived as a dangerous nuisance: its emissaries were soldiers who had to be fed and housed, bailiffs who seized property and lawyers who settled property disputes and took most of the proceeds.
+
+> Being French was not a source of personal pride, let alone the basis of a common identity. Before the mid-nineteenth century, few people had seen a map of France and few had heard of Charlemagne and Joan of Arc.
+
+> France was effectively a land of foreigners.
+
+]
+
+.source[Robb, Graham, 2008, *The Discovery of France*]
+]
+
+---
+
+# Their Rule Was Over People, Not Territory
+
+.pull-left[
+
+.center[
+![:scale 60%](../images/charlemagne.jpg)
+
+.smallest[
+Charlemagne, King of *the Franks*
+
+(742–814)
+]
+]
+]
+
+.pull-right[
+
+.center[
+![:scale 60%](../images/louisxvi.jpg)
+
+.smallest[
+Louis XIV, King of *France*
+
+(1638-1715)
+
+]]
+]
+
+---
+
+# Statebuilding Took Centuries
+
+.pull-left[
+- Even in 19<sup>th</sup> century, few “French” citizens spoke French
+- Provincial loyalties $>$ national identity
+- Second Industrial Revolution (1870-1914): technology allows State to penetrate the isolated countryside:
+  - judicial systems
+  - school systems
+  - army
+  - railroads/roads
+  - market access
+]
+
+.pull-right[
+.center[
+![](../images//peasantsintofrenchmen.jpg)
+]
+
+]
+
+---
+
+# Power and Professional Bureaucracy I
+
+.pull-left[
+.smallest[
+- State capacity and projection of power often requires a formal professional bureaucracy
+
+- Max Weber's “ideal types” of bureaucracy:
+
+1. **Traditional/patrimonial**
+  - rules and power arbitrary (come from ruler)
+  - hiring/firing/promotion based on personal connection
+2. **Rational and legal**
+  - staffed by professionals
+  - meritocratic hiring, firing, and internal promotion
+  - governed by objective legal rules
+]
+]
+.pull-right[
+.center[
+![](../images/ruralbureaucrat.png)
+]
+
+]
+
+---
+
+# Power and Professional Bureaucracy II
+
+.pull-left[
+.center[
+![](../images/spoilssystem2.jpg)
+
+.smallest[
+*Puck* satirical cartoon of U.S. President Chester Arthur doling out patronage to his cronies
+]
+]
+]
+
+.pull-right[
+
+.smallest[
+- In United States, political offices were appointed according to the "spoils system" throughout 19<sup>th</sup> century
+
+- Pendleton Civil Service Act (1883): requires positions in the federal government to be awarded based on merit, not on political patronage
+
+]
+
+.center[
+![:scale 70%](../images/merit.jpg)
+]
+]
+
+---
+
+# Natural States Today? I
+
+.pull-left[
+.center[
+![](../images/mexicancartels.png)
+]
+]
+
+.pull-right[
+.center[
+![:scale 80%](../images/mexicocartel1.png)
+
+Source: [WSJ (Oct 31, 2019)](https://www.wsj.com/articles/video-details-brazen-attack-by-mexican-drug-cartel-on-government-forces-11572532035?mod=hp_lead_pos9)
+]
+]
+
+---
+
+# Natural States Today? II
+
+.pull-left[
+.center[
+![:scale 80%](../images/migrantcrisisgangs1.png)
+
+Source: [WSJ (Nov 2, 2018)](https://www.wsj.com/articles/pay-or-die-extortion-economy-drives-latin-americas-murder-crisis-1541167619)
+]
+]
+
+.pull-left[
+.center[
+![:scale 80%](../images/migrantcrisis2gangs.png)
+
+Source: [WSJ (Nov 9, 2018)](https://www.wsj.com/articles/the-violence-driving-migration-isnt-just-gangs-1541777123)
+]
+]
+
+---
+
+# Natural States Today? III
+
+.left-column[
+.center[
+![](../images/afghanistanmap.png)
+
+]
+]
+
+.right-column[
+
+.smallest[
+> “The political center in Kabul was not (and has never been) a collection of formal, bureaucratic institutions working in concert to penetrate the unwieldy periphery of wayward warlords, defiant mullahs, and rebellious tribal chieftains.
+
+> “It was, instead, a political center operating largely in the neopatrimonial image, and, much like many of its predecessors, forging links to the countryside through partnerships with power holders who could sometimes expand the scope of the state by engaging it.”
+
+]
+
+.source[Mukhopadhyay, Dipali, (2014), *Warlords, Strongman Governors and the State in Afghanistan*]
+
+]
+
+---
+
+# Natural States Today? IV
+
+.pull-left[
+.center[
+![:scale 80%](../images/afghangovernors.jpg)
+
+]
+]
+
+.pull-right[
+
+Afghan Governors meeting:
+
+- Jamaluddin Badar, Nuristan governor (prosecuted for corruption)
+- Lutfullah Mashal, Langham governor (writer & poet)
+- Gul Agha Sherzai, Nangarhar governor (major anti-Taliban warlord and US ally, suspected of opium trafficking)
+
+]
+
+---
+
+# Natural States Today? IV
+
+.left-column[
+.center[
+![](../images/hamidkarzai.jpg)
+
+Hamid Karzai
+
+President of Afghanistan (2001-2014)
+]
+]
+
+.right-column[
+
+> "..the mere articulation of a democratic, centralized state would prove inadequate to shift the center of gravity in this state formation project from the provinces to Kabul."
+
+]
+
+.source[Mukhopadhyay, Dipali, (2014), *Warlords, Strongman Governors and the State in Afghanistan*]
+
+---
+
+# NWW's Typology of Natural States: Fragile
+
+.pull-left[
+.center[
+![scale 100%](../images/vikingraid2.jpg)
+]
+]
+
+.pull-right[
+.smaller[
+- .hi[*Fragile* Natural State]: State can barely sustain itself
+
+- Constant internal and/or external violence
+  - Civil war or foreign invasion(s)
+
+- Unable to support *any* organization but the State itself
+
+- Small changes upset coalition and cause infighting and repositioning
+
+- All politics is high stakes - misstep risks death
+]
+]
+
+---
+
+# NWW's Typology of Natural States: Basic
+
+.pull-left[
+.center[
+![:scale 100%](../images/medievalalliances.png)
+]
+]
+
+.pull-right[
+
+- .hi[*Basic* Natural State]: can support some elite organizations, but only within the State
+
+- Has public institutions that institutionalize the State: succession, tax rates, common beliefs
+
+- Organizations can only endure if connected to State, still personal and not perpetual
+]
+
+---
+
+# NWW's Typology of Natural States: Mature
+
+.pull-left[
+.center[
+![:scale 70%](../images/louisxvi.jpg)
+]
+]
+
+.pull-right[
+
+- .hi[*Mature* Natural State]: has near-monopoly on use of violence
+
+- Has public and private institutions and organizations among elite, not extensions of the State
+
+- Rule of law for elite organizations
+
+- May be able to sustain perpetually lived impersonal organizations separate from individuals and State
+]
+
+---
+
+# The Transition
+
+.pull-left[
+
+- How can we get from natural states that benefit the elite to open access orders (that might harm elite?)
+
+- **It must be in the interest of the elite to reform**
+
+- But how??? (A BIG question for later!)
+]
+
+.pull-right[
+
+.center[
+![:scale 60%](../images/doorstep.png)
+]
+]

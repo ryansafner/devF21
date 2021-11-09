@@ -15,7 +15,7 @@ slides: "4.2-slides"
 ---
 
 {{% alert note %}}
-*Thursday, November 4, 2021*
+*Thursday, November 4* and *Tuesday Noovember 9, 2021*
 {{% /alert %}}
 
 ## <i class="fas fa-info-circle fa-lg"></i> Overview

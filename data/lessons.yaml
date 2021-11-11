@@ -83,6 +83,7 @@ lessons:
     
   - title: "4.4 — Selectorate Model & The Violence Trap"
     content: "4.4-content"
+    slides: "4.4-slides"
     
   - title: '<span class="fake-header-table">Making Comparisons and Case Studies</span>'
     header: True

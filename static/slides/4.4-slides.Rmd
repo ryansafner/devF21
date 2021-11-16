@@ -466,11 +466,11 @@ In these circumstances [after the rebellion on An Lu-Shan from 756 to 763 AD] th
 .pull-left[
 - Generates a .hi[loyalty norm]
 
-- When $\frac{W}{S}$ is small, members of $W$ are **extremely loyal to the Leader**
+- When $\frac{W}{S}$ is small, members of $W$ are **extremely loyal to the Leader** (lower chance of being in challenger’s $W)$
   - cult of personality
   - one-party dictatorships
 
-- When $\frac{W}{S}$ is large, members of $W$ are *less loyal*
+- When $\frac{W}{S}$ is large, members of $W$ are *less loyal* (better chance of being in challenger’s $W)$
   - democracy
   - monarchy
   - military junta
@@ -508,7 +508,7 @@ In these circumstances [after the rebellion on An Lu-Shan from 756 to 763 AD] th
 
 - Selectorate: 100,000
 
-- $\frac{W}{S} = 0.01$
+- Loyalty norm: $\frac{W}{S} = 0.01$ (prob. of being in $C$'s $W)$
 ]
 
 --
@@ -523,7 +523,7 @@ In these circumstances [after the rebellion on An Lu-Shan from 756 to 763 AD] th
 
 - Selectorate: 10,000
 
-- $\frac{W}{S} = 0.10$
+- Loyalty norm: $\frac{W}{S} = 0.10$ (prob. of being in $C$'s $W)$
 ]
 
 --
@@ -534,52 +534,70 @@ In these circumstances [after the rebellion on An Lu-Shan from 756 to 763 AD] th
 
 # The Loyalty Norm: Hypothetical Example II
 
+.pull-left[
 ## Society A
 
+.smallest[
 - Probability of being in challenger's coalition is $\frac{W}{S}=0.01$
-
---
 
 $$\text{Expected payoff (Defect)}= 0.01(\$1,000,000)+0.99($0)=\$10,000$$
 
---
-
 - Leader *could* give $1,000,000 to each coalition member to ensure loyalty...
-
---
 
 - ... but only *needs* to give coalition members more than $10,000 to stop them from defecting
 
+]
+]
+
+.pull-right[
+.center[
+![](../images/rents.jpg)
+]
+]
 
 ---
 
 # The Loyalty Norm: Hypothetical Example III
 
+.pull-left[
+.center[
+![](../images/rents.jpg)
+]
+]
+
+.pull-right[
+.smallest[
 ## Society B
 
 - Probability of being in challenger's coalition is $\frac{W}{S}=0.10$
 
---
-
 $$\text{Expected payoff (Defect)}= 0.10(\$1,000,000)+0.90($0)=\$100,000$$
-
---
-
 - Leader *could* give $1,000,000 to each coalition member to ensure loyalty...
 
---
-
 - ... but only *needs* to give coalition members more than $100,000 to stop them from defecting
+]
+
 
 ---
 
 # Loyalty Norm: Small W/S Societies
 
+.pull-left[
+
 - Leaders in *small* $\frac{W}{S}$ societies with *strong* loyalty norms (Society A) need to spend *less* on private goods to keep $W_i$ members loyal
 
 - Marginal benefit of defection is smaller
 
-- The price of loyalty is "cheap" (since $W_i$ members are very loyal)
+- The price of loyalty is “cheap” (since $W_i$ members are very loyal)
+
+- Leader of Society A must spend $10,000 on each `\\(W_i\\)` member vs. $100,000 in Society B
+]
+
+.pull-right[
+.center[
+![](../images/rents.jpg)
+]
+]
 
 ---
 
@@ -796,10 +814,10 @@ In early 2004, the German anti-corruption NGO Transparency International release
 
 .pull-right[
 
-- Leaders prefer to buy the support of the winning coalition with private goods (rents)
+- Leaders $(L)$ prefer to buy the support of the winning coalition with private goods (rents)
    - cheaper
 
-- Challengers cannot credibly promise defecting members of $W$ private goods
+- Challengers $(C)$ cannot credibly promise defecting members of $W$ private goods
 
 ]
 

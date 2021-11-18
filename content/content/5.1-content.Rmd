@@ -1,0 +1,82 @@
+---
+title: "4.4 — Selectorate Model & The Violence Trap"
+draft: false
+linktitle: "4.4 — Selectorate Model & The Violence Trap"
+date: "2020-06-08"
+menu:
+  content:
+    parent: Course content
+    weight: 16
+type: docs
+output:
+  blogdown::html_page:
+    toc: true
+slides: "4.4-slides"
+---
+
+{{% alert note %}}
+*Thursday November 20, 2021*
+{{% /alert %}}
+
+## <i class="fas fa-info-circle fa-lg"></i> Overview
+
+TBD
+
+## <i class="fas fa-book-reader fa-lg"></i> Readings
+
+### Required
+
+- <i class="fas fa-book"></i> Chs. 4, 7 in Acemoglu and Robinson, 2012, *Why Nations Fail*
+
+### Recommended
+
+- [<i class="fas fa-external-link-square-alt"></i> Levy and Pert, "How the Dismal Science Got its Name"](http://www.econlib.org/library/Columns/LevyPeartdismal.html)
+- [<i class="fab fa-youtube"></i> The History of Europe: Every Year](https://www.youtube.com/watch?v=UY9P0QSxlnI)
+
+### Primary Sources
+
+- [<i class="fas fa-file-pdf"></i> North and Weingast (1989), "Constitutions and Commitment: The Evolution of Institutional Governing Public Choice in Seventeenth-Century England"](/readings/North-Weingast-1989.pdf)
+- [<i class="fas fa-file-pdf"></i> Weingast (2017), "Adam Smith's Theory of Violence and the Political-Economics of Development"](https://web.stanford.edu/group/mcnollgast/cgi-bin/wordpress/wp-content/uploads/2016/01/Weingast.ASM_.NBER-ver-4.00__17.0116.pdf)
+- [<i class="fas fa-file-pdf"></i> Ko, Koyama, and Sng (2017), "Unified China and Divided Europe"](/readings/Ko-Koyama-Sng-2017.pdf)
+- [<i class="fas fa-file-pdf"></i> Koyama and Johnson (2016), "States and Economic Growth: Capacity and Constraints"](/readings/Koyama-Johnson-2016.pdf)
+- [<i class="fas fa-file-pdf"></i> Milgrom, North, and Weingast (1990), "The Role of Institutions in the Revival of Trade: The Law Merchant, Private Judges, and the Champaigne Fairs"](/readings/Milgrom-North-Weingast-1990.pdf)
+- [<i class="fas fa-file-pdf"></i> Grief (1989), "Reputation and Coalitions in Medieval Trade: the Case of the Maghribi Traders"](/readings/Greif-1989.pdf)
+- [<i class="fas fa-file-pdf"></i> Grief, Milgrom, and Weingast (1994), "Coordination, Commitment, and Enforcement: The Case of the Merchant Guild"](/readings/Grief-Milgrom-Weingast-1994.pdf)
+- [<i class="fas fa-file-pdf"></i> Ogilvie (2014), "The Economics of Guilds"](/readings/Ogilvie-2014.pdf)
+- [<i class="fas fa-file-pdf"></i> Benson (1989), "The Spontaneous Evolution of Commercial Law"](/readings/Benson-1989.pdf)
+- Read the quotes by classical economists (Smith, Hume, Bastiat) on mercantilism, starting on [slide 153](https://devf19.classes.ryansafner.com/slides/11-slides#153)
+
+### Questions to Read For:
+
+- Why did the Industrial Revolution occur England in the 1800s? Why not elsewhere, or at other times? 
+
+- What remnants of feudal ideas, institutions, and customs remain today?
+
+- Was feudalism optimal or efficient for societies at the time, given their constraints?
+
+- Why did feudalism last so long? What prevented an escape to another (better?) system?
+
+- How specifically did feudalism transition into something else -- mercantilism, capitalism, socialism, etc. What were the main mechanisms of change?
+
+- How do reforms come about? How are they made incentive-compatible, so that the elite (that would lose power during reform) permit it? 
+How well do Olson and Weingast's models fit feudalism, and what will come after (or remain today in some countries)?
+
+- Were monopolies, guilds, created rents and rent-seeking, and other restrictions on trade as bad as we economists would say they are today in markets?
+
+- What are the legacies of colonialism and European imperialism? 
+- How did European colonists decide what kind of colony to set up (inclusive or extractive, to use Acemolgu & Robinson's terms)? 
+- Most (if not all) of the inclusive colonies tended to be British. Is that an important factor?  
+- Mercantilism as a coherent philosophy is archaic today. But how are some of its economic tenets (e.g. positive trade surplus) practiced or believed today?
+- In what ways are today's developing countries mercantilist? In what ways are they NWW's natural states? 
+- Adam Smith, Bastiat, and the Classical Economists ridiculed Mercantilism to a pulp, such that no serious economist today supports mercantilist ideas about trade. But how should we view Mercantilism in the context of its time?
+- Ending mercantilism is simple, in theory - get rid of trade barriers, monopoly privileges, and other restrictions. Why is it so hard? And in particular, should we encourage developing countries to do this?
+- How does the American Revolution, Constitutional Convention, and other "democratic popular revolutions" fit in the logic of natural states and elites? Or do they?
+- Now that we've explored geography and institutions more, does geography affect development, perhaps *through* institutions? Consider Acemoglu and Robinson's arguments about the different types of colonies - was that choice affected by geography?
+
+## <i class="fas fa-chalkboard-teacher"></i> Slides
+
+Below, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. Note while in going through the slides, you can type <kbd>h</kbd> to see a special list of viewing options, and type <kbd>o</kbd> for an outline view of all the slides.
+
+The lower button will allow you to download a PDF version of the slides. I suggest printing the slides beforehand and using them to take additional notes in class (*not everything* is in the slides)!
+
+`r blogdown::shortcode("slide-links")`

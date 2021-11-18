@@ -88,17 +88,24 @@ lessons:
   - title: '<span class="fake-header-table">Making Comparisons and Case Studies</span>'
     header: True
 
-  - title: '5.1 — The Origins of Liberal Democracy in Western Europe'
+  - title: '5.1 — The Road to the Industrial Revolution I: Feudalism'
+    content: "5.1-content"
+    slides: "5.1-slides"
+  
+  - title: '5.2 — The Road to the Industrial Revolution II: Escaping Feudalism & Mercantilism'
 
-  - title: '5.2 — Russia and the Post-Communist Transition'
+  - title: '5.3 — The Road to the Industrial Revolution III: Origins of Liberal Democracy in Western Europe'
 
-  - title: '5.3 — State Capitalism: East Asian Style'
+  - title: '5.4 — Russia and the Post-Communist Transition'
 
-  - title: "5.4 — Extractive Institutions: Latin America and Africa"
+  - title: '5.5 — State Capitalism: East Asian Style'
 
-  - title: '<i class="fas fa-laptop-code"></i> **Short Paper 2**'
+  - title: "5.6 — Extractive Institutions: Latin America and Africa"
 
-  - title: '<i class="fas fa-laptop-code"></i> **Country Profile** '
+  - title: '<i class="fas fa-laptop-code"></i> **Short Paper 2** due Mon Dec 6'
+    assignment: "02-short-paper"
+
+  - title: '<i class="fas fa-laptop-code"></i> **Country Profile** due Dec 2'
     assignment: "country-profile"
 
   - title: '<i class="fas fa-laptop-code"></i> **Final Exam**'

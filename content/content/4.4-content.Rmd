@@ -19,7 +19,7 @@ slides: "4.4-slides"
 {{% /alert %}}
 
 {{% alert warning %}}
-We will have a discussion **Thursday, November 18** on the required readings below.
+**Update (11/18)**: We will have a discussion on Blackboard’s Discussion Board until Sunday November 21.
 {{% /alert %}}
 
 ## <i class="fas fa-info-circle fa-lg"></i> Overview

@@ -53,8 +53,8 @@ theme_slides <- theme_light() +
 
 class: inverse, center, middle
 
-### [The Selectorate Model](#3)
-### [The Violence Trap](#18)
+### [Feudal Europe (c.400-c.1500)](#3)
+### [Escape from Feudalism (c.??-c.1500)](#)
 
 ---
 

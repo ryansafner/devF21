@@ -1,7 +1,7 @@
 ---
-title: "5.1 — Feudalism"
+title: "5.2 — Escaping Feudalism, and Mercantilism"
 draft: false
-linktitle: "5.1 — Feudalism"
+linktitle: "5.2 — Escaping Feudalism, and Mercantilism"
 date: "2020-06-08"
 menu:
   content:
@@ -11,11 +11,11 @@ type: docs
 output:
   blogdown::html_page:
     toc: true
-slides: "5.1-slides"
+slides: "5.2-slides"
 ---
 
 {{% alert note %}}
-*Thursday November 19, 2021*
+*Tuesday November 23, 2021*
 {{% /alert %}}
 
 ## <i class="fas fa-info-circle fa-lg"></i> Overview
@@ -30,17 +30,16 @@ TBD
 
 ### Recommended
 
+- [<i class="fas fa-external-link-square-alt"></i> Levy and Pert, "How the Dismal Science Got its Name"](http://www.econlib.org/library/Columns/LevyPeartdismal.html)
 - [<i class="fab fa-youtube"></i> Bill Wurtz: history of the entire world i guess](https://www.youtube.com/watch?v=xuCn8ux2gbs)
 - [<i class="fab fa-youtube"></i> The History of Europe: Every Year](https://www.youtube.com/watch?v=UY9P0QSxlnI)
 
 ### Primary Sources
 
-- [<i class="fas fa-file-pdf"></i> Milgrom, North, and Weingast (1990), "The Role of Institutions in the Revival of Trade: The Law Merchant, Private Judges, and the Champaigne Fairs"](/readings/Milgrom-North-Weingast-1990.pdf)
-- [<i class="fas fa-file-pdf"></i> Grief (1989), "Reputation and Coalitions in Medieval Trade: the Case of the Maghribi Traders"](/readings/Greif-1989.pdf)
-- [<i class="fas fa-file-pdf"></i> Grief, Milgrom, and Weingast (1994), "Coordination, Commitment, and Enforcement: The Case of the Merchant Guild"](/readings/Grief-Milgrom-Weingast-1994.pdf)
-- [<i class="fas fa-file-pdf"></i> Ogilvie (2014), "The Economics of Guilds"](/readings/Ogilvie-2014.pdf)
-- [<i class="fas fa-file-pdf"></i> Benson (1989), "The Spontaneous Evolution of Commercial Law"](/readings/Benson-1989.pdf)
-- Read the quotes by classical economists (Smith, Hume, Bastiat) on mercantilism, starting on [slide 153](https://devf19.classes.ryansafner.com/slides/11-slides#153)
+- [<i class="fas fa-file-pdf"></i> Weingast (2017), "Adam Smith's Theory of Violence and the Political-Economics of Development"](https://web.stanford.edu/group/mcnollgast/cgi-bin/wordpress/wp-content/uploads/2016/01/Weingast.ASM_.NBER-ver-4.00__17.0116.pdf)
+- [<i class="fas fa-file-pdf"></i> Ko, Koyama, and Sng (2017), "Unified China and Divided Europe"](/readings/Ko-Koyama-Sng-2017.pdf)
+- [<i class="fas fa-file-pdf"></i> Koyama and Johnson (2016), "States and Economic Growth: Capacity and Constraints"](/readings/Koyama-Johnson-2016.pdf)
+- Read the quotes by classical economists (Smith, Hume, Bastiat) on mercantilism, starting on [slide 92](https://devf21.classes.ryansafner.com/slides/5.2-slides#92)
 
 ### Questions to Read For:
 

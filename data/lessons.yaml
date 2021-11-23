@@ -85,22 +85,18 @@ lessons:
     content: "4.4-content"
     slides: "4.4-slides"
     
-  - title: '<span class="fake-header-table">Making Comparisons and Case Studies</span>'
+  - title: '<span class="fake-header-table">Escaping the Malthusian Trap & the Road to the Industrial Revolution</span>'
     header: True
 
-  - title: '5.1 — The Road to the Industrial Revolution I: Feudalism'
+  - title: '5.1 — Feudalism'
     content: "5.1-content"
     slides: "5.1-slides"
   
-  - title: '5.2 — The Road to the Industrial Revolution II: Escaping Feudalism & Mercantilism'
-
-  - title: '5.3 — The Road to the Industrial Revolution III: Origins of Liberal Democracy in Western Europe'
-
-  - title: '5.4 — Russia and the Post-Communist Transition'
-
-  - title: '5.5 — State Capitalism: East Asian Style'
-
-  - title: "5.6 — Extractive Institutions: Latin America and Africa"
+  - title: '5.2 — Escaping Feudalism, and Mercantilism'
+    content: "5.2-content"
+    slides: "5.2-slides"
+    
+  - title: '5.3 — Origins of Liberal Democracy in Western Europe'
 
   - title: '<i class="fas fa-laptop-code"></i> **Short Paper 2** due Mon Dec 6'
     assignment: "02-short-paper"

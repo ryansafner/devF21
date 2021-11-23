@@ -77,11 +77,11 @@ class: inverse, center, middle
 # Let's Explore Three (Among Many) Explanations
 
 .pull-left[
-## 1. Adam Smith's Explanation
+1. Adam Smith's Explanation
 
-## 2. War and State Capacity
+2. War and State Capacity
 
-## 3. Other Key Historical Events
+3. Other Key Historical Events
 
 ]
 
@@ -242,14 +242,14 @@ Adam Smith
 ]
 
 .right-column[
-
+.smallest[
 - King and towns find a mutually-beneficial exchange against common enemy: the lords:
   - King exempts towns from feudal ties to lords (effectively grants independence)
   - Allows towns to govern themselves, and pledges mutual protection against lords, in exchange for regular taxes to the King
 
 - Towns choose governance that benefits themselves: stronger property rights, rule of law, justice, military defense against lords
   - Don't get too excited: they are a clear oligarchy, not a democracy!
-  
+]
 ]
 
 .source[Smith, Adam, 1776, [*An Enquiry into the Nature and Causes of the Wealth of Nations*](https://www.econlib.org/library/Smith/smWN.html)
@@ -528,7 +528,7 @@ The "Holy Roman Empire" in 1648
 .pull-right[
 .smallest[
 - .hi[1648 Peace of Westphalia] puts an official end to State-sanctioned religious warfare
-  - Ends Thirty Years War, and Eighty Years War (Dutch revolt against Spain)
+  - Ends Thirty Years War, and Eighty Years War
 
 - "*Cuius regio, euis religio*"
 
@@ -536,7 +536,7 @@ The "Holy Roman Empire" in 1648
 
 - Territorial borders established between States
 
-- Balance of power in Europe: nation-states create credible commitment to ally against any one state seeking domination
+- Balance of power: nation-states create credible commitment to ally against any one state seeking domination
 ]
 
 ]
@@ -545,7 +545,10 @@ The "Holy Roman Empire" in 1648
 
 # War and State Capacity: Summary I
 
+.smaller[
 > "Understanding economic history is critical for comprehending the importance of state capacity. **In historical terms, the emergence of well functioning states is a relatively recent phenomenon.** For many premodern polities, even **the term state is an anachronism: there was no state in much of Europe prior to the late middle ages.** Otto Heinze observed that feudal rulers ‘lacked the attributes of sovereignty—that is, independence beyond its borders and exclusive rights within them’ (Hintze, 1906, 1975, p. 192). In medieval Europe, characterized by fragmented political authority, overlapping and competing legal jurisdictions, and private armies—the modern concept of a state—has little empirical purchase (Strayer, 1970). **The word 'state' only came to acquire its modern meaning in English at the end of the sixteenth century** (Skinner, 2009). This was not merely a semantic change; when 'the word 'state', l'etat, stato' or Der Staat came into usage in the early modern period **it was 'a word for a new political experience'** (Oakeshott, 2006, p. 361)," (p.2).
+
+]
 
 .source[Koyama, Mark and Noel D. Johnson, 2016, "States and Economic Growth: Capacity and Constraints," *Explorations in Economic History*, forthcoming]
 
@@ -638,7 +641,7 @@ The "Holy Roman Empire" in 1648
 - (Re)discovery of classical philosophy, mathematics, literature, art from Arabs (who retained it from Ancient Greece and Rome)
 
 .center[
-![](https://www.dropbox.com/s/5r1144rvwdcfrix/medievallearning.jpg?raw=1)
+![:scale 50%](https://www.dropbox.com/s/5r1144rvwdcfrix/medievallearning.jpg?raw=1)
 ]
 ]
 
@@ -828,7 +831,7 @@ The "Holy Roman Empire" in 1648
 .center[
 ![:scale 80%](https://www.dropbox.com/s/sved526wwnndw75/reformationmap.png?raw=1)
 
-.smallest[
+.quitesmall[
 Over the next 300 years, religious wars overlaid on political and military competition between early European states
 ]
 ]
@@ -924,7 +927,7 @@ The Amsterdam Stock Exchange (1601)
 
 .pull-right[
 
-.smallest[
+.quitesmall[
 > "The rise of Western Europe after 1500 is due largely to growth in countries with access to the Atlantic Ocean and with substantial trade with the New World, Africa, and Asia via the Atlantic. This trade and the associated colonialism affected Europe not only directly, but also indirectly by inducing institutional change. Where “initial” political institutions (those established before 1500) placed significant checks on the monarchy, the growth of Atlantic trade strengthened merchant groups by constraining the power of the monarchy, and helped merchants obtain changes in institutions to protect property rights. These changes were central to subsequent economic growth," (p.546)
 ]
 ]
@@ -935,18 +938,8 @@ The Amsterdam Stock Exchange (1601)
 
 # Other Key Historical Events: The Age of Discovery V
 
-.pull-left[
 .center[
 ![](https://www.dropbox.com/s/0u2k6x56wpyez08/atlantictrade1.png?raw=1)
-]
-]
-
-.pull-right[
-
-.center[
-![](https://www.dropbox.com/s/6jn8hxpg2uncrq2/atlantictrade2.png?raw=1)
-]
-
 ]
 
 .source[Acemoglu, Daron, Simon Johnson, and James Robinson, 2005, "The Rise of Europe: Atlantic Trade, Institutional Change, and Economic Growth," *American Economic Review* 95(3): 546-579]
@@ -1344,16 +1337,20 @@ Chief Justice (King's Bench)
 .pull-left[
 
 .center[
-![:scale 40%](https://www.dropbox.com/s/eypljhxdx438aeq/navigationacts.jpg?raw=1)
+![:scale 80%](https://www.dropbox.com/s/eypljhxdx438aeq/navigationacts.jpg?raw=1)
 ]
 ]
 
 .pull-right[
-.smaller[
+.smallest[
 - .green[**Example**:] British Navigation Acts
+]
 
+.quitesmall[
 > "[N]o goods of the growth, production, or manufacture of Asia, Africa, or America, shall be imported only by ships that belong to the people of the British Commonwealth."
+]
 
+.smallest[
 - All trade with Britain and her colonies must use British ships and British seamen
 
 - Intended to target rival European empires (esp. Dutch)
@@ -1363,7 +1360,6 @@ Chief Justice (King's Bench)
 ]
 
 ---
-
 
 # Trading Monopolies V
 
@@ -1665,11 +1661,13 @@ Hernan Cortes conquering the Aztecs
 ![](https://www.dropbox.com/s/opi7yoo7nfcu502/ajr3.png?raw=1)
 ]
 
-.font80[
+.quitesmall[
 - Clever use of **instrumental variables**:
+]
 
+.tiny[
 - First Stage:  	
-$$\widehat{\text{Expropriation Risk}_i}=\widehat{\gamma_0}+\widehat{\gamma_1}ln(\text{Settler Mortality in 1500}_i)+\widehat{\gamma}Controls+\nu_i$$
+$$\widehat{\text{Expropriation Risk}_i}=\widehat{\gamma_0}+\widehat{\gamma_1}\ln(\text{Settler Mortality in 1500}_i)+\widehat{\gamma}Controls+\nu_i$$
 - Second Stage:
 $$\widehat{\text{ln(Present GDP per capita)}}=\hat{\beta_0}+\hat{\beta_1}\widehat{\text{Expropriation Risk}_i}+\cdots+\hat{\beta_k}\text{Controls}+\epsilon_i$$
 ]
@@ -1689,7 +1687,7 @@ $$\widehat{\text{ln(Present GDP per capita)}}=\hat{\beta_0}+\hat{\beta_1}\wideha
 
 ---
 
-# Colonization and Imperialism: Persistent Long-Run Effects I
+# Colonization: Persistent Long-Run Effects I
 
 - (Not very surprisingly) countries today that were predominantly extractive colonies have had more troubled histories and are less developed than countries that were predominantly inclusive colonies     
 .pull-left[
@@ -1706,7 +1704,7 @@ $$\widehat{\text{ln(Present GDP per capita)}}=\hat{\beta_0}+\hat{\beta_1}\wideha
 
 ---
 
-# Colonization and Imperialism: Persistent Long-Run Effects II
+# Colonization: Persistent Long-Run Effects II
 
 .pull-left[
 
@@ -1727,7 +1725,7 @@ $$\widehat{\text{ln(Present GDP per capita)}}=\hat{\beta_0}+\hat{\beta_1}\wideha
 
 ---
 
-# Colonization and Imperialism: Persistent Long-Run Effects III
+# Colonization: Persistent Long-Run Effects III
 
 .pull-left[
 
@@ -2173,8 +2171,10 @@ Adam Smith
 > “Let the same natural liberty of exercising what species of industry they please, be restored to all his Majesty's subjects...break down the exclusive privileges of corporations, and repeal the statute of apprenticeship, both which are real encroachments upon natural liberty, and add to these the repeal of the [anti-migration laws] so that a poor workman, when thrown out of employment either in one trade or in one place, may seek for it in another trade or in another place without the fear either of a prosecution or of a removal.”
 
 ]
-]
+
 .source[Smith, Adam, 1776, *An Enquiry into the Nature and Causes of the Wealth of Nations*, Book IV, Chapter 9: Conclusion of the Mercantile system]
+
+]
 
 ---
 
@@ -2554,5 +2554,3 @@ John Stuart Mill
 
 .source[Mill, John Stuart, 1825, *The Corn Laws*]
 ]
-
----

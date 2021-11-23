@@ -19,7 +19,7 @@ library(pander)
 ```
 
 {{% alert warning %}}
-Due by **DATE** and **TIME** by CHALK-AND-WIRE UPLOAD (include a word count)
+Due by the end of the day **December 6** by email (both slides & write-up).
 {{% /alert %}}
 
 > "How can I know what I think until I see what I say?" [— E. M. Forster]{style="float:right"}
@@ -34,7 +34,7 @@ The following countries all have a GDP/capita of less than $20,000 USD, and are 
 
 Please **email me** with the country you would like to choose. I will remove countries from this list in the order that I receive emails claiming them. You may decide to change your country at any time, at which point, I will re-release the country into the pool for others to select, and update the list below:
 
-**Last Update: October 16**
+**Last Update: November 22**
 
 - Iran
 - Turkmenistan
@@ -49,16 +49,16 @@ Please **email me** with the country you would like to choose. I will remove cou
 - Costa Rica
 - Serbia
 - Grenada
-- Brazil
+- **Brazil (claimed)**
 - North Macedonia
 - Algeria
 - Suriname
 - Palau
-- Colombia
+- **Colombia (claimed)**
 - Lebanon
 - Saint Lucia
 - **Peru (claimed)**
-- South Africa
+- **South Africa (claimed)**
 - Bosnia and Herzegovina
 - Mongolia
 - Sri Lanka
@@ -75,14 +75,14 @@ Please **email me** with the country you would like to choose. I will remove cou
 - Libya
 - Namibia
 - Eswatini
-- **Fiji (claimed)**
+- Fiji
 - Armenia
 - Dominica
 - Bhutan
 - Jamaica
 - Jordan
 - Ukraine
-- Philippines
+- **Philippines (claimed)**
 - Morocco
 - Guyana
 - Belize
@@ -100,7 +100,7 @@ Please **email me** with the country you would like to choose. I will remove cou
 - Ghana
 - Tonga
 - Nigeria
-- Samoa
+- **Samoa (claimed)**
 - Nicaragua
 - Pakistan
 - Timor-Leste
@@ -124,7 +124,7 @@ Please **email me** with the country you would like to choose. I will remove cou
 - Tajikistan
 - Lesotho
 - São Tomé and Príncipe
-- Nepal
+- **Nepal (claimed)**
 - Vanuatu
 - The Gambia
 - Zimbabwe
@@ -133,7 +133,7 @@ Please **email me** with the country you would like to choose. I will remove cou
 - Chad
 - Mali
 - Yemen
-- Ethiopia
+- **Ethiopia (claimed)**
 - Guinea
 - Rwanda
 - Solomon Islands

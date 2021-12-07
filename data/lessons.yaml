@@ -105,4 +105,5 @@ lessons:
   - title: '<i class="fas fa-laptop-code"></i> **Country Profile** due Dec 2'
     assignment: "country-profile"
 
-  - title: '<i class="fas fa-laptop-code"></i> **Final Exam**'
+  - title: '<i class="fas fa-laptop-code"></i> **Final Exam** due Tues Dec 14'
+    assignment: "final-exam"

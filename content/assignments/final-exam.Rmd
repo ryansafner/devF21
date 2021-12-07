@@ -10,7 +10,7 @@ menu:
 type: docs
 output:
   blogdown::html_page:
-    toc: true
+    toc: false
 ---
 
 ```{r message=FALSE, warning=FALSE, include=FALSE}
@@ -34,7 +34,7 @@ You may discuss the questions, but you must write your own responses and turn in
 
 You will be graded both on your use of reasoning and economic analysis, and ability when relevant to accurately describe the arguments in the readings. Where asked for your opinion, you will not be graded on your *conclusion*, only your *reasoning.* You must be able to talk with some familiarity about arguments put forth in our readings, when relevant (informally, as in “According to Easterly...”). You do not need formal citations, but it should be clear when you are referencing the readings vs. your own thinking.
 
-Each question is worth **20 points.** This assignment is due to me by email by 2:00 PM on Tuesday 14. Starting at 2:01, you will lose 2 points for every hour late.
+This assignment is due to me by email by 2:00 PM on Tuesday December 14. Starting at 2:01, you will lose 2 points for every hour late.
 
 # Section I (Models & Frameworks) — Choose Three (3)
 
